@@ -803,7 +803,7 @@ export default function App() {
             {/* Top Card Image with Overlay Badge */}
             <div className="relative h-64 sm:h-72 overflow-hidden bg-slate-100">
               <img
-                src="/highway_charging_card.jpg"
+                src="/highway%20charger.png"
                 alt="Highway Charging Station"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -885,7 +885,7 @@ export default function App() {
             {/* Top Card Image with Overlay Badge */}
             <div className="relative h-64 sm:h-72 overflow-hidden bg-slate-100">
               <img
-                src="/city_charging_card.jpg"
+                src="/city%20chareger.png"
                 alt="City Charging Station"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
