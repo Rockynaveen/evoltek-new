@@ -796,69 +796,69 @@ export default function App() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
 
           {/* Card 1: Highway Charging Station */}
-          <div className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-xl flex flex-col justify-between group hover:shadow-2xl transition-all">
+          <div className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg flex flex-col justify-between group hover:shadow-xl transition-all">
             {/* Top Card Image with Overlay Badge */}
-            <div className="relative h-64 sm:h-72 overflow-hidden bg-slate-100">
+            <div className="relative h-48 sm:h-56 overflow-hidden bg-slate-100">
               <img
                 src="/highway%20charger.png"
                 alt="Highway Charging Station"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute top-4 left-4 bg-emerald-100/95 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-extrabold text-emerald-900 flex items-center gap-1.5 shadow-md border border-emerald-200 uppercase tracking-wider">
+              <div className="absolute top-3 left-3 bg-emerald-100/95 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-extrabold text-emerald-900 flex items-center gap-1.5 shadow-md border border-emerald-200 uppercase tracking-wider">
                 <Navigation className="w-3.5 h-3.5 text-emerald-700" />
                 <span>Highway Corridor</span>
               </div>
             </div>
 
             {/* Card Content */}
-            <div className="p-6 sm:p-8 space-y-6 flex-1 flex flex-col justify-between">
-              <div className="space-y-3">
-                <h3 className="text-2xl sm:text-3xl font-black text-slate-900">
+            <div className="p-5 sm:p-6 space-y-4">
+              <div className="space-y-2">
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900">
                   Highway Charging Station
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Designed for high-speed highway corridors with integrated amenities for long-distance drivers.
                 </p>
 
                 {/* Specs List with Green Icons */}
-                <div className="pt-4 space-y-3.5 text-sm border-t border-slate-100">
-                  <div className="flex items-center justify-between py-1">
-                    <div className="flex items-center gap-2.5 text-slate-600">
-                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-sm">📐</span>
+                <div className="pt-3 space-y-2.5 text-xs sm:text-sm border-t border-slate-100">
+                  <div className="flex items-center justify-between py-0.5">
+                    <div className="flex items-center gap-2 text-slate-600">
+                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                        <span className="text-xs">📐</span>
                       </div>
                       <span className="font-medium">Minimum Space</span>
                     </div>
                     <span className="font-extrabold text-emerald-800">1 Acre</span>
                   </div>
 
-                  <div className="flex items-center justify-between py-1">
-                    <div className="flex items-center gap-2.5 text-slate-600">
-                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <Zap className="w-4 h-4 text-emerald-700" />
+                  <div className="flex items-center justify-between py-0.5">
+                    <div className="flex items-center gap-2 text-slate-600">
+                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                        <Zap className="w-3.5 h-3.5 text-emerald-700" />
                       </div>
                       <span className="font-medium">Power Capacity</span>
                     </div>
                     <span className="font-extrabold text-emerald-800">60 / 120 / 180 / 240 / 360 / 480 kW</span>
                   </div>
 
-                  <div className="flex items-center justify-between py-1">
-                    <div className="flex items-center gap-2.5 text-slate-600">
-                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-sm">🔌</span>
+                  <div className="flex items-center justify-between py-0.5">
+                    <div className="flex items-center gap-2 text-slate-600">
+                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                        <span className="text-xs">🔌</span>
                       </div>
                       <span className="font-medium">Charger Type</span>
                     </div>
                     <span className="font-bold text-slate-900">DC Fast Charging</span>
                   </div>
 
-                  <div className="flex items-center justify-between py-1">
-                    <div className="flex items-center gap-2.5 text-slate-600">
-                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-sm">👥</span>
+                  <div className="flex items-center justify-between py-0.5">
+                    <div className="flex items-center gap-2 text-slate-600">
+                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                        <span className="text-xs">👥</span>
                       </div>
                       <span className="font-medium">Best For</span>
                     </div>
@@ -866,98 +866,76 @@ export default function App() {
                   </div>
                 </div>
               </div>
-
-              {/* Full Width Green Button */}
-              <div className="pt-4">
-                <button
-                  onClick={() => openModalWithOption('Highway Charging Station Enquiry')}
-                  className="w-full py-4 bg-[#0A5C36] hover:bg-[#08482A] text-white font-bold text-base rounded-2xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 active:scale-95 cursor-pointer"
-                >
-                  <span>Enquire Highway Setup</span>
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </div>
             </div>
           </div>
 
           {/* Card 2: City Charging Station */}
-          <div className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-xl flex flex-col justify-between group hover:shadow-2xl transition-all">
+          <div className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg flex flex-col justify-between group hover:shadow-xl transition-all">
             {/* Top Card Image with Overlay Badge */}
-            <div className="relative h-64 sm:h-72 overflow-hidden bg-slate-100">
+            <div className="relative h-48 sm:h-56 overflow-hidden bg-slate-100">
               <img
                 src="/city%20chareger.png"
                 alt="City Charging Station"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute top-4 left-4 bg-emerald-100/95 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-extrabold text-emerald-900 flex items-center gap-1.5 shadow-md border border-emerald-200 uppercase tracking-wider">
+              <div className="absolute top-3 left-3 bg-emerald-100/95 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-extrabold text-emerald-900 flex items-center gap-1.5 shadow-md border border-emerald-200 uppercase tracking-wider">
                 <Building2 className="w-3.5 h-3.5 text-emerald-700" />
                 <span>Urban Hub</span>
               </div>
             </div>
 
             {/* Card Content */}
-            <div className="p-6 sm:p-8 space-y-6 flex-1 flex flex-col justify-between">
-              <div className="space-y-3">
-                <h3 className="text-2xl sm:text-3xl font-black text-slate-900">
+            <div className="p-5 sm:p-6 space-y-4">
+              <div className="space-y-2">
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900">
                   City Charging Station
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Compact, high-throughput charging stations optimized for daily EV commuters and fleet vehicles.
                 </p>
 
                 {/* Specs List with Green Icons */}
-                <div className="pt-4 space-y-3.5 text-sm border-t border-slate-100">
-                  <div className="flex items-center justify-between py-1">
-                    <div className="flex items-center gap-2.5 text-slate-600">
-                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-sm">📐</span>
+                <div className="pt-3 space-y-2.5 text-xs sm:text-sm border-t border-slate-100">
+                  <div className="flex items-center justify-between py-0.5">
+                    <div className="flex items-center gap-2 text-slate-600">
+                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                        <span className="text-xs">📐</span>
                       </div>
                       <span className="font-medium">Minimum Space</span>
                     </div>
                     <span className="font-extrabold text-emerald-800">2,000 sq. ft.</span>
                   </div>
 
-                  <div className="flex items-center justify-between py-1">
-                    <div className="flex items-center gap-2.5 text-slate-600">
-                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <Zap className="w-4 h-4 text-emerald-700" />
+                  <div className="flex items-center justify-between py-0.5">
+                    <div className="flex items-center gap-2 text-slate-600">
+                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                        <Zap className="w-3.5 h-3.5 text-emerald-700" />
                       </div>
                       <span className="font-medium">Power Capacity</span>
                     </div>
                     <span className="font-extrabold text-emerald-800">60 / 120 / 180 / 240 / 360 / 480 kW</span>
                   </div>
 
-                  <div className="flex items-center justify-between py-1">
-                    <div className="flex items-center gap-2.5 text-slate-600">
-                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-sm">🔌</span>
+                  <div className="flex items-center justify-between py-0.5">
+                    <div className="flex items-center gap-2 text-slate-600">
+                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                        <span className="text-xs">🔌</span>
                       </div>
                       <span className="font-medium">Charger Type</span>
                     </div>
                     <span className="font-bold text-slate-900">DC Fast Charging</span>
                   </div>
 
-                  <div className="flex items-center justify-between py-1">
-                    <div className="flex items-center gap-2.5 text-slate-600">
-                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-sm">👥</span>
+                  <div className="flex items-center justify-between py-0.5">
+                    <div className="flex items-center gap-2 text-slate-600">
+                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                        <span className="text-xs">👥</span>
                       </div>
                       <span className="font-medium">Best For</span>
                     </div>
                     <span className="font-bold text-slate-900 text-right">Daily city EV users & commercial fleets</span>
                   </div>
                 </div>
-              </div>
-
-              {/* Full Width Green Button */}
-              <div className="pt-4">
-                <button
-                  onClick={() => openModalWithOption('City Charging Station Enquiry')}
-                  className="w-full py-4 bg-[#0A5C36] hover:bg-[#08482A] text-white font-bold text-base rounded-2xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 active:scale-95 cursor-pointer"
-                >
-                  <span>Enquire City Setup</span>
-                  <ArrowRight className="w-5 h-5" />
-                </button>
               </div>
             </div>
           </div>
