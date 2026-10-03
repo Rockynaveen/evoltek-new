@@ -326,30 +326,32 @@ export default function App() {
         </div>
       </section>
 
-      {/* ================= 4. INVESTMENT MODEL SECTION (50/50) ================= */}
-      <section id="investment" className="py-16 bg-emerald-50/40 border border-emerald-100 rounded-[30px] my-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto shadow-sm">
+      {/* ================= 4. INVESTMENT MODEL SECTION (50/50 COLLABORATION) ================= */}
+      <section id="investment" className="py-16 sm:py-20 bg-[#F2F8F4] rounded-[32px] my-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
 
-        {/* Header */}
-        <div className="text-center space-y-2 mb-12">
-          <div className="flex items-center justify-center gap-3 text-emerald-700 font-extrabold uppercase text-sm sm:text-base tracking-widest">
-            <span className="h-[2px] w-10 sm:w-16 bg-emerald-600"></span>
-            <span>INVESTMENT MODEL: COLLABORATION</span>
-            <span className="h-[2px] w-10 sm:w-16 bg-emerald-600"></span>
+        {/* Header with Horizontal Green Lines */}
+        <div className="text-center mb-12 sm:mb-16">
+          <div className="flex items-center justify-center gap-3 sm:gap-6">
+            <div className="h-[2px] w-12 sm:w-28 bg-[#1A7D0D]" />
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#1A7D0D] tracking-wide uppercase text-center font-['Plus_Jakarta_Sans']">
+              INVESTMENT MODEL: COLLABORATION
+            </h2>
+            <div className="h-[2px] w-12 sm:w-28 bg-[#1A7D0D]" />
           </div>
-          <p className="text-xs font-bold uppercase tracking-wider text-slate-700">
+          <p className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#2D3748] mt-2.5">
             EVOLTEK & INVESTOR – GROWING TOGETHER
           </p>
         </div>
 
         {/* Top Visual Diagram (2 Circle Photos + 50/50 Handshake Center) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto mb-14 sm:mb-18">
 
           {/* Left Circle Photo: EV Charging Station */}
           <div className="flex justify-center">
-            <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full p-2 bg-white border-4 border-emerald-600 shadow-xl overflow-hidden group">
+            <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full p-2 sm:p-2.5 bg-white border-[5px] border-[#1A7D0D] shadow-2xl shadow-green-900/15 overflow-hidden group">
               <img
-                src="/highway%20charger.png"
-                alt="EV Charging Station"
+                src="/about us.png"
+                alt="Evoltek EV Charging Station"
                 className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -358,27 +360,27 @@ export default function App() {
           {/* Center 50/50 Handshake Badge */}
           <div className="flex flex-col items-center justify-center text-center space-y-3">
             <div>
-              <span className="text-4xl sm:text-5xl font-black text-emerald-700 block tracking-tight">50%</span>
-              <span className="text-xs font-black uppercase text-emerald-900 tracking-wider">EVOLTEK</span>
+              <span className="text-5xl sm:text-6xl font-black text-[#1A7D0D] block tracking-tight leading-none">50%</span>
+              <span className="text-xs sm:text-sm font-black uppercase text-[#1A7D0D] tracking-widest block mt-1">EVOLTEK</span>
             </div>
 
-            <div className="flex items-center gap-3 w-full justify-center">
-              <span className="h-[2px] w-8 bg-emerald-500"></span>
-              <div className="w-14 h-14 rounded-full border-2 border-emerald-600 bg-white flex items-center justify-center shadow-md text-emerald-700 shrink-0">
-                <Handshake className="w-7 h-7 text-emerald-700" />
+            <div className="flex items-center gap-3 sm:gap-4 w-full justify-center py-2">
+              <span className="h-[2px] w-10 sm:w-14 bg-[#1A7D0D]"></span>
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#1A7D0D] bg-white flex items-center justify-center shadow-md text-[#1A7D0D] shrink-0 hover:scale-105 transition-transform">
+                <Handshake className="w-7 h-7 sm:w-8 sm:h-8 text-[#1A7D0D] stroke-[2.2]" />
               </div>
-              <span className="h-[2px] w-8 bg-emerald-500"></span>
+              <span className="h-[2px] w-10 sm:w-14 bg-[#1A7D0D]"></span>
             </div>
 
             <div>
-              <span className="text-4xl sm:text-5xl font-black text-emerald-700 block tracking-tight">50%</span>
-              <span className="text-xs font-black uppercase text-emerald-900 tracking-wider">INVESTOR</span>
+              <span className="text-5xl sm:text-6xl font-black text-[#1A7D0D] block tracking-tight leading-none">50%</span>
+              <span className="text-xs sm:text-sm font-black uppercase text-[#1A7D0D] tracking-widest block mt-1">INVESTOR</span>
             </div>
           </div>
 
-          {/* Right Circle Photo: Investor Growth */}
+          {/* Right Circle Photo: Investor Growth & Nature */}
           <div className="flex justify-center">
-            <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full p-2 bg-white border-4 border-emerald-600 shadow-xl overflow-hidden group">
+            <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full p-2 sm:p-2.5 bg-white border-[5px] border-[#1A7D0D] shadow-2xl shadow-green-900/15 overflow-hidden group">
               <img
                 src="/investor_growth_circle.jpg"
                 alt="Investor Growth"
@@ -389,118 +391,200 @@ export default function App() {
 
         </div>
 
+        {/* Bottom 5 Features Row (Matching Reference Layout & 3D Flat Icons) */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 max-w-6xl mx-auto pt-4 items-start text-center">
 
-
-      </section>
-
-      {/* ================= 5. WHY INVEST WITH EVOLTEK? (6-Card Grid) ================= */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-900 text-xs font-bold px-4 py-1.5 rounded-full border border-emerald-200">
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
-            <span>Investor Benefits</span>
+          {/* Feature 1: Shared Investment */}
+          <div className="flex flex-col items-center group">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg className="w-full h-full filter drop-shadow-md" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="gradCoinBase" cx="40%" cy="35%" r="65%">
+                    <stop offset="0%" stopColor="#22c55e" />
+                    <stop offset="70%" stopColor="#15803d" />
+                    <stop offset="100%" stopColor="#14532d" />
+                  </radialGradient>
+                  <linearGradient id="goldHalf" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#fbbf24" />
+                    <stop offset="60%" stopColor="#f59e0b" />
+                    <stop offset="100%" stopColor="#d97706" />
+                  </linearGradient>
+                  <linearGradient id="greenHalf" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#4ade80" />
+                    <stop offset="70%" stopColor="#16a34a" />
+                    <stop offset="100%" stopColor="#15803d" />
+                  </linearGradient>
+                </defs>
+                <circle cx="40" cy="40" r="36" fill="url(#gradCoinBase)" />
+                <circle cx="40" cy="40" r="32" fill="#ffffff" fillOpacity="0.2" />
+                <path d="M 40 12 A 28 28 0 0 0 40 68 Z" fill="url(#goldHalf)" />
+                <path d="M 40 12 A 28 28 0 0 1 40 68 Z" fill="url(#greenHalf)" />
+                <line x1="40" y1="12" x2="40" y2="68" stroke="#ffffff" strokeWidth="2.5" strokeOpacity="0.8" />
+                <text x="26" y="44" fill="#ffffff" fontSize="10" fontWeight="900" fontFamily="sans-serif" textAnchor="middle">50%</text>
+                <text x="54" y="44" fill="#ffffff" fontSize="10" fontWeight="900" fontFamily="sans-serif" textAnchor="middle">50%</text>
+                <ellipse cx="40" cy="22" rx="18" ry="7" fill="#ffffff" fillOpacity="0.3" />
+              </svg>
+            </div>
+            <h3 className="font-extrabold text-[#1A7D0D] text-sm sm:text-base mt-3 leading-snug">
+              Shared<br />Investment
+            </h3>
+            <p className="text-[11px] sm:text-xs text-gray-700 font-medium mt-1 leading-relaxed max-w-[190px]">
+              You invest only half the cost, and Evoltek invests the other half.
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            Why Invest With Evoltek?
-          </h2>
-          <p className="text-slate-600 text-base sm:text-lg">
-            Engineered to deliver high returns, minimal operational burden, and sustainable mobility growth.
-          </p>
+
+          {/* Feature 2: Hassle-free Maintenance */}
+          <div className="flex flex-col items-center group">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg className="w-full h-full filter drop-shadow-md" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="gearGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#34d399" />
+                    <stop offset="50%" stopColor="#10b981" />
+                    <stop offset="100%" stopColor="#047857" />
+                  </linearGradient>
+                  <linearGradient id="metalTool" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#ffffff" />
+                    <stop offset="50%" stopColor="#cbd5e1" />
+                    <stop offset="100%" stopColor="#64748b" />
+                  </linearGradient>
+                </defs>
+                <path d="M40 12 L43 18 L50 17 L52 23 L58 24 L58 31 L64 34 L62 40 L64 46 L58 49 L58 56 L52 57 L50 63 L43 62 L40 68 L37 62 L30 63 L28 57 L22 56 L22 49 L16 46 L18 40 L16 34 L22 31 L22 24 L28 23 L30 17 L37 18 Z" 
+                      fill="url(#gearGrad)" stroke="#065f46" strokeWidth="1.5" strokeLinejoin="round" />
+                <circle cx="40" cy="40" r="16" fill="#f0fdf4" stroke="#047857" strokeWidth="2" />
+                <g transform="rotate(-30 40 40)">
+                  <rect x="37" y="20" width="6" height="40" rx="3" fill="url(#metalTool)" stroke="#475569" strokeWidth="1" />
+                  <path d="M33 25 C33 19 47 19 47 25 L44 25 C43 22 37 22 36 25 Z" fill="url(#metalTool)" stroke="#475569" strokeWidth="1" />
+                  <circle cx="40" cy="54" r="5" fill="url(#metalTool)" stroke="#475569" strokeWidth="1" />
+                  <circle cx="40" cy="54" r="2.5" fill="#f0fdf4" />
+                </g>
+                <g transform="rotate(40 40 40)">
+                  <rect x="38.5" y="24" width="3" height="30" fill="url(#metalTool)" stroke="#475569" strokeWidth="0.8" />
+                  <rect x="37" y="44" width="6" height="14" rx="2" fill="#15803d" stroke="#065f46" strokeWidth="1" />
+                </g>
+              </svg>
+            </div>
+            <h3 className="font-extrabold text-[#1A7D0D] text-sm sm:text-base mt-3 leading-snug">
+              Hassle-free<br />Maintenance
+            </h3>
+            <p className="text-[11px] sm:text-xs text-gray-700 font-medium mt-1 leading-relaxed max-w-[190px]">
+              Evoltek takes care of setup, operations and station maintenance.
+            </p>
+          </div>
+
+          {/* Feature 3: Two Return Options */}
+          <div className="flex flex-col items-center group">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg className="w-full h-full filter drop-shadow-md" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="scaleGreen" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#4ade80" />
+                    <stop offset="50%" stopColor="#16a34a" />
+                    <stop offset="100%" stopColor="#15803d" />
+                  </linearGradient>
+                  <linearGradient id="panGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#86efac" />
+                    <stop offset="100%" stopColor="#15803d" />
+                  </linearGradient>
+                </defs>
+                <ellipse cx="40" cy="68" rx="16" ry="5" fill="#14532d" />
+                <rect x="38" y="22" width="4" height="46" rx="2" fill="url(#scaleGreen)" />
+                <circle cx="40" cy="20" r="5" fill="#22c55e" stroke="#15803d" strokeWidth="1.5" />
+                <rect x="14" y="21" width="52" height="4" rx="2" fill="url(#scaleGreen)" stroke="#15803d" strokeWidth="1" />
+                <circle cx="18" cy="23" r="2.5" fill="#15803d" />
+                <circle cx="62" cy="23" r="2.5" fill="#15803d" />
+                
+                {/* Left Pan */}
+                <line x1="18" y1="24" x2="10" y2="44" stroke="#16a34a" strokeWidth="1.2" />
+                <line x1="18" y1="24" x2="26" y2="44" stroke="#16a34a" strokeWidth="1.2" />
+                <path d="M 9 44 Q 18 52 27 44 Z" fill="url(#panGrad)" stroke="#15803d" strokeWidth="1" />
+                <circle cx="18" cy="41" r="3.5" fill="#fbbf24" stroke="#d97706" strokeWidth="1" />
+
+                {/* Right Pan */}
+                <line x1="62" y1="24" x2="54" y2="44" stroke="#16a34a" strokeWidth="1.2" />
+                <line x1="62" y1="24" x2="70" y2="44" stroke="#16a34a" strokeWidth="1.2" />
+                <path d="M 53 44 Q 62 52 71 44 Z" fill="url(#panGrad)" stroke="#15803d" strokeWidth="1" />
+                <circle cx="62" cy="41" r="3.5" fill="#38bdf8" stroke="#0284c7" strokeWidth="1" />
+              </svg>
+            </div>
+            <h3 className="font-extrabold text-[#1A7D0D] text-sm sm:text-base mt-3 leading-snug">
+              Two Return<br />Options
+            </h3>
+            <p className="text-[11px] sm:text-xs text-gray-700 font-medium mt-1 leading-relaxed max-w-[190px]">
+              Choose between a percentage return or a fixed return.
+            </p>
+          </div>
+
+          {/* Feature 4: Secure Agreements */}
+          <div className="flex flex-col items-center group">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg className="w-full h-full filter drop-shadow-md" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#22c55e" />
+                    <stop offset="60%" stopColor="#15803d" />
+                    <stop offset="100%" stopColor="#14532d" />
+                  </linearGradient>
+                </defs>
+                <path d="M 40 8 C 58 14 66 18 66 38 C 66 54 52 66 40 72 C 28 66 14 54 14 38 C 14 18 22 14 40 8 Z" 
+                      fill="url(#shieldGrad)" stroke="#166534" strokeWidth="2" />
+                <path d="M 40 12 C 54 17 62 20 62 38 C 62 51 50 62 40 67 C 30 62 18 51 18 38 C 18 20 26 17 40 12 Z" 
+                      fill="#ffffff" fillOpacity="0.15" />
+                {/* Document */}
+                <rect x="26" y="22" width="28" height="36" rx="3" fill="#ffffff" stroke="#cbd5e1" strokeWidth="1" />
+                <path d="M 46 22 L 54 30 L 46 30 Z" fill="#e2e8f0" />
+                <line x1="30" y1="29" x2="42" y2="29" stroke="#15803d" strokeWidth="2" strokeLinecap="round" />
+                <line x1="30" y1="35" x2="48" y2="35" stroke="#94a3b8" strokeWidth="1.5" strokeLinecap="round" />
+                <line x1="30" y1="40" x2="48" y2="40" stroke="#94a3b8" strokeWidth="1.5" strokeLinecap="round" />
+                <line x1="30" y1="45" x2="44" y2="45" stroke="#94a3b8" strokeWidth="1.5" strokeLinecap="round" />
+                <circle cx="43" cy="50" r="5" fill="#16a34a" />
+                <path d="M41 50 L42.5 51.5 L45 49" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+            <h3 className="font-extrabold text-[#1A7D0D] text-sm sm:text-base mt-3 leading-snug">
+              Secure<br />Agreements
+            </h3>
+            <p className="text-[11px] sm:text-xs text-gray-700 font-medium mt-1 leading-relaxed max-w-[190px]">
+              Long-term agreement of 5 or 10 years, renewable.
+            </p>
+          </div>
+
+          {/* Feature 5: Transparency with App */}
+          <div className="flex flex-col items-center group">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg className="w-full h-full filter drop-shadow-md" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="phoneCase" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#1e293b" />
+                    <stop offset="100%" stopColor="#0f172a" />
+                  </linearGradient>
+                  <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#22c55e" />
+                    <stop offset="60%" stopColor="#15803d" />
+                    <stop offset="100%" stopColor="#052e16" />
+                  </linearGradient>
+                </defs>
+                <rect x="26" y="10" width="28" height="60" rx="6" fill="url(#phoneCase)" stroke="#22c55e" strokeWidth="2" />
+                <rect x="28.5" y="14" width="23" height="52" rx="4" fill="url(#screenGrad)" />
+                <rect x="36" y="12" width="8" height="1.5" rx="0.75" fill="#94a3b8" />
+                <circle cx="40" cy="32" r="7" fill="#ffffff" fillOpacity="0.25" stroke="#4ade80" strokeWidth="1.5" />
+                <path d="M40 28 L37.5 33 L40.5 33 L39.5 37 L42.5 31.5 L39.5 31.5 Z" fill="#ffffff" />
+                <rect x="31" y="45" width="18" height="3" rx="1.5" fill="#4ade80" />
+                <rect x="31" y="50" width="13" height="2.5" rx="1.25" fill="#86efac" />
+                <rect x="31" y="55" width="16" height="2.5" rx="1.25" fill="#86efac" />
+                <rect x="36" y="62" width="8" height="1.5" rx="0.75" fill="#ffffff" fillOpacity="0.8" />
+              </svg>
+            </div>
+            <h3 className="font-extrabold text-[#1A7D0D] text-sm sm:text-base mt-3 leading-snug">
+              Transparency<br />with App
+            </h3>
+            <p className="text-[11px] sm:text-xs text-gray-700 font-medium mt-1 leading-relaxed max-w-[190px]">
+              Track your station's performance through the Evoltek mobile app.
+            </p>
+          </div>
+
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          {/* Card 01 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_shared_investment.jpg"
-                alt="Shared Investment"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Shared Investment</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Invest only half the project cost while Evoltek contributes the other half.
-            </p>
-          </div>
-
-          {/* Card 02 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_hassle_free.jpg"
-                alt="Hassle-Free Operations"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Hassle-Free Operations</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Evoltek handles setup, operations and station maintenance.
-            </p>
-          </div>
-
-          {/* Card 03 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_flexible_returns.jpg"
-                alt="Flexible Returns"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Flexible Returns</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Choose between percentage-based or fixed-return options.
-            </p>
-          </div>
-
-          {/* Card 04 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_long_term.jpg"
-                alt="Long-Term Agreement"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Long-Term Agreement</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              5 or 10-year agreement options with renewal availability.
-            </p>
-          </div>
-
-          {/* Card 05 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_digital_transparency.jpg"
-                alt="Digital Transparency"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Digital Transparency</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Monitor station performance through the Evoltek mobile app.
-            </p>
-          </div>
-
-          {/* Card 06 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_scalable_network.jpg"
-                alt="Scalable Network"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Scalable Network</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Build a growing EV charging network across strategic locations.
-            </p>
-          </div>
-
-        </div>
       </section>
 
       {/* ================= 6. VISION & MISSION ================= */}
