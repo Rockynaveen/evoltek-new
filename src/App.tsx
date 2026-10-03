@@ -3,6 +3,8 @@ import {
   Menu,
   X,
   ArrowRight,
+  ArrowUpRight,
+  Play,
   Sparkles,
   Zap,
   Navigation,
@@ -110,7 +112,7 @@ export default function App() {
   // Calculations for ROI Calculator
   const investorContribution = roiInvestment * 0.5;
   const evoltekContribution = roiInvestment * 0.5;
-  
+
   // Return estimation
   // If 5 years: Fixed Return 5% monthly on investor contribution
   // If 10 years: Percentage Return 28% annual return on investor contribution
@@ -152,7 +154,7 @@ export default function App() {
 
       {/* ================= HERO SECTION BLOCK (Light Green with 15px Border Radius) ================= */}
       <div id="home" className="bg-[#e5efd5] rounded-[15px] relative overflow-hidden shadow-sm border border-emerald-100/80">
-        
+
         {/* Decorative ambient background glows */}
         <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-to-b from-emerald-200/40 via-green-100/20 to-transparent blur-3xl pointer-events-none rounded-full animate-pulse-glow" />
         <div className="absolute top-[400px] -left-40 w-96 h-96 bg-emerald-300/20 blur-3xl pointer-events-none rounded-full" />
@@ -381,80 +383,199 @@ export default function App() {
         </section>
       </div>
 
-      {/* ================= 3. "WHAT IS EVOLTEK?" SECTION ================= */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      {/* ================= 3. "ABOUT US" SECTION (Matching Reference Design) ================= */}
+      <section id="about" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
 
-          {/* Left Column: EV Charging Station Image */}
-          <div className="lg:col-span-6 relative">
-            <div className="relative rounded-[40px] overflow-hidden shadow-2xl border border-white/80 group">
+          {/* Left Column: Man Charging EV Image */}
+          <div className="lg:col-span-5 relative">
+            <div className="relative rounded-[32px] overflow-hidden shadow-2xl border border-slate-100/80 group bg-slate-100">
               <img
-                src="/about%20us.png"
-                alt="Evoltek EV Charging Station - About Us"
-                className="w-full h-[460px] sm:h-[520px] object-cover group-hover:scale-105 transition-transform duration-700"
+                src="/about_evoltek.jpg"
+                alt="EVOLTEK DC Fast Charger - Driver plugging in EV charging nozzle"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = '/about us.png';
+                }}
+                className="w-full h-[480px] sm:h-[560px] lg:h-[620px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />
             </div>
           </div>
 
-          {/* Right Column: Content & 4 Features */}
-          <div className="lg:col-span-6 space-y-8 text-left">
+          {/* Right Column: Content, Smart Charging, Energy Innovation & Video Preview */}
+          <div className="lg:col-span-7 space-y-6 text-left">
 
-            <div className="space-y-4">
-              {/* Category Pill Tag */}
-              <div className="inline-flex items-center gap-2 bg-emerald-100/90 text-emerald-950 text-xs font-bold px-4 py-1.5 rounded-full border border-emerald-200">
-                <Navigation className="w-3.5 h-3.5 text-emerald-700" />
-                <span>City → Highway → Destination</span>
-              </div>
-
-              {/* Main Heading */}
-              <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight leading-[1.15] font-['Plus_Jakarta_Sans']">
-                The Future of EV Charging Starts Here
-              </h2>
-
-              {/* Main Text */}
-              <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
-                Evoltek is a new-generation EV charging station concept designed to build a convenient, reliable and scalable charging network across cities and highways.
-              </p>
+            {/* Tagline Badge */}
+            <div className="flex items-center gap-2">
+              <Zap className="w-4 h-4 text-[#22c55e] fill-[#22c55e]" />
+              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] text-slate-500 font-mono">
+                ABOUT US
+              </span>
             </div>
 
-            {/* 4 Clean Feature Items */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+            {/* Main Headline */}
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[34px] xl:text-4xl font-black text-slate-900 tracking-tight leading-tight whitespace-nowrap">
+              The Future of EV Charging Starts Here
+            </h2>
 
-              <div>
-                <h4 className="text-base font-bold text-slate-900">
-                  ⚡ Fast Charging
-                </h4>
-                <p className="text-sm text-slate-600 mt-1 leading-relaxed">
-                  High-capacity DC fast chargers minimizing wait times for every driver.
-                </p>
+            {/* Sub-paragraph */}
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal max-w-2xl">
+              Evoltek is a new-generation EV charging station concept designed to build a convenient, reliable and scalable charging network across cities and highways.
+            </p>
+
+            {/* Feature Items (Borderless, with custom green icons, increased size, no background circle) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-7 pt-4">
+
+              {/* Item 1: Fast Charging */}
+              <div className="flex items-start gap-4 sm:gap-5 group cursor-pointer">
+                <div className="relative shrink-0 flex items-center justify-center [perspective:600px]">
+                  <div className="group-hover-flip">
+                    <svg
+                      className="w-16 h-16 sm:w-18 sm:h-18 text-[#22c55e]"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      stroke="#22c55e"
+                      strokeWidth="2.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <rect x="6" y="8" width="18" height="28" rx="2.5" />
+                      <rect x="9" y="11" width="12" height="11" rx="1.5" />
+                      <path d="M16 13.5l-3.5 4h3.5l-1.5 4 4.5-5h-3.5l1.5-3z" fill="#22c55e" stroke="none" />
+                      <line x1="4" y1="36" x2="26" y2="36" strokeWidth="2.5" />
+                      <path d="M24 16h2a3.5 3.5 0 0 1 3.5 3.5v7a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3v-6" />
+                      <rect x="33" y="18" width="5.5" height="5" rx="1" />
+                      <line x1="34.5" y1="14.5" x2="34.5" y2="18" strokeWidth="2" />
+                      <line x1="37" y1="14.5" x2="37" y2="18" strokeWidth="2" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                    Fast Charging
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                    High-capacity DC fast chargers minimizing wait times for every driver.
+                  </p>
+                </div>
               </div>
 
-              <div>
-                <h4 className="text-base font-bold text-slate-900">
-                  📍 Strategic Locations
-                </h4>
-                <p className="text-sm text-slate-600 mt-1 leading-relaxed">
-                  Optimally placed along busy highways, urban centers and popular hubs.
-                </p>
+              {/* Item 2: Strategic Locations */}
+              <div className="flex items-start gap-4 sm:gap-5 group cursor-pointer">
+                <div className="relative shrink-0 flex items-center justify-center [perspective:600px]">
+                  <div className="group-hover-flip">
+                    <svg
+                      className="w-16 h-16 sm:w-18 sm:h-18 text-[#22c55e]"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      stroke="#22c55e"
+                      strokeWidth="2.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M16 27c-4-4-9-9-9-15a13 13 0 0 1 26 0c0 6-5 11-9 15l-4 4-4-4z" />
+                      <path d="M18.5 8.5l-3 4.5h3l-1.5 4.5 4.5-5.5h-3l1.5-3.5z" fill="#22c55e" stroke="none" />
+                      <ellipse cx="16" cy="38" rx="8" ry="3" />
+                      <path d="M26 31h8l2.5 3.5h2a1.5 1.5 0 0 1 1.5 1.5v3h-2" />
+                      <circle cx="29" cy="39" r="2.2" />
+                      <circle cx="38" cy="39" r="2.2" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                    Strategic Locations
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                    Optimally placed along busy highways, urban centers and popular hubs.
+                  </p>
+                </div>
               </div>
 
-              <div>
-                <h4 className="text-base font-bold text-slate-900">
-                  📱 Smart Digital Experience
-                </h4>
-                <p className="text-sm text-slate-600 mt-1 leading-relaxed">
-                  Seamless app navigation, real-time charger availability & contactless payments.
-                </p>
+              {/* Item 3: Smart Digital Experience */}
+              <div className="flex items-start gap-4 sm:gap-5 group cursor-pointer">
+                <div className="relative shrink-0 flex items-center justify-center [perspective:600px]">
+                  <div className="group-hover-flip">
+                    <svg
+                      className="w-16 h-16 sm:w-18 sm:h-18 text-[#22c55e]"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      stroke="#22c55e"
+                      strokeWidth="2.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <rect x="5" y="6" width="17" height="34" rx="3" />
+                      <line x1="9" y1="10" x2="18" y2="10" />
+                      <line x1="11" y1="36" x2="16" y2="36" />
+                      <circle cx="13.5" cy="22" r="5.5" />
+                      <path d="M14.5 18l-2.2 3.5h2.5l-1.5 3.5 3.2-4h-2.2l1.2-3z" fill="#22c55e" stroke="none" />
+                      <path d="M25 24c1.5-2 3.5-3 7-3h5l3 3.5h2a2 2 0 0 1 2 2v6h-2" />
+                      <circle cx="28" cy="33.5" r="2.5" />
+                      <circle cx="40" cy="33.5" r="2.5" />
+                      <path d="M22 30h4" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                    Smart Digital Experience
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                    Seamless app navigation, real-time charger availability & contactless payments.
+                  </p>
+                </div>
               </div>
 
-              <div>
-                <h4 className="text-base font-bold text-slate-900">
-                  🔋 Scalable Infrastructure
-                </h4>
-                <p className="text-sm text-slate-600 mt-1 leading-relaxed">
-                  Future-ready modular hardware designed to grow with EV adoption.
-                </p>
+              {/* Item 4: Scalable Infrastructure */}
+              <div className="flex items-start gap-4 sm:gap-5 group cursor-pointer">
+                <div className="relative shrink-0 flex items-center justify-center [perspective:600px]">
+                  <div className="group-hover-flip">
+                    <svg
+                      className="w-16 h-16 sm:w-18 sm:h-18 text-[#22c55e]"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      stroke="#22c55e"
+                      strokeWidth="2.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <rect x="6" y="9" width="16" height="30" rx="3" />
+                      <path d="M10 5h8v4h-8z" />
+                      <line x1="10" y1="18" x2="18" y2="18" />
+                      <line x1="10" y1="25" x2="18" y2="25" />
+                      <line x1="10" y1="32" x2="18" y2="32" />
+                      <path d="M22 17h5a3 3 0 0 1 3 3v8a3 3 0 0 0 3 3h4" />
+                      <circle cx="40" cy="31" r="3.5" />
+                      <path d="M37 18h6v6h-6z" />
+                      <line x1="40" y1="14" x2="40" y2="18" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                    Scalable Infrastructure
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                    Future-ready modular hardware designed to grow with EV adoption.
+                  </p>
+                </div>
               </div>
+
+            </div>
+
+            {/* Bottom Row: Read More Button */}
+            <div className="pt-6 border-t border-slate-100">
+
+              {/* Read More Pill Button */}
+              <a
+                href="#charging-stations"
+                className="inline-flex items-center gap-3 bg-[#3db83a] hover:bg-[#34a531] text-white font-bold text-sm sm:text-base pl-7 pr-3 py-3 rounded-full shadow-lg shadow-green-500/20 hover:shadow-green-600/30 transition-all duration-300 group cursor-pointer"
+              >
+                <span>Read More</span>
+                <span className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-slate-900 shadow-sm group-hover:rotate-45 transition-transform duration-300">
+                  <ArrowUpRight className="w-4 h-4 text-slate-900 stroke-[2.5]" />
+                </span>
+              </a>
 
             </div>
 
@@ -483,7 +604,7 @@ export default function App() {
 
         {/* Large 50/50 Visual Diagram */}
         <div className="mt-14 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-          
+
           {/* Evoltek Card (50%) */}
           <div className="md:col-span-5 bg-slate-800/90 backdrop-blur-xl p-8 rounded-3xl border border-emerald-500/30 shadow-xl space-y-6 relative overflow-hidden group hover:border-emerald-500 transition-all">
             <div className="flex items-center justify-between">
@@ -641,7 +762,7 @@ export default function App() {
       {/* ================= 6. VISION & MISSION ================= */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
+
           {/* Vision Screen */}
           <div className="bg-gradient-to-br from-emerald-900 to-slate-900 text-white p-8 sm:p-10 rounded-3xl border border-emerald-800/40 shadow-xl flex flex-col justify-between space-y-6">
             <div className="space-y-4">
@@ -1165,7 +1286,7 @@ export default function App() {
 
             {/* Output Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 border-t border-slate-700/80">
-              
+
               <div className="bg-slate-900/80 p-5 rounded-2xl border border-slate-700 space-y-1">
                 <p className="text-[11px] font-bold text-slate-400 uppercase">Your Investment (50%)</p>
                 <p className="text-xl font-extrabold text-white">{formatCurrency(investorContribution)}</p>
@@ -1231,7 +1352,7 @@ export default function App() {
           {/* Phone Mockup Display UI */}
           <div className="lg:col-span-6 flex justify-center">
             <div className="bg-slate-900 rounded-[35px] p-6 border-4 border-slate-700 shadow-2xl max-w-xs w-full space-y-4">
-              
+
               {/* App Status Header */}
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <span className="font-extrabold text-sm text-emerald-400">EVOLTEK APP</span>
@@ -1439,7 +1560,7 @@ export default function App() {
               </div>
             ) : (
               <form onSubmit={handleContactSubmit} className="space-y-5">
-                
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div className="space-y-2">
                     <label className="text-xs font-extrabold text-slate-700 uppercase">Full Name</label>
@@ -1590,7 +1711,7 @@ export default function App() {
       {partnerModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200">
           <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100">
-            
+
             <button
               onClick={() => setPartnerModalOpen(false)}
               className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-600 rounded-full hover:bg-slate-100"
@@ -1602,7 +1723,7 @@ export default function App() {
               <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
                 <Zap className="w-6 h-6" />
               </div>
-              
+
               <div>
                 <span className="text-xs font-extrabold text-emerald-800 uppercase tracking-wider">Partner With Evoltek</span>
                 <h3 className="text-2xl font-black text-slate-900">{modalOption}</h3>
