@@ -7,7 +7,6 @@ import {
   Zap,
   Navigation,
   CheckCircle2,
-  ShieldCheck,
   TrendingUp,
   Smartphone,
   Building2,
