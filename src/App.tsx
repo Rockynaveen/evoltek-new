@@ -12,79 +12,19 @@ import {
   Smartphone,
   Building2,
   Mail,
-  Clock,
   DollarSign,
-  PieChart,
-  Shield,
-  Layers,
   Award,
   PhoneCall,
-  Check
+  Check,
+  Maximize2,
+  Plug,
+  Users,
+  Handshake,
+  ChevronRight,
+  ArrowUpRight
 } from 'lucide-react';
 
-// EV Charging Station Amenities Dataset for Hero Showcase Ticker
-const AMENITY_DATA = [
-  {
-    id: 'fast-charging',
-    title: 'Fast Charging Hubs',
-    category: '⚡ Ultra-Fast Power',
-    icon3d: '/icon_3d_charging.jpg',
-    badgeText: 'Up to 360 kW DC',
-    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&q=80&w=600',
-    description: 'Liquid-cooled DC ultra-fast chargers giving your EV up to 80% battery in just 15 minutes.',
-    highlight: '100% Green Energy Powered',
-  },
-  {
-    id: 'restaurants',
-    title: 'Restaurants & Dining',
-    category: '🍽️ Gourmet Cafes',
-    icon3d: '/icon_3d_restaurant.jpg',
-    badgeText: '24/7 Food Courts',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=600',
-    description: 'Artisanal cafes, hot gourmet meals, and quick drive-thru dining while your vehicle powers up.',
-    highlight: 'Dine-in & Express Takeaway',
-  },
-  {
-    id: 'wifi',
-    title: 'High-Speed 5G Wi-Fi',
-    category: '📶 Free Gigabit Zones',
-    icon3d: '/icon_3d_wifi.jpg',
-    badgeText: 'Ultra 5G Speed',
-    image: 'https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&q=80&w=600',
-    description: 'Ultra-fast wireless connectivity with quiet workstation pods for seamless work on the road.',
-    highlight: 'Unlimited Free Guest Access',
-  },
-  {
-    id: 'parks',
-    title: 'Parks & Relaxation',
-    category: '🌳 Green Eco Spaces',
-    icon3d: '/icon_3d_park.jpg',
-    badgeText: 'Garden Trails & Pets',
-    image: 'https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?auto=format&fit=crop&q=80&w=600',
-    description: 'Landscaped garden promenades, shaded outdoor seating, and dedicated dog park areas.',
-    highlight: 'Family & Pet Outdoor Trails',
-  },
-  {
-    id: 'rooms',
-    title: 'Rooms & Rest Facilities',
-    category: '🛏️ Executive Suites',
-    icon3d: '/icon_3d_bed.jpg',
-    badgeText: 'Pods & Clean Showers',
-    image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=600',
-    description: 'Quiet soundproof sleep pods, luxury shower facilities, and overnight rest rooms.',
-    highlight: 'Hourly & Overnight Stays',
-  },
-  {
-    id: 'lounges',
-    title: 'Comfortable Lounges',
-    category: '☕ Premium AC Lounges',
-    icon3d: '/icon_3d_lounge.jpg',
-    badgeText: 'Barista Coffee Bar',
-    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=600',
-    description: 'Climate-controlled VIP lounges with ergonomic recliner seating and complimentary coffee.',
-    highlight: '24/7 Air-Conditioned Comfort',
-  },
-];
+
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -110,7 +50,7 @@ export default function App() {
   // Calculations for ROI Calculator
   const investorContribution = roiInvestment * 0.5;
   const evoltekContribution = roiInvestment * 0.5;
-  
+
   // Return estimation
   // If 5 years: Fixed Return 5% monthly on investor contribution
   // If 10 years: Percentage Return 28% annual return on investor contribution
@@ -148,237 +88,163 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-[#0F172A] font-['Plus_Jakarta_Sans',sans-serif] p-2">
+    <div className="min-h-screen bg-slate-50 text-[#0F172A] font-['Plus_Jakarta_Sans',sans-serif] p-1">
 
-      {/* ================= HERO SECTION BLOCK (Light Green with 15px Border Radius) ================= */}
-      <div id="home" className="bg-[#e5efd5] rounded-[15px] relative overflow-hidden shadow-sm border border-emerald-100/80">
-        
-        {/* Decorative ambient background glows */}
-        <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-to-b from-emerald-200/40 via-green-100/20 to-transparent blur-3xl pointer-events-none rounded-full animate-pulse-glow" />
-        <div className="absolute top-[400px] -left-40 w-96 h-96 bg-emerald-300/20 blur-3xl pointer-events-none rounded-full" />
-        <div className="absolute top-[500px] -right-40 w-96 h-96 bg-teal-300/20 blur-3xl pointer-events-none rounded-full" />
+      {/* ================= HERO SECTION BLOCK (Electa EV Charging Station Exact Design) ================= */}
+      <div id="home" className="relative w-full h-[calc(100vh-1rem)] flex flex-col justify-between rounded-2xl sm:rounded-3xl overflow-hidden bg-[#171E23] text-white shadow-xl">
 
-        {/* ================= 1. HEADER / NAVIGATION ================= */}
-        <header className="sticky top-0 z-50 backdrop-blur-md bg-[#e5efd5]/95 transition-all py-3 sm:py-4">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+        {/* TOP NAVIGATION HEADER (Full White Header Bar) */}
+        <header className="relative z-30 w-full bg-white px-6 sm:px-8 py-0 flex items-center justify-between shadow-sm rounded-t-2xl sm:rounded-t-3xl">
+          {/* Logo (Left) */}
+          <a href="#home" className="flex items-center group py-0 shrink-0">
+            <img
+              src="/logo.png"
+              alt="Evoltek Logo"
+              className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[220px] sm:max-w-[280px] md:max-w-[360px] object-contain group-hover:scale-105 transition-transform"
+            />
+          </a>
 
-            {/* Brand Logo - Far Left */}
-            <a href="#home" className="flex items-center group shrink-0 py-0.5">
-              <img
-                src="/logo.png"
-                alt="Evoltek Logo"
-                className="h-14 sm:h-16 md:h-20 lg:h-22 w-auto max-w-[240px] sm:max-w-[300px] md:max-w-[340px] object-contain group-hover:scale-105 transition-transform"
-              />
+          {/* Navigation Links (Center/Right) */}
+          <nav className="hidden lg:flex items-center gap-7 xl:gap-9 ml-auto mr-8">
+            <a href="#home" className="text-[#32aa15] font-bold text-sm xl:text-base hover:opacity-80 transition-opacity">
+              Home
             </a>
+            <a href="#about" className="text-slate-800 font-semibold text-sm xl:text-base hover:text-[#32aa15] transition-colors">
+              About
+            </a>
+            <a href="#charging-stations" className="text-slate-800 font-semibold text-sm xl:text-base hover:text-[#32aa15] transition-colors">
+              Charging Stations
+            </a>
+            <a href="#investment" className="text-slate-800 font-semibold text-sm xl:text-base hover:text-[#32aa15] transition-colors">
+              Investment
+            </a>
+            <a href="#franchise" className="text-slate-800 font-semibold text-sm xl:text-base hover:text-[#32aa15] transition-colors">
+              Franchise
+            </a>
+            <a href="#roi-calculator" className="text-slate-800 font-semibold text-sm xl:text-base hover:text-[#32aa15] transition-colors">
+              ROI Calculator
+            </a>
+            <a href="#contact" className="text-slate-800 font-semibold text-sm xl:text-base hover:text-[#32aa15] transition-colors">
+              Contact
+            </a>
+          </nav>
 
-            {/* Floating Central White Navigation Card */}
-            <nav className="hidden lg:flex items-center gap-6 bg-white/95 backdrop-blur-md px-7 py-3 rounded-[15px] shadow-md shadow-slate-900/5 border border-white/80 shrink-0">
-              <a href="#home" className="text-slate-900 font-semibold hover:text-emerald-800 text-sm transition-colors">
-                Home
-              </a>
-              <a href="#about" className="text-slate-600 font-medium hover:text-emerald-800 text-sm transition-colors">
-                About
-              </a>
-              <a href="#charging-stations" className="text-slate-600 font-medium hover:text-emerald-800 text-sm transition-colors">
-                Charging Stations
-              </a>
-              <a href="#investment" className="text-slate-600 font-medium hover:text-emerald-800 text-sm transition-colors">
-                Investment
-              </a>
-              <a href="#franchise" className="text-slate-600 font-medium hover:text-emerald-800 text-sm transition-colors">
-                Franchise
-              </a>
-              <a href="#roi-calculator" className="text-slate-600 font-medium hover:text-emerald-800 text-sm transition-colors">
-                ROI Calculator
-              </a>
-              <a href="#contact" className="text-slate-600 font-medium hover:text-emerald-800 text-sm transition-colors">
-                Contact
-              </a>
-            </nav>
-
-            {/* Right Action Button */}
-            <div className="hidden lg:flex items-center gap-4 shrink-0">
-              <button
-                onClick={() => openModalWithOption('Become a Partner')}
-                className="relative group overflow-hidden bg-slate-900 text-white font-semibold text-sm px-6 py-3 rounded-[15px] shadow-lg shadow-slate-900/10 hover:shadow-slate-900/20 transition-all duration-300 flex items-center gap-2 active:scale-95 cursor-pointer"
-              >
-                <span className="relative z-10 flex items-center gap-2">
-                  Become a Partner
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </span>
-                <div className="absolute inset-0 bg-emerald-800 -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out" />
-              </button>
-            </div>
-
-            {/* Mobile Menu Trigger */}
+          {/* Become a Partner Green Pill Button */}
+          <div className="hidden sm:flex items-center ml-auto lg:ml-0 shrink-0">
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-white/50 focus:outline-none"
-              aria-label="Toggle menu"
+              onClick={() => openModalWithOption('Become a Partner')}
+              className="border-2 border-[#32aa15] bg-[#32aa15] hover:bg-transparent text-white hover:text-[#32aa15] font-bold text-sm sm:text-base py-2.5 px-5 sm:px-6 rounded-full flex items-center gap-3 shadow-lg shadow-[#32aa15]/25 transition-all duration-300 group active:scale-95 cursor-pointer shrink-0"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              <span className="whitespace-nowrap">Become a Partner</span>
+              <div className="w-7 h-7 rounded-full bg-white group-hover:bg-[#32aa15] text-[#32aa15] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300">
+                <ArrowRight className="w-4 h-4 stroke-[3] group-hover:translate-x-0.5 transition-transform" />
+              </div>
             </button>
           </div>
 
-          {/* Mobile Navigation Drawer */}
-          {mobileMenuOpen && (
-            <div className="lg:hidden bg-white/95 backdrop-blur-md border-b border-slate-200/80 px-6 py-6 space-y-3 animate-in slide-in-from-top duration-200 mt-2 mx-4 rounded-[15px] shadow-xl">
-              <a href="#home" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-bold text-emerald-800">Home</a>
-              <a href="#about" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-medium text-slate-700">About</a>
-              <a href="#charging-stations" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-medium text-slate-700">Charging Stations</a>
-              <a href="#investment" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-medium text-slate-700">Investment</a>
-              <a href="#franchise" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-medium text-slate-700">Franchise</a>
-              <a href="#roi-calculator" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-medium text-slate-700">ROI Calculator</a>
-              <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="block text-sm font-medium text-slate-700">Contact</a>
-              <div className="pt-3 border-t border-slate-100">
-                <button
-                  onClick={() => { setMobileMenuOpen(false); openModalWithOption('Become a Partner'); }}
-                  className="w-full py-3 bg-emerald-800 text-white font-semibold text-sm rounded-[15px] flex items-center justify-center gap-2 shadow-md"
-                >
-                  Become a Partner
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-          )}
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="lg:hidden p-2 text-slate-800 hover:text-[#32aa15] ml-auto"
+            aria-label="Toggle Navigation Menu"
+          >
+            {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+          </button>
         </header>
 
-        {/* ================= 2. HERO SECTION — "Powering Every Journey" ================= */}
-        <section className="pt-12 sm:pt-16 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-
-          {/* Top Content Block */}
-          <div className="text-center max-w-4xl mx-auto space-y-6">
-
-            {/* Hero Main Headline */}
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-950 leading-[1.1] font-['Plus_Jakarta_Sans'] whitespace-nowrap">
-              Powering Every Journey
-            </h1>
-
-            {/* Subheading */}
-            <p className="text-lg sm:text-2xl text-emerald-950 font-bold max-w-3xl mx-auto leading-snug">
-              Building a smarter, reliable and scalable EV charging network across cities, highways and destinations.
-            </p>
-
-            {/* Supporting Text */}
-            <p className="text-sm sm:text-base text-slate-700 max-w-2xl mx-auto leading-relaxed font-normal">
-              Fast charging, digital convenience and traveller-friendly EV hubs designed for the future of electric mobility.
-            </p>
-
-            {/* Hero CTA Buttons (Primary & Secondary) */}
-            <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-              {/* Primary CTA */}
+        {/* Mobile Menu Drawer */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden bg-[#171E23]/95 backdrop-blur-xl border-b border-slate-700/80 px-6 py-6 space-y-4 animate-in slide-in-from-top duration-200 text-white relative z-50">
+            <a href="#home" onClick={() => setMobileMenuOpen(false)} className="block text-base font-bold text-[#32aa15]">Home</a>
+            <a href="#about" onClick={() => setMobileMenuOpen(false)} className="block text-base font-semibold text-slate-200">About</a>
+            <a href="#charging-stations" onClick={() => setMobileMenuOpen(false)} className="block text-base font-semibold text-slate-200">Charging Stations</a>
+            <a href="#investment" onClick={() => setMobileMenuOpen(false)} className="block text-base font-semibold text-slate-200">Investment</a>
+            <a href="#franchise" onClick={() => setMobileMenuOpen(false)} className="block text-base font-semibold text-slate-200">Franchise</a>
+            <a href="#roi-calculator" onClick={() => setMobileMenuOpen(false)} className="block text-base font-semibold text-slate-200">ROI Calculator</a>
+            <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="block text-base font-semibold text-slate-200">Contact</a>
+            <div className="pt-4 border-t border-slate-700">
               <button
-                onClick={() => openModalWithOption('Invest With Evoltek')}
-                className="w-full sm:w-auto bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-base px-8 py-4 rounded-[15px] shadow-xl shadow-emerald-800/25 hover:shadow-emerald-900/30 transition-all duration-300 flex items-center justify-center gap-3 group active:scale-95 cursor-pointer"
+                onClick={() => { setMobileMenuOpen(false); openModalWithOption('Become a Partner'); }}
+                className="w-full py-3.5 bg-[#32aa15] text-white font-bold text-base rounded-full flex items-center justify-center gap-2 shadow-lg"
               >
-                <Zap className="w-5 h-5 text-emerald-300 fill-emerald-300" />
-                <span>Invest With Evoltek</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                Become a Partner
+                <ArrowRight className="w-5 h-5 stroke-[2.5]" />
               </button>
-
-              {/* Secondary CTA */}
-              <a
-                href="#charging-stations"
-                className="w-full sm:w-auto bg-white/80 hover:bg-white text-slate-900 border border-slate-300/80 hover:border-emerald-600 font-bold text-base px-8 py-4 rounded-[15px] shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group active:scale-95 cursor-pointer"
-              >
-                <span>Explore Charging Stations</span>
-                <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-emerald-700 group-hover:translate-x-1 transition-all" />
-              </a>
             </div>
           </div>
+        )}
 
-          {/* Hero Showcase Ticker & Central Mobile Phone Image */}
-          <div className="mt-14 sm:mt-18 relative min-h-[560px] sm:min-h-[640px] flex items-center justify-center">
+        {/* HERO BODY AREA */}
+        <div className="relative flex-1 flex items-center overflow-hidden">
+          {/* Background Image */}
+          <img
+            src="/electa_hero_bg.jpg"
+            alt="Electa EV Charging Station"
+            className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          />
 
-            {/* Full-width continuous moving cards ticker */}
-            <div className="absolute left-1/2 -translate-x-1/2 w-screen top-1/2 -translate-y-1/2 overflow-hidden py-10 pointer-events-auto">
+          {/* Left Side Dark Card Overlay (Matches dark logo tab seamlessly) */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#171E23] via-[#171E23]/95 md:via-[#171E23]/85 to-transparent md:w-[72%] lg:w-[65%] z-10" />
 
-              {/* Ticker Track */}
-              <div className="flex gap-6 w-max animate-marquee">
-                {[...AMENITY_DATA, ...AMENITY_DATA, ...AMENITY_DATA, ...AMENITY_DATA].map((item, index) => (
-                  <div
-                    key={`${item.id}-${index}`}
-                    className="w-[310px] sm:w-[340px] bg-white/95 backdrop-blur-xl rounded-3xl p-5 border border-white/90 transition-all duration-300 shadow-xl hover:shadow-2xl cursor-pointer group flex flex-col justify-between shrink-0 hover:-translate-y-2"
-                  >
-                    {/* Card Image Block */}
-                    <div className="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-100 shadow-inner">
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
+          {/* Content Box */}
+          <div className="relative z-20 max-w-7xl px-6 sm:px-8 py-10 sm:py-14 md:py-16 w-full">
+            <div className="max-w-3xl lg:max-w-5xl space-y-6 sm:space-y-7">
 
-                      {/* Category Tag Overlay with 3D Glossy Icon */}
-                      <div className="absolute top-3 left-3 bg-slate-950/85 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-2 shadow-lg border border-white/20">
-                        <img src={item.icon3d} alt="" className="w-4 h-4 object-contain rounded-full bg-white/20 p-0.5" />
-                        <span>{item.category}</span>
-                      </div>
-
-                      {/* Badge Overlay */}
-                      <div className="absolute bottom-3 right-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-extrabold text-slate-800 flex items-center gap-1.5 shadow-md border border-slate-100">
-                        <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
-                        <span>{item.badgeText}</span>
-                      </div>
-                    </div>
-
-                    {/* Card Content Text */}
-                    <div className="space-y-3">
-                      <div>
-                        <h3 className="font-black text-slate-900 text-lg group-hover:text-emerald-800 transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2 font-normal">
-                          {item.description}
-                        </p>
-                      </div>
-
-                      {/* Feature Bar */}
-                      <div className="p-3 rounded-2xl border border-emerald-100/90 bg-emerald-50/80 flex items-center gap-3.5 shadow-sm transition-all group-hover:shadow-md">
-                        <div className="w-12 h-12 rounded-xl bg-white p-1.5 flex items-center justify-center shrink-0 shadow-md border border-emerald-100 overflow-hidden group-hover:scale-110 transition-transform">
-                          <img src={item.icon3d} alt={item.title} className="w-full h-full object-contain" />
-                        </div>
-                        <div className="text-left overflow-hidden">
-                          <p className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-800/80">Station Amenity</p>
-                          <p className="text-xs font-bold text-slate-900 truncate">{item.highlight}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+              {/* Welcome Tag */}
+              <div className="inline-flex items-center gap-3 text-slate-200 text-sm sm:text-base font-semibold tracking-wide">
+                <Zap className="w-6 h-6 sm:w-7 sm:h-7 text-[#32aa15] fill-current shrink-0" />
+                <span>WELCOME TO EVOLTEK</span>
               </div>
-            </div>
 
-            {/* Central Mobile Phone Image */}
-            <div className="relative z-20 max-w-[300px] sm:max-w-[360px] md:max-w-[420px] shrink-0 drop-shadow-2xl hover:scale-[1.02] transition-transform duration-300 pointer-events-auto">
-              <img
-                src="/mobile%20phone%20hero%20section.png"
-                alt="Mobile Phone Hero Section"
-                className="w-full h-auto object-contain"
-              />
+              {/* Main Headline (Single Line) */}
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight font-['Plus_Jakarta_Sans'] whitespace-nowrap group">
+                Powering Every{' '}
+                <span className="text-[#32aa15] group-hover:text-white hover:text-white transition-colors duration-300">
+                  Journey
+                </span>
+              </h1>
+
+              {/* Subtitle / Description Paragraph with Note Callout */}
+              <div className="space-y-3 max-w-2xl">
+                <p className="text-slate-200 text-base sm:text-lg leading-relaxed font-medium">
+                  Building a smarter, reliable and scalable EV charging network across cities, highways and destinations.
+                </p>
+
+                {/* Note Callout (No Card Background) */}
+                <div className="flex items-start gap-2.5 text-slate-300 text-sm sm:text-base leading-relaxed pt-1">
+                  <Sparkles className="w-5 h-5 text-[#32aa15] shrink-0 mt-0.5" />
+                  <span>
+                    <strong className="font-semibold text-white">Note:</strong> Fast charging, digital convenience and traveller-friendly EV hubs designed for the future of electric mobility.
+                  </span>
+                </div>
+              </div>
+
+              {/* Action Button Row (Side-by-Side) */}
+              <div className="pt-3 flex flex-row items-center gap-3 sm:gap-5 flex-wrap sm:flex-nowrap">
+                {/* Primary CTA Button */}
+                <button
+                  onClick={() => openModalWithOption('Invest With Evoltek')}
+                  className="border-2 border-[#32aa15] bg-[#32aa15] hover:bg-transparent text-white hover:text-[#32aa15] font-bold text-sm sm:text-base py-3 px-6 sm:px-7 rounded-full flex items-center justify-between gap-3 sm:gap-4 shadow-xl shadow-[#32aa15]/30 hover:shadow-none transition-all duration-300 group cursor-pointer active:scale-95 hover:scale-105 shrink-0"
+                >
+                  <span className="whitespace-nowrap">Invest With Evoltek</span>
+                  <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white group-hover:bg-[#32aa15] text-[#32aa15] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300">
+                    <ArrowUpRight className="w-4.5 h-4.5 sm:w-5 sm:h-5 stroke-[2.5] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </div>
+                </button>
+
+                {/* Secondary CTA Button */}
+                <a
+                  href="#about"
+                  className="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold text-sm sm:text-base py-3.5 px-6 sm:px-7 rounded-full flex items-center gap-2.5 shadow-md backdrop-blur-md transition-all duration-300 group cursor-pointer active:scale-95 hover:border-white/60 shrink-0"
+                >
+                  <span className="whitespace-nowrap">Explore Charging Stations</span>
+                  <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-white group-hover:translate-x-1 transition-all shrink-0" />
+                </a>
+              </div>
+
             </div>
           </div>
-
-          {/* Small Statistics Bar Below Hero */}
-          <div className="mt-12 pt-8 border-t border-emerald-200/60 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-            <div className="p-4 bg-white/70 backdrop-blur-md rounded-2xl border border-white/80 shadow-sm">
-              <p className="text-2xl sm:text-3xl font-extrabold text-emerald-800">50%</p>
-              <p className="text-xs font-semibold text-slate-700 mt-1 uppercase tracking-wider">Evoltek Investment</p>
-            </div>
-            <div className="p-4 bg-white/70 backdrop-blur-md rounded-2xl border border-white/80 shadow-sm">
-              <p className="text-2xl sm:text-3xl font-extrabold text-emerald-800">50%</p>
-              <p className="text-xs font-semibold text-slate-700 mt-1 uppercase tracking-wider">Investor Contribution</p>
-            </div>
-            <div className="p-4 bg-white/70 backdrop-blur-md rounded-2xl border border-white/80 shadow-sm">
-              <p className="text-2xl sm:text-3xl font-extrabold text-emerald-800">60–480 kW</p>
-              <p className="text-xs font-semibold text-slate-700 mt-1 uppercase tracking-wider">Charging Solutions</p>
-            </div>
-            <div className="p-4 bg-white/70 backdrop-blur-md rounded-2xl border border-white/80 shadow-sm">
-              <p className="text-2xl sm:text-3xl font-extrabold text-emerald-800">5–10 Years</p>
-              <p className="text-xs font-semibold text-slate-700 mt-1 uppercase tracking-wider">Agreement Options</p>
-            </div>
-          </div>
-
-        </section>
+        </div>
       </div>
 
       {/* ================= 3. "WHAT IS EVOLTEK?" SECTION ================= */}
@@ -464,86 +330,70 @@ export default function App() {
       </section>
 
       {/* ================= 4. INVESTMENT MODEL SECTION (50/50) ================= */}
-      <section id="investment" className="py-20 bg-slate-900 text-white rounded-[30px] my-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative overflow-hidden shadow-2xl">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 blur-3xl pointer-events-none rounded-full" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-500/10 blur-3xl pointer-events-none rounded-full" />
+      <section id="investment" className="py-16 bg-emerald-50/40 border border-emerald-100 rounded-[30px] my-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto shadow-sm">
 
-        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 text-xs font-bold px-4 py-1.5 rounded-full border border-emerald-500/30">
-            <PieChart className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Co-Investment Framework</span>
+        {/* Header */}
+        <div className="text-center space-y-2 mb-12">
+          <div className="flex items-center justify-center gap-3 text-emerald-700 font-extrabold uppercase text-sm sm:text-base tracking-widest">
+            <span className="h-[2px] w-10 sm:w-16 bg-emerald-600"></span>
+            <span>INVESTMENT MODEL: COLLABORATION</span>
+            <span className="h-[2px] w-10 sm:w-16 bg-emerald-600"></span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-            Invest Together. Grow Together.
-          </h2>
-          <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Evoltek contributes 50% of the project capital and handles end-to-end station setup, maintenance, and technical operations while you share in long-term revenues.
+          <p className="text-xs font-bold uppercase tracking-wider text-slate-700">
+            EVOLTEK & INVESTOR – GROWING TOGETHER
           </p>
         </div>
 
-        {/* Large 50/50 Visual Diagram */}
-        <div className="mt-14 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-          
-          {/* Evoltek Card (50%) */}
-          <div className="md:col-span-5 bg-slate-800/90 backdrop-blur-xl p-8 rounded-3xl border border-emerald-500/30 shadow-xl space-y-6 relative overflow-hidden group hover:border-emerald-500 transition-all">
-            <div className="flex items-center justify-between">
-              <div>
-                <span className="text-xs uppercase tracking-wider font-extrabold text-emerald-400">Co-Partner</span>
-                <h3 className="text-2xl font-black text-white">EVOLTEK</h3>
-              </div>
-              <div className="bg-emerald-500/20 text-emerald-300 text-2xl font-black px-4 py-2 rounded-2xl border border-emerald-500/40">
-                50%
-              </div>
-            </div>
-            <ul className="space-y-3 text-sm text-slate-300">
-              <li className="flex items-center gap-3"><CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" /> Co-invests 50% of total station capital</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" /> Sets up charging station hardware</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" /> Manages 24/7 technical operations</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" /> Handles routine station maintenance</li>
-            </ul>
-          </div>
+        {/* Top Visual Diagram (2 Circle Photos + 50/50 Handshake Center) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto mb-14">
 
-          {/* Center Divider / Icon */}
-          <div className="md:col-span-2 flex flex-col items-center justify-center text-center space-y-2">
-            <div className="w-14 h-14 rounded-full bg-emerald-500 text-slate-950 font-black text-xl flex items-center justify-center shadow-lg shadow-emerald-500/30 animate-pulse">
-              +
-            </div>
-            <p className="text-xs font-bold uppercase text-emerald-400 tracking-wider">Combines into</p>
-            <div className="px-3 py-1 rounded-full bg-slate-800 text-xs font-bold text-slate-300 border border-slate-700">
-              ↓ EV CHARGING STATION
+          {/* Left Circle Photo: EV Charging Station */}
+          <div className="flex justify-center">
+            <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full p-2 bg-white border-4 border-emerald-600 shadow-xl overflow-hidden group">
+              <img
+                src="/highway%20charger.png"
+                alt="EV Charging Station"
+                className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
           </div>
 
-          {/* Investor Card (50%) */}
-          <div className="md:col-span-5 bg-slate-800/90 backdrop-blur-xl p-8 rounded-3xl border border-teal-500/30 shadow-xl space-y-6 relative overflow-hidden group hover:border-teal-500 transition-all">
-            <div className="flex items-center justify-between">
-              <div>
-                <span className="text-xs uppercase tracking-wider font-extrabold text-teal-400">Co-Partner</span>
-                <h3 className="text-2xl font-black text-white">INVESTOR</h3>
-              </div>
-              <div className="bg-teal-500/20 text-teal-300 text-2xl font-black px-4 py-2 rounded-2xl border border-teal-500/40">
-                50%
-              </div>
+          {/* Center 50/50 Handshake Badge */}
+          <div className="flex flex-col items-center justify-center text-center space-y-3">
+            <div>
+              <span className="text-4xl sm:text-5xl font-black text-emerald-700 block tracking-tight">50%</span>
+              <span className="text-xs font-black uppercase text-emerald-900 tracking-wider">EVOLTEK</span>
             </div>
-            <ul className="space-y-3 text-sm text-slate-300">
-              <li className="flex items-center gap-3"><CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0" /> Co-invests remaining 50% project cost</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0" /> Receives steady, transparent monthly returns</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0" /> Tracks performance via Evoltek Mobile App</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0" /> Holds 5 or 10-year official agreement</li>
-            </ul>
+
+            <div className="flex items-center gap-3 w-full justify-center">
+              <span className="h-[2px] w-8 bg-emerald-500"></span>
+              <div className="w-14 h-14 rounded-full border-2 border-emerald-600 bg-white flex items-center justify-center shadow-md text-emerald-700 shrink-0">
+                <Handshake className="w-7 h-7 text-emerald-700" />
+              </div>
+              <span className="h-[2px] w-8 bg-emerald-500"></span>
+            </div>
+
+            <div>
+              <span className="text-4xl sm:text-5xl font-black text-emerald-700 block tracking-tight">50%</span>
+              <span className="text-xs font-black uppercase text-emerald-900 tracking-wider">INVESTOR</span>
+            </div>
+          </div>
+
+          {/* Right Circle Photo: Investor Growth */}
+          <div className="flex justify-center">
+            <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full p-2 bg-white border-4 border-emerald-600 shadow-xl overflow-hidden group">
+              <img
+                src="/investor_growth_circle.jpg"
+                alt="Investor Growth"
+                className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
           </div>
 
         </div>
 
-        <div className="mt-12 text-center">
-          <button
-            onClick={() => openModalWithOption('Explore Investment Opportunity')}
-            className="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-4 rounded-[15px] shadow-lg shadow-emerald-500/20 transition-all active:scale-95 cursor-pointer"
-          >
-            <span>Explore Investment Opportunity</span>
-            <ArrowRight className="w-5 h-5" />
-          </button>
-        </div>
+
+
       </section>
 
       {/* ================= 5. WHY INVEST WITH EVOLTEK? (6-Card Grid) ================= */}
@@ -564,73 +414,91 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {/* Card 01 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-6 group-hover:bg-emerald-800 group-hover:text-white transition-colors">
-              <DollarSign className="w-6 h-6" />
+          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
+              <img
+                src="/icon_3d_shared_investment.jpg"
+                alt="Shared Investment"
+                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
-            <span className="text-xs font-extrabold text-emerald-800 uppercase tracking-wider">Card 01</span>
-            <h3 className="text-xl font-bold text-slate-900 mt-1 mb-2">Shared Investment</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Shared Investment</h3>
+            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
               Invest only half the project cost while Evoltek contributes the other half.
             </p>
           </div>
 
           {/* Card 02 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-6 group-hover:bg-emerald-800 group-hover:text-white transition-colors">
-              <Shield className="w-6 h-6" />
+          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
+              <img
+                src="/icon_3d_hassle_free.jpg"
+                alt="Hassle-Free Operations"
+                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
-            <span className="text-xs font-extrabold text-emerald-800 uppercase tracking-wider">Card 02</span>
-            <h3 className="text-xl font-bold text-slate-900 mt-1 mb-2">Hassle-Free Operations</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Hassle-Free Operations</h3>
+            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
               Evoltek handles setup, operations and station maintenance.
             </p>
           </div>
 
           {/* Card 03 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-6 group-hover:bg-emerald-800 group-hover:text-white transition-colors">
-              <TrendingUp className="w-6 h-6" />
+          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
+              <img
+                src="/icon_3d_flexible_returns.jpg"
+                alt="Flexible Returns"
+                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
-            <span className="text-xs font-extrabold text-emerald-800 uppercase tracking-wider">Card 03</span>
-            <h3 className="text-xl font-bold text-slate-900 mt-1 mb-2">Flexible Returns</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Flexible Returns</h3>
+            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
               Choose between percentage-based or fixed-return options.
             </p>
           </div>
 
           {/* Card 04 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-6 group-hover:bg-emerald-800 group-hover:text-white transition-colors">
-              <Clock className="w-6 h-6" />
+          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
+              <img
+                src="/icon_3d_long_term.jpg"
+                alt="Long-Term Agreement"
+                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
-            <span className="text-xs font-extrabold text-emerald-800 uppercase tracking-wider">Card 04</span>
-            <h3 className="text-xl font-bold text-slate-900 mt-1 mb-2">Long-Term Agreement</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Long-Term Agreement</h3>
+            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
               5 or 10-year agreement options with renewal availability.
             </p>
           </div>
 
           {/* Card 05 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-6 group-hover:bg-emerald-800 group-hover:text-white transition-colors">
-              <Smartphone className="w-6 h-6" />
+          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
+              <img
+                src="/icon_3d_digital_transparency.jpg"
+                alt="Digital Transparency"
+                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
-            <span className="text-xs font-extrabold text-emerald-800 uppercase tracking-wider">Card 05</span>
-            <h3 className="text-xl font-bold text-slate-900 mt-1 mb-2">Digital Transparency</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Digital Transparency</h3>
+            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
               Monitor station performance through the Evoltek mobile app.
             </p>
           </div>
 
           {/* Card 06 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-6 group-hover:bg-emerald-800 group-hover:text-white transition-colors">
-              <Layers className="w-6 h-6" />
+          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
+              <img
+                src="/icon_3d_scalable_network.jpg"
+                alt="Scalable Network"
+                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
-            <span className="text-xs font-extrabold text-emerald-800 uppercase tracking-wider">Card 06</span>
-            <h3 className="text-xl font-bold text-slate-900 mt-1 mb-2">Scalable Network</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Scalable Network</h3>
+            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
               Build a growing EV charging network across strategic locations.
             </p>
           </div>
@@ -641,7 +509,7 @@ export default function App() {
       {/* ================= 6. VISION & MISSION ================= */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
+
           {/* Vision Screen */}
           <div className="bg-gradient-to-br from-emerald-900 to-slate-900 text-white p-8 sm:p-10 rounded-3xl border border-emerald-800/40 shadow-xl flex flex-col justify-between space-y-6">
             <div className="space-y-4">
@@ -783,12 +651,12 @@ export default function App() {
 
       {/* ================= 8. CHARGING STATIONS SECTION ================= */}
       <section id="charging-stations" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
+        <div className="text-center max-w-5xl mx-auto space-y-4 mb-14">
           <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-900 text-xs font-bold px-4 py-1.5 rounded-full border border-emerald-200">
             <Zap className="w-3.5 h-3.5 text-emerald-700" />
             <span>Station Types</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
+          <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight whitespace-nowrap">
             Charging Solutions Built for Every Journey
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
@@ -807,16 +675,13 @@ export default function App() {
                 alt="Highway Charging Station"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute top-3 left-3 bg-emerald-100/95 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-extrabold text-emerald-900 flex items-center gap-1.5 shadow-md border border-emerald-200 uppercase tracking-wider">
-                <Navigation className="w-3.5 h-3.5 text-emerald-700" />
-                <span>Highway Corridor</span>
-              </div>
+
             </div>
 
             {/* Card Content */}
             <div className="p-5 sm:p-6 space-y-4">
               <div className="space-y-2">
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900">
+                <h3 className="text-xl sm:text-2xl font-black text-emerald-600">
                   Highway Charging Station
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -826,41 +691,41 @@ export default function App() {
                 {/* Specs List with Green Icons */}
                 <div className="pt-3 space-y-2.5 text-xs sm:text-sm border-t border-slate-100">
                   <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">📐</span>
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-6 h-6 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Maximize2 className="w-5 h-5 text-emerald-600" />
                       </div>
-                      <span className="font-medium">Minimum Space</span>
+                      <span className="font-semibold text-slate-800">Minimum Space</span>
                     </div>
-                    <span className="font-extrabold text-emerald-800">1 Acre</span>
+                    <span className="font-extrabold text-slate-900">1 Acre</span>
                   </div>
 
                   <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <Zap className="w-3.5 h-3.5 text-emerald-700" />
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-6 h-6 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Zap className="w-5 h-5 text-emerald-600" />
                       </div>
-                      <span className="font-medium">Power Capacity</span>
+                      <span className="font-semibold text-slate-800">Power Capacity</span>
                     </div>
-                    <span className="font-extrabold text-emerald-800">60 / 120 / 180 / 240 / 360 / 480 kW</span>
+                    <span className="font-extrabold text-slate-900">60 / 120 / 180 / 240 / 360 / 480 kW</span>
                   </div>
 
                   <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">🔌</span>
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-6 h-6 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Plug className="w-5 h-5 text-emerald-600" />
                       </div>
-                      <span className="font-medium">Charger Type</span>
+                      <span className="font-semibold text-slate-800">Charger Type</span>
                     </div>
                     <span className="font-bold text-slate-900">DC Fast Charging</span>
                   </div>
 
                   <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">👥</span>
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-6 h-6 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Users className="w-5 h-5 text-emerald-600" />
                       </div>
-                      <span className="font-medium">Best For</span>
+                      <span className="font-semibold text-slate-800">Best For</span>
                     </div>
                     <span className="font-bold text-slate-900 text-right">Long-distance travelers & highway traffic</span>
                   </div>
@@ -878,16 +743,13 @@ export default function App() {
                 alt="City Charging Station"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute top-3 left-3 bg-emerald-100/95 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-extrabold text-emerald-900 flex items-center gap-1.5 shadow-md border border-emerald-200 uppercase tracking-wider">
-                <Building2 className="w-3.5 h-3.5 text-emerald-700" />
-                <span>Urban Hub</span>
-              </div>
+
             </div>
 
             {/* Card Content */}
             <div className="p-5 sm:p-6 space-y-4">
               <div className="space-y-2">
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900">
+                <h3 className="text-xl sm:text-2xl font-black text-emerald-600">
                   City Charging Station
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -897,41 +759,41 @@ export default function App() {
                 {/* Specs List with Green Icons */}
                 <div className="pt-3 space-y-2.5 text-xs sm:text-sm border-t border-slate-100">
                   <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">📐</span>
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-6 h-6 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Maximize2 className="w-5 h-5 text-emerald-600" />
                       </div>
-                      <span className="font-medium">Minimum Space</span>
+                      <span className="font-semibold text-slate-800">Minimum Space</span>
                     </div>
-                    <span className="font-extrabold text-emerald-800">2,000 sq. ft.</span>
+                    <span className="font-extrabold text-slate-900">2,000 sq. ft.</span>
                   </div>
 
                   <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <Zap className="w-3.5 h-3.5 text-emerald-700" />
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-6 h-6 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Zap className="w-5 h-5 text-emerald-600" />
                       </div>
-                      <span className="font-medium">Power Capacity</span>
+                      <span className="font-semibold text-slate-800">Power Capacity</span>
                     </div>
-                    <span className="font-extrabold text-emerald-800">60 / 120 / 180 / 240 / 360 / 480 kW</span>
+                    <span className="font-extrabold text-slate-900">60 / 120 / 180 / 240 / 360 / 480 kW</span>
                   </div>
 
                   <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">🔌</span>
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-6 h-6 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Plug className="w-5 h-5 text-emerald-600" />
                       </div>
-                      <span className="font-medium">Charger Type</span>
+                      <span className="font-semibold text-slate-800">Charger Type</span>
                     </div>
                     <span className="font-bold text-slate-900">DC Fast Charging</span>
                   </div>
 
                   <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">👥</span>
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-6 h-6 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Users className="w-5 h-5 text-emerald-600" />
                       </div>
-                      <span className="font-medium">Best For</span>
+                      <span className="font-semibold text-slate-800">Best For</span>
                     </div>
                     <span className="font-bold text-slate-900 text-right">Daily city EV users & commercial fleets</span>
                   </div>
@@ -1016,60 +878,133 @@ export default function App() {
       </section>
 
       {/* ================= 11. HOW IT WORKS ================= */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-900 text-xs font-bold px-4 py-1.5 rounded-full border border-emerald-200">
-            <Layers className="w-3.5 h-3.5 text-emerald-700" />
-            <span>Simple Onboarding</span>
-          </div>
-          <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            How It Works
+      <section className="space-y-12 py-8 w-full">
+        <div className="flex items-center justify-center gap-4 py-2">
+          <div className="h-[2px] w-16 sm:w-28 bg-[#1a7d0d]" />
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#1a7d0d] tracking-wider uppercase text-center">
+            HOW TO GET STARTED
           </h2>
-          <p className="text-slate-600 text-base sm:text-lg">
-            From initial booking to live station monitoring in 4 transparent steps.
-          </p>
+          <div className="h-[2px] w-16 sm:w-28 bg-[#1a7d0d]" />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="relative w-full max-w-full px-4 sm:px-8 lg:px-12 mx-auto">
 
-          {/* STEP 01 */}
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-md relative space-y-4">
-            <span className="text-xs font-black uppercase text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Step 01</span>
-            <h3 className="text-xl font-bold text-slate-900">BOOK</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              Pay a ₹25,000 booking advance and receive an official receipt.
-            </p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 relative z-10">
+
+            {/* Step 1 */}
+            <div className="flex flex-col items-center text-center space-y-4 group relative">
+              <div className="relative">
+                <div className="w-24 h-24 sm:w-36 sm:h-36 lg:w-44 lg:h-44 rounded-full bg-white border-2 border-emerald-300 flex items-center justify-center p-3 sm:p-5 shadow-md group-hover:scale-105 group-hover:shadow-lg transition-all duration-300 overflow-hidden">
+                  <img
+                    src="/step_book.jpg"
+                    alt="Step 1: Book"
+                    className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <span className="absolute top-0 left-0 w-7 h-7 sm:w-10 sm:h-10 bg-[#1a7d0d] text-white text-xs sm:text-base font-black rounded-full flex items-center justify-center shadow-md border-2 border-white z-10">
+                  1
+                </span>
+
+                {/* Connector Arrow (1 -> 2) */}
+                <div className="absolute left-[98%] right-[-65%] sm:right-[-70%] lg:right-[-65%] top-1/2 -translate-y-1/2 flex items-center text-[#1a7d0d] z-20 pointer-events-none">
+                  <div className="flex-1 h-[2px] border-t-2 border-dashed border-[#1a7d0d]" />
+                  <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[3.5] -ml-1.5 shrink-0" />
+                </div>
+              </div>
+
+              <div className="space-y-1.5 max-w-[260px]">
+                <h3 className="font-extrabold text-[#1a7d0d] text-xl sm:text-2xl">Book</h3>
+                <p className="text-xs sm:text-sm text-gray-700 font-semibold leading-relaxed">
+                  Pay a ₹25,000 booking advance and receive a receipt.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="flex flex-col items-center text-center space-y-4 group relative">
+              <div className="relative">
+                <div className="w-24 h-24 sm:w-36 sm:h-36 lg:w-44 lg:h-44 rounded-full bg-white border-2 border-emerald-300 flex items-center justify-center p-3 sm:p-5 shadow-md group-hover:scale-105 group-hover:shadow-lg transition-all duration-300 overflow-hidden">
+                  <img
+                    src="/step_agree.jpg"
+                    alt="Step 2: Agree"
+                    className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <span className="absolute top-0 left-0 w-7 h-7 sm:w-10 sm:h-10 bg-[#1a7d0d] text-white text-xs sm:text-base font-black rounded-full flex items-center justify-center shadow-md border-2 border-white z-10">
+                  2
+                </span>
+
+                {/* Desktop Connector Arrow (2 -> 3) */}
+                <div className="hidden lg:flex absolute left-[98%] right-[-65%] top-1/2 -translate-y-1/2 items-center text-[#1a7d0d] z-20 pointer-events-none">
+                  <div className="flex-1 h-[2px] border-t-2 border-dashed border-[#1a7d0d]" />
+                  <ChevronRight className="w-5 h-5 stroke-[3.5] -ml-1.5 shrink-0" />
+                </div>
+              </div>
+
+              <div className="space-y-1.5 max-w-[260px]">
+                <h3 className="font-extrabold text-[#1a7d0d] text-xl sm:text-2xl">Agree</h3>
+                <p className="text-xs sm:text-sm text-gray-700 font-semibold leading-relaxed">
+                  Sign the agreement (5 or 10 years).
+                </p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="flex flex-col items-center text-center space-y-4 group relative">
+              <div className="relative">
+                <div className="w-24 h-24 sm:w-36 sm:h-36 lg:w-44 lg:h-44 rounded-full bg-white border-2 border-emerald-300 flex items-center justify-center p-3 sm:p-5 shadow-md group-hover:scale-105 group-hover:shadow-lg transition-all duration-300 overflow-hidden">
+                  <img
+                    src="/step_launch.jpg"
+                    alt="Step 3: Launch"
+                    className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <span className="absolute top-0 left-0 w-7 h-7 sm:w-10 sm:h-10 bg-[#1a7d0d] text-white text-xs sm:text-base font-black rounded-full flex items-center justify-center shadow-md border-2 border-white z-10">
+                  3
+                </span>
+
+                {/* Connector Arrow (3 -> 4) */}
+                <div className="absolute left-[98%] right-[-65%] sm:right-[-70%] lg:right-[-65%] top-1/2 -translate-y-1/2 flex items-center text-[#1a7d0d] z-20 pointer-events-none">
+                  <div className="flex-1 h-[2px] border-t-2 border-dashed border-[#1a7d0d]" />
+                  <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[3.5] -ml-1.5 shrink-0" />
+                </div>
+              </div>
+
+              <div className="space-y-1.5 max-w-[260px]">
+                <h3 className="font-extrabold text-[#1a7d0d] text-xl sm:text-2xl">Launch</h3>
+                <p className="text-xs sm:text-sm text-gray-700 font-semibold leading-relaxed">
+                  Your station is set up in about 2 months.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="flex flex-col items-center text-center space-y-4 group relative">
+              <div className="relative">
+                <div className="w-24 h-24 sm:w-36 sm:h-36 lg:w-44 lg:h-44 rounded-full bg-white border-2 border-emerald-300 flex items-center justify-center p-3 sm:p-5 shadow-md group-hover:scale-105 group-hover:shadow-lg transition-all duration-300 overflow-hidden">
+                  <img
+                    src="/step_track.jpg"
+                    alt="Step 4: Track"
+                    className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <span className="absolute top-0 left-0 w-7 h-7 sm:w-10 sm:h-10 bg-[#1a7d0d] text-white text-xs sm:text-base font-black rounded-full flex items-center justify-center shadow-md border-2 border-white z-10">
+                  4
+                </span>
+              </div>
+
+              <div className="space-y-1.5 max-w-[260px]">
+                <h3 className="font-extrabold text-[#1a7d0d] text-xl sm:text-2xl">Track</h3>
+                <p className="text-xs sm:text-sm text-gray-700 font-semibold leading-relaxed">
+                  Monitor everything on the Evoltek mobile app.
+                </p>
+              </div>
+            </div>
+
           </div>
-
-          {/* STEP 02 */}
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-md relative space-y-4">
-            <span className="text-xs font-black uppercase text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Step 02</span>
-            <h3 className="text-xl font-bold text-slate-900">AGREE</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              Sign the formal 5 or 10-year co-investment agreement.
-            </p>
-          </div>
-
-          {/* STEP 03 */}
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-md relative space-y-4">
-            <span className="text-xs font-black uppercase text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Step 03</span>
-            <h3 className="text-xl font-bold text-slate-900">LAUNCH</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              Your EV station is fully set up & commissioned in about 2 months.
-            </p>
-          </div>
-
-          {/* STEP 04 */}
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-md relative space-y-4">
-            <span className="text-xs font-black uppercase text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Step 04</span>
-            <h3 className="text-xl font-bold text-slate-900">TRACK</h3>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              Monitor live performance and revenue through the Evoltek mobile app.
-            </p>
-          </div>
-
         </div>
       </section>
+
 
       {/* ================= 12. ROI CALCULATOR ================= */}
       <section id="roi-calculator" className="py-20 bg-slate-900 text-white rounded-[30px] my-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto shadow-2xl relative overflow-hidden">
@@ -1165,7 +1100,7 @@ export default function App() {
 
             {/* Output Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 border-t border-slate-700/80">
-              
+
               <div className="bg-slate-900/80 p-5 rounded-2xl border border-slate-700 space-y-1">
                 <p className="text-[11px] font-bold text-slate-400 uppercase">Your Investment (50%)</p>
                 <p className="text-xl font-extrabold text-white">{formatCurrency(investorContribution)}</p>
@@ -1231,7 +1166,7 @@ export default function App() {
           {/* Phone Mockup Display UI */}
           <div className="lg:col-span-6 flex justify-center">
             <div className="bg-slate-900 rounded-[35px] p-6 border-4 border-slate-700 shadow-2xl max-w-xs w-full space-y-4">
-              
+
               {/* App Status Header */}
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <span className="font-extrabold text-sm text-emerald-400">EVOLTEK APP</span>
@@ -1439,7 +1374,7 @@ export default function App() {
               </div>
             ) : (
               <form onSubmit={handleContactSubmit} className="space-y-5">
-                
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div className="space-y-2">
                     <label className="text-xs font-extrabold text-slate-700 uppercase">Full Name</label>
@@ -1590,7 +1525,7 @@ export default function App() {
       {partnerModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200">
           <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100">
-            
+
             <button
               onClick={() => setPartnerModalOpen(false)}
               className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-600 rounded-full hover:bg-slate-100"
@@ -1602,7 +1537,7 @@ export default function App() {
               <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
                 <Zap className="w-6 h-6" />
               </div>
-              
+
               <div>
                 <span className="text-xs font-extrabold text-emerald-800 uppercase tracking-wider">Partner With Evoltek</span>
                 <h3 className="text-2xl font-black text-slate-900">{modalOption}</h3>
