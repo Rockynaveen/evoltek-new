@@ -412,93 +412,141 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {/* Card 01 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_shared_investment.jpg"
-                alt="Shared Investment"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
+          <div className="bg-white rounded-[32px] overflow-hidden border border-slate-200/80 shadow-lg shadow-slate-200/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+            {/* Top White Box with Top-Right Corner Curve */}
+            <div className="p-8 sm:p-9 bg-white space-y-6 rounded-tr-[55px] flex-1">
+              <div className="w-16 h-16 rounded-full bg-[#e2f7df] flex items-center justify-center p-3 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <img
+                  src="/icon_3d_shared_investment.jpg"
+                  alt="Shared Investment"
+                  className="w-full h-full object-contain mix-blend-multiply"
+                />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+                Shared Investment
+              </h3>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Shared Investment</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Invest only half the project cost while Evoltek contributes the other half.
-            </p>
+            {/* Bottom Mint Tint Box */}
+            <div className="p-8 sm:p-9 bg-[#eaf6e5] border-t border-emerald-100/60 rounded-b-[32px]">
+              <p className="text-sm font-semibold text-slate-700 leading-relaxed">
+                Invest only half the project cost while Evoltek contributes the other half.
+              </p>
+            </div>
           </div>
 
           {/* Card 02 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_hassle_free.jpg"
-                alt="Hassle-Free Operations"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
+          <div className="bg-white rounded-[32px] overflow-hidden border border-slate-200/80 shadow-lg shadow-slate-200/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+            {/* Top White Box with Top-Right Corner Curve */}
+            <div className="p-8 sm:p-9 bg-white space-y-6 rounded-tr-[55px] flex-1">
+              <div className="w-16 h-16 rounded-full bg-[#e2f7df] flex items-center justify-center p-3 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <img
+                  src="/icon_3d_hassle_free.jpg"
+                  alt="Hassle-Free Operations"
+                  className="w-full h-full object-contain mix-blend-multiply"
+                />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+                Hassle-Free Operations
+              </h3>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Hassle-Free Operations</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Evoltek handles setup, operations and station maintenance.
-            </p>
+            {/* Bottom Mint Tint Box */}
+            <div className="p-8 sm:p-9 bg-[#eaf6e5] border-t border-emerald-100/60 rounded-b-[32px]">
+              <p className="text-sm font-semibold text-slate-700 leading-relaxed">
+                Evoltek handles setup, operations and station maintenance.
+              </p>
+            </div>
           </div>
 
           {/* Card 03 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_flexible_returns.jpg"
-                alt="Flexible Returns"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
+          <div className="bg-white rounded-[32px] overflow-hidden border border-slate-200/80 shadow-lg shadow-slate-200/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+            {/* Top White Box with Top-Right Corner Curve */}
+            <div className="p-8 sm:p-9 bg-white space-y-6 rounded-tr-[55px] flex-1">
+              <div className="w-16 h-16 rounded-full bg-[#e2f7df] flex items-center justify-center p-3 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <img
+                  src="/icon_3d_flexible_returns.jpg"
+                  alt="Flexible Returns"
+                  className="w-full h-full object-contain mix-blend-multiply"
+                />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+                Flexible Returns
+              </h3>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Flexible Returns</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Choose between percentage-based or fixed-return options.
-            </p>
+            {/* Bottom Mint Tint Box */}
+            <div className="p-8 sm:p-9 bg-[#eaf6e5] border-t border-emerald-100/60 rounded-b-[32px]">
+              <p className="text-sm font-semibold text-slate-700 leading-relaxed">
+                Choose between percentage-based or fixed-return options.
+              </p>
+            </div>
           </div>
 
           {/* Card 04 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_long_term.jpg"
-                alt="Long-Term Agreement"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
+          <div className="bg-white rounded-[32px] overflow-hidden border border-slate-200/80 shadow-lg shadow-slate-200/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+            {/* Top White Box with Top-Right Corner Curve */}
+            <div className="p-8 sm:p-9 bg-white space-y-6 rounded-tr-[55px] flex-1">
+              <div className="w-16 h-16 rounded-full bg-[#e2f7df] flex items-center justify-center p-3 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <img
+                  src="/icon_3d_long_term.jpg"
+                  alt="Long-Term Agreement"
+                  className="w-full h-full object-contain mix-blend-multiply"
+                />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+                Long-Term Agreement
+              </h3>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Long-Term Agreement</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              5 or 10-year agreement options with renewal availability.
-            </p>
+            {/* Bottom Mint Tint Box */}
+            <div className="p-8 sm:p-9 bg-[#eaf6e5] border-t border-emerald-100/60 rounded-b-[32px]">
+              <p className="text-sm font-semibold text-slate-700 leading-relaxed">
+                5 or 10-year agreement options with renewal availability.
+              </p>
+            </div>
           </div>
 
           {/* Card 05 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_digital_transparency.jpg"
-                alt="Digital Transparency"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
+          <div className="bg-white rounded-[32px] overflow-hidden border border-slate-200/80 shadow-lg shadow-slate-200/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+            {/* Top White Box with Top-Right Corner Curve */}
+            <div className="p-8 sm:p-9 bg-white space-y-6 rounded-tr-[55px] flex-1">
+              <div className="w-16 h-16 rounded-full bg-[#e2f7df] flex items-center justify-center p-3 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <img
+                  src="/icon_3d_digital_transparency.jpg"
+                  alt="Digital Transparency"
+                  className="w-full h-full object-contain mix-blend-multiply"
+                />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+                Digital Transparency
+              </h3>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Digital Transparency</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Monitor station performance through the Evoltek mobile app.
-            </p>
+            {/* Bottom Mint Tint Box */}
+            <div className="p-8 sm:p-9 bg-[#eaf6e5] border-t border-emerald-100/60 rounded-b-[32px]">
+              <p className="text-sm font-semibold text-slate-700 leading-relaxed">
+                Monitor station performance through the Evoltek mobile app.
+              </p>
+            </div>
           </div>
 
           {/* Card 06 */}
-          <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center flex flex-col items-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mb-6 flex items-center justify-center">
-              <img
-                src="/icon_3d_scalable_network.jpg"
-                alt="Scalable Network"
-                className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-              />
+          <div className="bg-white rounded-[32px] overflow-hidden border border-slate-200/80 shadow-lg shadow-slate-200/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+            {/* Top White Box with Top-Right Corner Curve */}
+            <div className="p-8 sm:p-9 bg-white space-y-6 rounded-tr-[55px] flex-1">
+              <div className="w-16 h-16 rounded-full bg-[#e2f7df] flex items-center justify-center p-3 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <img
+                  src="/icon_3d_scalable_network.jpg"
+                  alt="Scalable Network"
+                  className="w-full h-full object-contain mix-blend-multiply"
+                />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+                Scalable Network
+              </h3>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Scalable Network</h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Build a growing EV charging network across strategic locations.
-            </p>
+            {/* Bottom Mint Tint Box */}
+            <div className="p-8 sm:p-9 bg-[#eaf6e5] border-t border-emerald-100/60 rounded-b-[32px]">
+              <p className="text-sm font-semibold text-slate-700 leading-relaxed">
+                Build a growing EV charging network across strategic locations.
+              </p>
+            </div>
           </div>
 
         </div>
