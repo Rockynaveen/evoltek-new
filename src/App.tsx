@@ -16,9 +16,6 @@ import {
   Award,
   PhoneCall,
   Check,
-  Maximize2,
-  Plug,
-  Users,
   Handshake,
   ChevronRight,
   ArrowUpRight
@@ -665,156 +662,181 @@ export default function App() {
         </div>
 
         {/* Cards Stack */}
-        <div className="space-y-6 sm:space-y-8 max-w-5xl mx-auto">
+        <div className="space-y-8 max-w-6xl mx-auto">
 
           {/* Card 1: Highway Charging Station */}
-          <div className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg flex flex-col justify-between group hover:shadow-xl transition-all">
-            {/* Top Card Image with Overlay Badge */}
-            <div className="relative h-48 sm:h-56 overflow-hidden bg-slate-100">
-              <img
-                src="/highway%20charger.png"
-                alt="Highway Charging Station"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute top-3 left-3 bg-emerald-100/95 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-extrabold text-emerald-900 flex items-center gap-1.5 shadow-md border border-emerald-200 uppercase tracking-wider">
-                <Navigation className="w-3.5 h-3.5 text-emerald-700" />
-                <span>Highway Corridor</span>
+          <div className="bg-white rounded-[32px] p-6 sm:p-8 lg:p-10 border border-slate-200/80 shadow-lg shadow-slate-200/50 hover:shadow-xl transition-all duration-300">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+              
+              {/* Left Column: Title + Subtitle + Action Button */}
+              <div className="lg:col-span-4 space-y-6 flex flex-col justify-between h-full">
+                <div className="space-y-3">
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                    Highway Charging Station
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
+                    Designed for high-speed highway corridors and long-distance drivers.
+                  </p>
+                </div>
+
+                <button
+                  onClick={() => openModalWithOption('Highway Charging Station')}
+                  className="inline-flex items-center justify-between sm:justify-start gap-3 bg-[#38c838] hover:bg-[#2eb02e] text-slate-950 font-black text-sm px-6 py-3.5 rounded-full shadow-md transition-all active:scale-95 group cursor-pointer w-fit"
+                >
+                  <span>Select Option</span>
+                  <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center text-slate-950 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
+                    <ArrowUpRight className="w-4 h-4 stroke-[3]" />
+                  </div>
+                </button>
               </div>
-            </div>
 
-            {/* Card Content */}
-            <div className="p-5 sm:p-6 space-y-4">
-              <div className="space-y-2">
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900">
-                  Highway Charging Station
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Designed for high-speed highway corridors with integrated amenities for long-distance drivers.
-                </p>
-
-                {/* Specs List with Green Icons */}
-                <div className="pt-3 space-y-2.5 text-xs sm:text-sm border-t border-slate-100">
-                  <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">📐</span>
-                      </div>
-                      <span className="font-medium">Minimum Space</span>
-                    </div>
-                    <span className="font-extrabold text-emerald-800">1 Acre</span>
+              {/* Middle Column: Vertical Divider + Specs List */}
+              <div className="lg:col-span-4 lg:border-l border-slate-200/80 lg:pl-8 space-y-3.5">
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#38c838] text-slate-950 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                    <Check className="w-3.5 h-3.5 stroke-[3.5]" />
                   </div>
-
-                  <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <Zap className="w-3.5 h-3.5 text-emerald-700" />
-                      </div>
-                      <span className="font-medium">Power Capacity</span>
-                    </div>
-                    <span className="font-extrabold text-emerald-800">60 / 120 / 180 / 240 / 360 / 480 kW</span>
+                  <div className="text-xs sm:text-sm text-slate-700 font-medium">
+                    <strong className="text-slate-900 font-extrabold block sm:inline">Minimum Space: </strong>
+                    <span>1 Acre</span>
                   </div>
+                </div>
 
-                  <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">🔌</span>
-                      </div>
-                      <span className="font-medium">Charger Type</span>
-                    </div>
-                    <span className="font-bold text-slate-900">DC Fast Charging</span>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#38c838] text-slate-950 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                    <Check className="w-3.5 h-3.5 stroke-[3.5]" />
                   </div>
+                  <div className="text-xs sm:text-sm text-slate-700 font-medium">
+                    <strong className="text-slate-900 font-extrabold block sm:inline">Power: </strong>
+                    <span>60 / 120 / 180 / 240 / 360 / 480 kW</span>
+                  </div>
+                </div>
 
-                  <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">👥</span>
-                      </div>
-                      <span className="font-medium">Best For</span>
-                    </div>
-                    <span className="font-bold text-slate-900 text-right">Long-distance travelers & highway traffic</span>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#38c838] text-slate-950 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                    <Check className="w-3.5 h-3.5 stroke-[3.5]" />
+                  </div>
+                  <div className="text-xs sm:text-sm text-slate-700 font-medium">
+                    <strong className="text-slate-900 font-extrabold block sm:inline">Charger: </strong>
+                    <span>DC Fast Charging</span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#38c838] text-slate-950 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                    <Check className="w-3.5 h-3.5 stroke-[3.5]" />
+                  </div>
+                  <div className="text-xs sm:text-sm text-slate-700 font-medium">
+                    <strong className="text-slate-900 font-extrabold block sm:inline">Best For: </strong>
+                    <span>Long-distance travellers & highway traffic</span>
                   </div>
                 </div>
               </div>
+
+              {/* Right Column: Image with Custom Rounded Cut */}
+              <div className="lg:col-span-4">
+                <div className="relative h-48 sm:h-56 lg:h-64 w-full overflow-hidden rounded-[28px] rounded-tr-[55px] rounded-bl-[55px] shadow-md group">
+                  <img
+                    src="/highway%20charger.png"
+                    alt="Highway Charging Station"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/30 via-transparent to-transparent" />
+                </div>
+              </div>
+
             </div>
           </div>
 
           {/* Card 2: City Charging Station */}
-          <div className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg flex flex-col justify-between group hover:shadow-xl transition-all">
-            {/* Top Card Image with Overlay Badge */}
-            <div className="relative h-48 sm:h-56 overflow-hidden bg-slate-100">
-              <img
-                src="/city%20chareger.png"
-                alt="City Charging Station"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute top-3 left-3 bg-emerald-100/95 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-extrabold text-emerald-900 flex items-center gap-1.5 shadow-md border border-emerald-200 uppercase tracking-wider">
-                <Building2 className="w-3.5 h-3.5 text-emerald-700" />
-                <span>Urban Hub</span>
+          <div className="bg-white rounded-[32px] p-6 sm:p-8 lg:p-10 border border-slate-200/80 shadow-lg shadow-slate-200/50 hover:shadow-xl transition-all duration-300">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+              
+              {/* Left Column: Title + Subtitle + Action Button */}
+              <div className="lg:col-span-4 space-y-6 flex flex-col justify-between h-full">
+                <div className="space-y-3">
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                    City Charging Station
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
+                    Compact, high-throughput charging hubs tailored for daily EV commuters.
+                  </p>
+                </div>
+
+                <button
+                  onClick={() => openModalWithOption('City Charging Station')}
+                  className="inline-flex items-center justify-between sm:justify-start gap-3 bg-[#38c838] hover:bg-[#2eb02e] text-slate-950 font-black text-sm px-6 py-3.5 rounded-full shadow-md transition-all active:scale-95 group cursor-pointer w-fit"
+                >
+                  <span>Select Option</span>
+                  <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center text-slate-950 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
+                    <ArrowUpRight className="w-4 h-4 stroke-[3]" />
+                  </div>
+                </button>
               </div>
-            </div>
 
-            {/* Card Content */}
-            <div className="p-5 sm:p-6 space-y-4">
-              <div className="space-y-2">
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900">
-                  City Charging Station
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Compact, high-throughput charging stations optimized for daily EV commuters and fleet vehicles.
-                </p>
-
-                {/* Specs List with Green Icons */}
-                <div className="pt-3 space-y-2.5 text-xs sm:text-sm border-t border-slate-100">
-                  <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">📐</span>
-                      </div>
-                      <span className="font-medium">Minimum Space</span>
-                    </div>
-                    <span className="font-extrabold text-emerald-800">2,000 sq. ft.</span>
+              {/* Middle Column: Vertical Divider + Specs List */}
+              <div className="lg:col-span-4 lg:border-l border-slate-200/80 lg:pl-8 space-y-3.5">
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#38c838] text-slate-950 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                    <Check className="w-3.5 h-3.5 stroke-[3.5]" />
                   </div>
-
-                  <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <Zap className="w-3.5 h-3.5 text-emerald-700" />
-                      </div>
-                      <span className="font-medium">Power Capacity</span>
-                    </div>
-                    <span className="font-extrabold text-emerald-800">60 / 120 / 180 / 240 / 360 / 480 kW</span>
+                  <div className="text-xs sm:text-sm text-slate-700 font-medium">
+                    <strong className="text-slate-900 font-extrabold block sm:inline">Minimum Space: </strong>
+                    <span>2,000 sq. ft.</span>
                   </div>
+                </div>
 
-                  <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">🔌</span>
-                      </div>
-                      <span className="font-medium">Charger Type</span>
-                    </div>
-                    <span className="font-bold text-slate-900">DC Fast Charging</span>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#38c838] text-slate-950 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                    <Check className="w-3.5 h-3.5 stroke-[3.5]" />
                   </div>
+                  <div className="text-xs sm:text-sm text-slate-700 font-medium">
+                    <strong className="text-slate-900 font-extrabold block sm:inline">Power: </strong>
+                    <span>60 / 120 / 180 / 240 / 360 / 480 kW</span>
+                  </div>
+                </div>
 
-                  <div className="flex items-center justify-between py-0.5">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <div className="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
-                        <span className="text-xs">👥</span>
-                      </div>
-                      <span className="font-medium">Best For</span>
-                    </div>
-                    <span className="font-bold text-slate-900 text-right">Daily city EV users & commercial fleets</span>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#38c838] text-slate-950 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                    <Check className="w-3.5 h-3.5 stroke-[3.5]" />
+                  </div>
+                  <div className="text-xs sm:text-sm text-slate-700 font-medium">
+                    <strong className="text-slate-900 font-extrabold block sm:inline">Charger: </strong>
+                    <span>DC Fast Charging</span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-[#38c838] text-slate-950 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                    <Check className="w-3.5 h-3.5 stroke-[3.5]" />
+                  </div>
+                  <div className="text-xs sm:text-sm text-slate-700 font-medium">
+                    <strong className="text-slate-900 font-extrabold block sm:inline">Best For: </strong>
+                    <span>Daily city EV users</span>
                   </div>
                 </div>
               </div>
+
+              {/* Right Column: Image with Custom Rounded Cut */}
+              <div className="lg:col-span-4">
+                <div className="relative h-48 sm:h-56 lg:h-64 w-full overflow-hidden rounded-[28px] rounded-tr-[55px] rounded-bl-[55px] shadow-md group">
+                  <img
+                    src="/city%20chareger.png"
+                    alt="City Charging Station"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/30 via-transparent to-transparent" />
+                </div>
+              </div>
+
             </div>
           </div>
 
         </div>
-    </div>
-      </section >
+      </section>
 
-    {/* ================= 10. RETURNS SECTION ================= */ }
-    < section className = "py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" >
+      {/* ================= 10. RETURNS SECTION ================= */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-900 text-xs font-bold px-4 py-1.5 rounded-full border border-emerald-200">
             <DollarSign className="w-3.5 h-3.5 text-emerald-700" />
@@ -883,10 +905,10 @@ export default function App() {
           </div>
 
         </div>
-      </section >
+      </section>
 
-    {/* ================= 11. HOW IT WORKS ================= */ }
-    < section className = "space-y-12 py-8 w-full" >
+      {/* ================= 11. HOW IT WORKS ================= */}
+      <section className="space-y-12 py-8 w-full">
         <div className="flex items-center justify-center gap-4 py-2">
           <div className="h-[2px] w-16 sm:w-28 bg-[#1a7d0d]" />
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#1a7d0d] tracking-wider uppercase text-center">
@@ -1011,11 +1033,10 @@ export default function App() {
 
           </div>
         </div>
-      </section >
+      </section>
 
-
-    {/* ================= 12. ROI CALCULATOR ================= */ }
-    < section id = "roi-calculator" className = "py-20 bg-slate-900 text-white rounded-[30px] my-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto shadow-2xl relative overflow-hidden" >
+      {/* ================= 12. ROI CALCULATOR ================= */}
+      <section id="roi-calculator" className="py-20 bg-slate-900 text-white rounded-[30px] my-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto shadow-2xl relative overflow-hidden">
       <div className="max-w-4xl mx-auto space-y-8">
 
         <div className="text-center space-y-3">
@@ -1146,10 +1167,10 @@ export default function App() {
         </div>
 
       </div>
-      </section >
+      </section>
 
-    {/* ================= 13. EVOLTEK MOBILE APP ================= */ }
-    < section className = "py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" >
+      {/* ================= 13. EVOLTEK MOBILE APP ================= */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="bg-slate-950 text-white rounded-[30px] p-8 sm:p-14 border border-slate-800 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
         <div className="lg:col-span-6 space-y-6">
@@ -1216,10 +1237,10 @@ export default function App() {
         </div>
 
       </div>
-      </section >
+      </section>
 
-    {/* ================= 14. FRANCHISE OPPORTUNITY ================= */ }
-    < section id = "franchise" className = "py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" >
+      {/* ================= 14. FRANCHISE OPPORTUNITY ================= */}
+      <section id="franchise" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-900 text-xs font-bold px-4 py-1.5 rounded-full border border-emerald-200">
             <Building2 className="w-3.5 h-3.5 text-emerald-700" />
@@ -1281,10 +1302,10 @@ export default function App() {
           </div>
 
         </div>
-      </section >
+      </section>
 
-    {/* ================= 15. LANDOWNER CTA ================= */ }
-    < section className = "py-16 bg-gradient-to-r from-emerald-800 to-teal-900 text-white rounded-[30px] my-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8" >
+      {/* ================= 15. LANDOWNER CTA ================= */}
+      <section className="py-16 bg-gradient-to-r from-emerald-800 to-teal-900 text-white rounded-[30px] my-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="space-y-3 text-center md:text-left">
           <span className="text-xs uppercase font-extrabold tracking-widest text-emerald-300">Property Partnership</span>
           <h2 className="text-2xl sm:text-4xl font-black">
@@ -1302,10 +1323,10 @@ export default function App() {
           <span>Partner With Evoltek</span>
           <ArrowRight className="w-5 h-5" />
         </button>
-      </section >
+      </section>
 
-    {/* ================= 16. FINAL CTA ================= */ }
-    < section className = "py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center space-y-8" >
+      {/* ================= 16. FINAL CTA ================= */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center space-y-8">
         <div className="max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
             Ready to Invest in the Future of Mobility?
@@ -1332,10 +1353,10 @@ export default function App() {
             <span>Talk to Our Team</span>
           </a>
         </div>
-      </section >
+      </section>
 
-    {/* ================= 17. CONTACT SECTION ================= */ }
-    < section id = "contact" className = "py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" >
+      {/* ================= 17. CONTACT SECTION ================= */}
+      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="bg-white rounded-[30px] p-8 sm:p-14 border border-slate-200 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-12">
 
         {/* Contact Information */}
@@ -1477,10 +1498,10 @@ export default function App() {
         </div>
 
       </div>
-      </section >
+      </section>
 
-    {/* ================= 18. FOOTER ================= */ }
-    < footer className = "bg-slate-950 text-white rounded-[30px] mt-12 py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border border-slate-800" >
+      {/* ================= 18. FOOTER ================= */}
+      <footer className="bg-slate-950 text-white rounded-[30px] mt-12 py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border border-slate-800">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
           <div className="space-y-4">
@@ -1527,9 +1548,9 @@ export default function App() {
         <div className="mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
           © 2026 Evoltek. All Rights Reserved.
         </div>
-      </footer >
+      </footer>
 
-    {/* ================= ENQUIRY / PARTNER MODAL ================= */ }
+      {/* ================= ENQUIRY / PARTNER MODAL ================= */}
   {
     partnerModalOpen && (
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200">
@@ -1588,6 +1609,6 @@ export default function App() {
     )
   }
 
-    </div >
+    </div>
   );
 }
