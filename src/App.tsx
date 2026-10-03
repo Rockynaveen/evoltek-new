@@ -1172,72 +1172,110 @@ export default function App() {
 
       {/* ================= 13. EVOLTEK MOBILE APP ================= */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="bg-slate-950 text-white rounded-[30px] p-8 sm:p-14 border border-slate-800 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-[#0a101b] to-slate-950 text-white rounded-[36px] p-8 sm:p-14 lg:p-16 border border-slate-800/90 shadow-2xl shadow-slate-950/80 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          {/* Ambient Glow Effects */}
+          <div className="absolute -top-24 -left-24 w-96 h-96 bg-emerald-500/15 blur-[120px] rounded-full pointer-events-none" />
+          <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full pointer-events-none" />
 
-        <div className="lg:col-span-6 space-y-6">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-400 text-xs font-bold px-4 py-1.5 rounded-full border border-emerald-500/30">
-            <Smartphone className="w-3.5 h-3.5" />
-            <span>Smart Mobile Portal</span>
-          </div>
-
-          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-            Everything. In One App.
-          </h2>
-
-          <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Investors and EV Network Users can check station status, usage and earnings through the Evoltek mobile app, all in one place.
-          </p>
-
-          <div className="inline-block bg-slate-900 border border-slate-700 text-emerald-400 text-xs font-bold px-5 py-2.5 rounded-2xl shadow-inner">
-            📱 Coming Soon on iOS & Android
-          </div>
-        </div>
-
-        {/* Phone Mockup Display UI */}
-        <div className="lg:col-span-6 flex justify-center">
-          <div className="bg-slate-900 rounded-[35px] p-6 border-4 border-slate-700 shadow-2xl max-w-xs w-full space-y-4">
-
-            {/* App Status Header */}
-            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-              <span className="font-extrabold text-sm text-emerald-400">EVOLTEK APP</span>
-              <div className="flex items-center gap-1.5 bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded-full">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-                <span>● Online</span>
-              </div>
+          {/* Left Column Text & CTA */}
+          <div className="lg:col-span-6 space-y-8 relative z-10">
+            <div className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 text-xs font-bold px-4 py-1.5 rounded-full border border-emerald-500/30 shadow-inner">
+              <Smartphone className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Smart Mobile Portal</span>
             </div>
 
-            {/* Stats Widgets */}
-            <div className="space-y-3">
-              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700 flex justify-between items-center">
-                <span className="text-xs text-slate-400">Today's Usage</span>
-                <span className="text-sm font-black text-white">1,284 kWh</span>
-              </div>
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+              Everything. <br className="hidden sm:inline" />In One App.
+            </h2>
 
-              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700 flex justify-between items-center">
-                <span className="text-xs text-slate-400">Sessions</span>
-                <span className="text-sm font-black text-white">86</span>
-              </div>
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
+              Investors and EV Network Users can check station status, usage and earnings through the Evoltek mobile app, all in one place.
+            </p>
 
-              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700 flex justify-between items-center">
-                <span className="text-xs text-slate-400">Earnings</span>
-                <span className="text-sm font-black text-emerald-400">₹ 42,500</span>
-              </div>
-
-              <div className="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700 space-y-2">
-                <div className="flex justify-between text-[11px] text-slate-400">
-                  <span>Station Performance</span>
-                  <span className="text-emerald-400 font-bold">98.4%</span>
-                </div>
-                <div className="w-full bg-slate-900 h-2 rounded-full overflow-hidden">
-                  <div className="bg-emerald-500 h-full w-[98%]" />
-                </div>
+            <div className="pt-2 flex flex-wrap items-center gap-4">
+              <div className="inline-flex items-center gap-3 bg-slate-900/90 border border-slate-700/80 text-emerald-400 text-xs font-extrabold px-6 py-3.5 rounded-2xl shadow-lg backdrop-blur-md">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_10px_#34d399]" />
+                <span>📱 Coming Soon on iOS & Android</span>
               </div>
             </div>
-
           </div>
-        </div>
 
-      </div>
+          {/* Right Column: Phone Mockup Display UI */}
+          <div className="lg:col-span-6 flex justify-center relative z-10">
+            <div className="relative">
+              
+              {/* Outer Phone Frame */}
+              <div className="bg-slate-950 rounded-[48px] p-5 border-[7px] border-slate-800 shadow-[0_0_60px_rgba(16,185,129,0.18)] max-w-sm w-full space-y-4 backdrop-blur-2xl relative overflow-hidden">
+                
+                {/* Notch / Speaker Bar */}
+                <div className="w-32 h-4 bg-slate-900 rounded-full mx-auto border border-slate-800/80 mb-2 flex items-center justify-center">
+                  <div className="w-3 h-1 bg-slate-800 rounded-full" />
+                </div>
+
+                {/* App Status Header */}
+                <div className="flex items-center justify-between border-b border-slate-800/90 pb-3 px-1">
+                  <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center font-black text-xs">
+                      ⚡
+                    </div>
+                    <span className="font-extrabold text-xs text-white tracking-wider">EVOLTEK APP</span>
+                  </div>
+
+                  <div className="flex items-center gap-1.5 bg-emerald-500/20 text-emerald-300 text-[10px] font-bold px-2.5 py-1 rounded-full border border-emerald-500/30">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+                    <span>● Online</span>
+                  </div>
+                </div>
+
+                {/* Stats Widgets */}
+                <div className="space-y-3 pt-1">
+
+                  {/* Widget 1: Usage */}
+                  <div className="bg-slate-900/90 p-4 rounded-2xl border border-slate-800/80 flex justify-between items-center shadow-inner hover:border-emerald-500/40 transition-colors">
+                    <div className="space-y-0.5">
+                      <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Today's Usage</span>
+                      <p className="text-xs text-emerald-400 font-semibold">Live Monitoring</p>
+                    </div>
+                    <span className="text-lg font-black text-white">1,284 kWh</span>
+                  </div>
+
+                  {/* Widget 2: Sessions */}
+                  <div className="bg-slate-900/90 p-4 rounded-2xl border border-slate-800/80 flex justify-between items-center shadow-inner hover:border-emerald-500/40 transition-colors">
+                    <div className="space-y-0.5">
+                      <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Sessions</span>
+                      <p className="text-xs text-slate-400 font-medium">Completed Today</p>
+                    </div>
+                    <span className="text-lg font-black text-white">86</span>
+                  </div>
+
+                  {/* Widget 3: Earnings */}
+                  <div className="bg-slate-900/90 p-4 rounded-2xl border border-slate-800/80 flex justify-between items-center shadow-inner hover:border-emerald-500/40 transition-colors">
+                    <div className="space-y-0.5">
+                      <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Earnings</span>
+                      <p className="text-xs text-slate-400 font-medium">Net Return</p>
+                    </div>
+                    <span className="text-lg font-black text-emerald-400">₹ 42,500</span>
+                  </div>
+
+                  {/* Widget 4: Station Performance */}
+                  <div className="bg-slate-900/90 p-4 rounded-2xl border border-slate-800/80 space-y-2.5 shadow-inner">
+                    <div className="flex justify-between items-center text-[11px]">
+                      <span className="font-bold text-slate-400 uppercase tracking-wider">Station Performance</span>
+                      <span className="text-emerald-400 font-extrabold text-xs">98.4%</span>
+                    </div>
+                    <div className="w-full bg-slate-950 h-2.5 rounded-full overflow-hidden border border-slate-800 p-0.5">
+                      <div className="bg-gradient-to-r from-emerald-600 to-teal-400 h-full rounded-full w-[98.4%] shadow-[0_0_10px_#34d399]" />
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
       </section>
 
       {/* ================= 14. FRANCHISE OPPORTUNITY ================= */}
@@ -1257,49 +1295,85 @@ export default function App() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
-            <h4 className="font-bold text-slate-900 text-base">🤝 50% Shared Investment</h4>
-            <p className="text-sm text-slate-600">Evoltek funds half the project cost.</p>
+          {/* Card 1 */}
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl hover:border-emerald-500/60 hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold group-hover:bg-emerald-500 group-hover:text-white transition-colors shadow-sm">
+              🤝
+            </div>
+            <h4 className="font-extrabold text-slate-900 text-lg">50% Shared Investment</h4>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">Evoltek funds half the project cost.</p>
           </div>
 
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
-            <h4 className="font-bold text-slate-900 text-base">📈 Multiple Return Options</h4>
-            <p className="text-sm text-slate-600">Choose percentage or fixed return.</p>
+          {/* Card 2 */}
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl hover:border-emerald-500/60 hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold group-hover:bg-emerald-500 group-hover:text-white transition-colors shadow-sm">
+              📈
+            </div>
+            <h4 className="font-extrabold text-slate-900 text-lg">Multiple Return Options</h4>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">Choose percentage or fixed return.</p>
           </div>
 
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
-            <h4 className="font-bold text-slate-900 text-base">📜 Long-Term Security</h4>
-            <p className="text-sm text-slate-600">5 or 10-year agreements.</p>
+          {/* Card 3 */}
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl hover:border-emerald-500/60 hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold group-hover:bg-emerald-500 group-hover:text-white transition-colors shadow-sm">
+              📜
+            </div>
+            <h4 className="font-extrabold text-slate-900 text-lg">Long-Term Security</h4>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">5 or 10-year agreements.</p>
           </div>
 
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
-            <h4 className="font-bold text-slate-900 text-base">⚙️ Managed Operations</h4>
-            <p className="text-sm text-slate-600">Evoltek handles technical operations and maintenance.</p>
+          {/* Card 4 */}
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl hover:border-emerald-500/60 hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold group-hover:bg-emerald-500 group-hover:text-white transition-colors shadow-sm">
+              ⚙️
+            </div>
+            <h4 className="font-extrabold text-slate-900 text-lg">Managed Operations</h4>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">Evoltek handles technical operations and maintenance.</p>
           </div>
 
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
-            <h4 className="font-bold text-slate-900 text-base">⚡ Fast DC Charging</h4>
-            <p className="text-sm text-slate-600">Highway and city charging solutions.</p>
+          {/* Card 5 */}
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl hover:border-emerald-500/60 hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold group-hover:bg-emerald-500 group-hover:text-white transition-colors shadow-sm">
+              ⚡
+            </div>
+            <h4 className="font-extrabold text-slate-900 text-lg">Fast DC Charging</h4>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">Highway and city charging solutions.</p>
           </div>
 
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
-            <h4 className="font-bold text-slate-900 text-base">🍽️ Additional Income</h4>
-            <p className="text-sm text-slate-600">Add cafeteria, restaurant or gaming facilities.</p>
+          {/* Card 6 */}
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl hover:border-emerald-500/60 hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold group-hover:bg-emerald-500 group-hover:text-white transition-colors shadow-sm">
+              🍽️
+            </div>
+            <h4 className="font-extrabold text-slate-900 text-lg">Additional Income</h4>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">Add cafeteria, restaurant or gaming facilities.</p>
           </div>
 
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
-            <h4 className="font-bold text-slate-900 text-base">🏞️ Landowner Opportunity</h4>
-            <p className="text-sm text-slate-600">Provide land and earn rent.</p>
+          {/* Card 7 */}
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl hover:border-emerald-500/60 hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold group-hover:bg-emerald-500 group-hover:text-white transition-colors shadow-sm">
+              🏞️
+            </div>
+            <h4 className="font-extrabold text-slate-900 text-lg">Landowner Opportunity</h4>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">Provide land and earn rent.</p>
           </div>
 
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
-            <h4 className="font-bold text-slate-900 text-base">🚀 Quick Launch</h4>
-            <p className="text-sm text-slate-600">Station setup in about 2 months.</p>
+          {/* Card 8 */}
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl hover:border-emerald-500/60 hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold group-hover:bg-emerald-500 group-hover:text-white transition-colors shadow-sm">
+              🚀
+            </div>
+            <h4 className="font-extrabold text-slate-900 text-lg">Quick Launch</h4>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">Station setup in about 2 months.</p>
           </div>
 
-          <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
-            <h4 className="font-bold text-slate-900 text-base">📱 Full Visibility</h4>
-            <p className="text-sm text-slate-600">Monitor performance through the mobile app.</p>
+          {/* Card 9 */}
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl hover:border-emerald-500/60 hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center text-xl font-bold group-hover:bg-emerald-500 group-hover:text-white transition-colors shadow-sm">
+              📱
+            </div>
+            <h4 className="font-extrabold text-slate-900 text-lg">Full Visibility</h4>
+            <p className="text-sm text-slate-600 font-medium leading-relaxed">Monitor performance through the mobile app.</p>
           </div>
 
         </div>
