@@ -16,7 +16,7 @@ export const InvestmentModel: React.FC = () => {
                 </svg>
                 <span>INVESTMENT MODEL</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-bold text-[#1C2029] tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-semibold text-[#1C2029] tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
                 Invest Together. Grow Together.
               </h2>
             </div>

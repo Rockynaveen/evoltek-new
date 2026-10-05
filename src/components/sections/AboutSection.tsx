@@ -36,7 +36,7 @@ export const AboutSection: React.FC = () => {
             </div>
 
             {/* Main Headline */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] font-bold text-[#1C2029] tracking-tight leading-[1.2] font-['Wix_Madefor_Display',sans-serif]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] font-semibold text-[#1C2029] tracking-tight leading-[1.2] font-['Wix_Madefor_Display',sans-serif]">
               The Future of EV Charging Starts Here
             </h2>
 

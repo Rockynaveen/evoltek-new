@@ -31,7 +31,7 @@ export const MobileAppSection: React.FC = () => {
             </div>
 
             {/* Main Heading */}
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-white tracking-tight leading-[1.12] font-['Wix_Madefor_Display',sans-serif]">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-semibold text-white tracking-tight leading-[1.12] font-['Wix_Madefor_Display',sans-serif]">
               Get the app made for smart EV drivers
             </h2>
 

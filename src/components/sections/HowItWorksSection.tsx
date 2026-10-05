@@ -62,7 +62,7 @@ export const HowItWorksSection: React.FC = () => {
           </div>
 
           {/* Main Title */}
-          <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-bold text-white tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+          <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-semibold text-white tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
             Simple. fast. reliable.
           </h2>
         </div>

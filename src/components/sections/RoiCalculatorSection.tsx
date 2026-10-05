@@ -52,7 +52,7 @@ export const RoiCalculatorSection: React.FC<RoiCalculatorSectionProps> = ({
                 </svg>
                 <span>INTERACTIVE ESTIMATOR</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-bold text-[#1C2029] tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-semibold text-[#1C2029] tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
                 Calculate Your ROI Potential
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">

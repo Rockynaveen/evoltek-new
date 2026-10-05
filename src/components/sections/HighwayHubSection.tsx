@@ -70,7 +70,7 @@ export const HighwayHubSection: React.FC = () => {
           <div className="absolute left-[6%] right-[6%] bottom-[8.5%] sm:bottom-0 top-auto sm:top-0 sm:left-[5.5%] sm:right-auto sm:my-auto h-fit w-auto sm:w-[48%] max-w-[620px] flex flex-col justify-center p-2 sm:p-8 lg:p-10 pl-2 sm:pl-10 lg:pl-12 z-10 text-white space-y-2 sm:space-y-5 lg:space-y-7">
 
             {/* Headline */}
-            <h2 className="text-[17px] sm:text-3xl md:text-4xl lg:text-[44px] font-bold tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+            <h2 className="text-[17px] sm:text-3xl md:text-4xl lg:text-[44px] font-semibold tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
               <span className="text-white block">Your EV Recharges.</span>
               <span className="text-[#32aa15] block mt-0.5 sm:mt-1">You Recharge Too.</span>
             </h2>

@@ -55,7 +55,7 @@ export const ChargingSolutions: React.FC<ChargingSolutionsProps> = ({ openModalW
             </svg>
             <span>STATION CATEGORIES</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-bold text-[#1C2029] tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+          <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-semibold text-[#1C2029] tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
             Charging Solutions Built for Every Journey
           </h2>
           <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed">

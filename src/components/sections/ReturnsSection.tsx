@@ -21,7 +21,7 @@ export const ReturnsSection: React.FC<ReturnsSectionProps> = ({ openModalWithOpt
             <span>INVESTMENT RETURNS</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
             Choose Your Return Model
           </h2>
 
