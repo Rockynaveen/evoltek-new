@@ -4,6 +4,7 @@ import { HeroSection } from './components/sections/HeroSection';
 import { VisionMissionSection } from './components/sections/VisionMissionSection';
 import { AboutSection } from './components/sections/AboutSection';
 import { InvestmentModel } from './components/sections/InvestmentModel';
+import { ReturnsSection } from './components/sections/ReturnsSection';
 import { WhyChooseEvoltek } from './components/sections/WhyChooseEvoltek';
 import { ChargingSolutions } from './components/sections/ChargingSolutions';
 import { HighwayHubSection } from './components/sections/HighwayHubSection';
@@ -90,6 +91,9 @@ export default function App() {
 
       {/* 6. INVESTMENT & COLLABORATION MODEL SECTION */}
       <InvestmentModel />
+
+      {/* RETURNS MODEL SECTION (CHOOSE YOUR RETURN MODEL) */}
+      <ReturnsSection openModalWithOption={openModalWithOption} />
 
       {/* 7. WORK PROCESS (HOW IT WORKS - Simple. Fast. Reliable.) SECTION */}
       <HowItWorksSection />
