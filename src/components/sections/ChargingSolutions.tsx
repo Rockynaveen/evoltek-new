@@ -41,7 +41,7 @@ const STATIONS: StationType[] = [
 
 export const ChargingSolutions: React.FC<ChargingSolutionsProps> = ({ openModalWithOption }) => {
   return (
-    <section id="charging-stations" className="w-full bg-[#eef7e3] text-slate-900 py-20 sm:py-24 lg:py-28 relative overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]">
+    <section id="charging-stations" className="w-full bg-[#eef7e3] text-slate-900 py-12 relative overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]">
       {/* Background Subtle Ambient Glow Effects */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#32aa15]/10 blur-[140px] pointer-events-none rounded-full" />
 
@@ -63,8 +63,8 @@ export const ChargingSolutions: React.FC<ChargingSolutionsProps> = ({ openModalW
           </p>
         </div>
 
-        {/* Station Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 max-w-6xl mx-auto">
+        {/* Station Cards Grid - 50-50 Full Width */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 w-full">
           {STATIONS.map((station) => (
             <div
               key={station.id}

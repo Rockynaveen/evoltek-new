@@ -7,7 +7,7 @@ interface CtaSectionProps {
 
 export const CtaSection: React.FC<CtaSectionProps> = ({ openModalWithOption }) => {
   return (
-    <section className="w-full bg-[#eef7e3] py-14 sm:py-18 relative">
+    <section className="w-full bg-[#eef7e3] py-12 relative">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative rounded-[32px] overflow-hidden shadow-2xl min-h-[380px] sm:min-h-[420px] flex items-center group">
           {/* Background Card Image */}

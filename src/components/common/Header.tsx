@@ -18,7 +18,7 @@ export const Header: React.FC<HeaderProps> = ({
     <>
       {/* TOP WHITE NAVIGATION HEADER */}
       <header
-        className={`sticky top-0 left-0 right-0 z-50 w-full shrink-0 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200/80 transition-all duration-300 py-1.5 sm:py-2 text-slate-900 rounded-none ${isScrolled ? 'shadow-lg bg-white/98 py-1' : 'py-1.5 sm:py-2'
+        className={`sticky top-0 left-0 right-0 z-50 w-full shrink-0 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200/80 transition-all duration-300 py-0 text-slate-900 rounded-none ${isScrolled ? 'shadow-lg bg-white/98' : ''
           }`}
       >
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between flex-nowrap w-full">

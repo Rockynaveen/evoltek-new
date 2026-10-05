@@ -64,7 +64,7 @@ interface FranchiseSectionProps {
 
 export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWithOption }) => {
   return (
-    <section id="franchise" className="w-full bg-white text-slate-900 py-16 sm:py-20 lg:py-24 relative overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]">
+    <section id="franchise" className="w-full bg-white text-slate-900 py-12 relative overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]">
       {/* Background Subtle Ambient Glow */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-emerald-500/5 blur-[140px] pointer-events-none rounded-full" />
       <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#32aa15]/5 blur-[140px] pointer-events-none rounded-full" />

@@ -3,9 +3,9 @@ import { Eye, Target } from 'lucide-react';
 
 export const VisionMissionSection: React.FC = () => {
   return (
-    <section className="w-full bg-white py-12 sm:py-16 font-['Plus_Jakarta_Sans',sans-serif]">
+    <section className="w-full bg-white py-12 font-['Plus_Jakarta_Sans',sans-serif]">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 w-full">
 
           {/* ================= CARD 1: OUR VISION ================= */}
           <div className="bg-white rounded-[32px] border border-slate-200/90 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden relative group cursor-pointer">

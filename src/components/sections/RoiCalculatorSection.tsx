@@ -35,7 +35,7 @@ export const RoiCalculatorSection: React.FC<RoiCalculatorSectionProps> = ({
   };
 
   return (
-    <section id="roi-calculator" className="w-full bg-[#eef7e3] py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+    <section id="roi-calculator" className="w-full bg-[#eef7e3] py-12 relative overflow-hidden">
       {/* Light Ambient Glow Background */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#32aa15]/5 rounded-full blur-3xl pointer-events-none" />
 

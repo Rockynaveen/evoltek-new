@@ -36,7 +36,7 @@ const STEPS: StepItem[] = [
 
 export const HowItWorksSection: React.FC = () => {
   return (
-    <section id="how-it-works" className="w-full bg-[#0B1320] text-white py-20 sm:py-24 lg:py-28 relative overflow-hidden">
+    <section id="how-it-works" className="w-full bg-[#0B1320] text-white py-12 relative overflow-hidden">
       {/* Background Image - Highly Visible with Dark Tint matching reference screenshot */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 pointer-events-none"

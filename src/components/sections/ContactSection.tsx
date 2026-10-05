@@ -23,7 +23,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   ];
 
   return (
-    <section id="contact" className="w-full bg-[#fcfdfe] py-16 sm:py-20 lg:py-24 border-t border-slate-100">
+    <section id="contact" className="w-full bg-[#fcfdfe] py-12 border-t border-slate-100">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
 

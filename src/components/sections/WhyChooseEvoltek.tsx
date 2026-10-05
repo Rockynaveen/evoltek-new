@@ -2,7 +2,7 @@ import React from 'react';
 
 export const WhyChooseEvoltek: React.FC = () => {
   return (
-    <section id="why-choose-evoltek" className="w-full bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto overflow-hidden">
+    <section id="why-choose-evoltek" className="w-full bg-white py-12 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto overflow-hidden">
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-20">
         <div className="inline-flex items-center gap-2.5 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">

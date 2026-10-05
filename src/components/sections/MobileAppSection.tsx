@@ -72,9 +72,11 @@ export const MobileAppSection: React.FC = () => {
 
           </div>
 
-          {/* CENTER COLUMN: DUAL PHONES TOUCHING THE BOTTOM */}
-          <div className="lg:col-span-5 flex items-end justify-center self-end p-0 m-0 leading-none">
-            <div className="w-full max-w-[400px] sm:max-w-[460px] lg:max-w-[490px] flex items-end justify-center p-0 m-0 leading-none">
+          {/* CENTER & RIGHT VISUAL CLUSTER: PHONES + ATTACHED MAN & APP STORE CARD */}
+          <div className="lg:col-span-8 flex flex-col md:flex-row items-end justify-start lg:justify-start relative">
+            
+            {/* 1. Dual Phones (kept in place on the left of this visual area) */}
+            <div className="w-full max-w-[380px] sm:max-w-[440px] lg:max-w-[480px] shrink-0 flex items-end justify-center p-0 m-0 leading-none z-10">
               <img
                 src="/mobile_app_phones.png"
                 alt="Evoltek Mobile App Charging Interface"
@@ -82,44 +84,45 @@ export const MobileAppSection: React.FC = () => {
                 loading="lazy"
               />
             </div>
-          </div>
 
-          {/* RIGHT COLUMN: STORE DOWNLOAD CARD (TOP) & MAN TOUCHING THE BOTTOM */}
-          <div className="lg:col-span-3 flex flex-col justify-between items-center lg:items-end self-stretch pt-2">
-            
-            {/* Vibrant Green Store Download Card (Top Right) */}
-            <div className="w-full max-w-[210px] bg-[#38c838] p-4 sm:p-5 rounded-3xl shadow-2xl flex flex-col gap-2.5 z-20 border border-white/20 mb-4 lg:mb-0">
+            {/* 2. Man & App Store Card Group (brought to the left, tightly attached to the mobile phones) */}
+            <div className="flex flex-col justify-between items-start self-stretch -ml-6 sm:-ml-10 lg:-ml-14 z-20 shrink-0">
               
-              {/* App Store Pill Button */}
-              <a
-                href="#download-ios"
-                className="w-full bg-[#0F172A] hover:bg-black text-white px-4 py-2.5 rounded-xl flex items-center gap-2.5 transition-all duration-200 group shadow-md"
-              >
-                <Apple className="w-5 h-5 fill-current text-white shrink-0 group-hover:scale-105 transition-transform" />
-                <span className="text-xs font-bold text-white tracking-wide">App Store</span>
-              </a>
+              {/* Vibrant Green Store Download Card (Attached directly above the man) */}
+              <div className="w-full max-w-[200px] sm:max-w-[210px] bg-[#38c838] p-3.5 sm:p-4 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col gap-2 border border-white/20 mb-3 sm:mb-4">
+                
+                {/* App Store Pill Button */}
+                <a
+                  href="#download-ios"
+                  className="w-full bg-[#0F172A] hover:bg-black text-white px-3.5 py-2 rounded-xl flex items-center gap-2.5 transition-all duration-200 group shadow-md"
+                >
+                  <Apple className="w-4 h-4 fill-current text-white shrink-0 group-hover:scale-105 transition-transform" />
+                  <span className="text-xs font-bold text-white tracking-wide">App Store</span>
+                </a>
 
-              {/* Google Play Pill Button */}
-              <a
-                href="#download-android"
-                className="w-full bg-[#0F172A] hover:bg-black text-white px-4 py-2.5 rounded-xl flex items-center gap-2.5 transition-all duration-200 group shadow-md"
-              >
-                <svg className="w-4 h-4 fill-current text-white shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 24 24">
-                  <path d="M3 20.5v-17c0-.55.45-1 1-1h.24l10.22 8.76L4.24 20.02H4c-.55 0-1-.45-1-.98zm12.92-7.81L18.4 14.1l3.07-1.78c.7-.4.7-1.05 0-1.45L18.4 9.1l-2.48 1.44 2.48 1.43v.72zm-1.46.85L4.72 21.84c.34.16.74.12 1.05-.06l10.15-5.91-1.46-.84zm0-3.08l1.46-.84-10.15-5.9c-.31-.18-.71-.22-1.05-.06l9.74 8.35.7.45z" />
-                </svg>
-                <span className="text-xs font-bold text-white tracking-wide">Google Play</span>
-              </a>
+                {/* Google Play Pill Button */}
+                <a
+                  href="#download-android"
+                  className="w-full bg-[#0F172A] hover:bg-black text-white px-3.5 py-2 rounded-xl flex items-center gap-2.5 transition-all duration-200 group shadow-md"
+                >
+                  <svg className="w-3.5 h-3.5 fill-current text-white shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 24 24">
+                    <path d="M3 20.5v-17c0-.55.45-1 1-1h.24l10.22 8.76L4.24 20.02H4c-.55 0-1-.45-1-.98zm12.92-7.81L18.4 14.1l3.07-1.78c.7-.4.7-1.05 0-1.45L18.4 9.1l-2.48 1.44 2.48 1.43v.72zm-1.46.85L4.72 21.84c.34.16.74.12 1.05-.06l10.15-5.91-1.46-.84zm0-3.08l1.46-.84-10.15-5.9c-.31-.18-.71-.22-1.05-.06l9.74 8.35.7.45z" />
+                  </svg>
+                  <span className="text-xs font-bold text-white tracking-wide">Google Play</span>
+                </a>
 
-            </div>
+              </div>
 
-            {/* Smiling Happy User Looking at Smartphone (Touching Bottom) */}
-            <div className="w-full flex items-end justify-center lg:justify-end mt-auto p-0 m-0 leading-none">
-              <img
-                src="/happy_ev_user.png"
-                alt="Excited EV User Celebrating with Mobile App"
-                className="w-auto h-[260px] sm:h-[300px] lg:h-[340px] block object-contain object-bottom drop-shadow-2xl select-none mb-0 pb-0"
-                loading="lazy"
-              />
+              {/* Smiling Happy User Looking at Smartphone (Attached to the phones, touching bottom) */}
+              <div className="flex items-end justify-start mt-auto p-0 m-0 leading-none">
+                <img
+                  src="/happy_ev_user.png"
+                  alt="Excited EV User Celebrating with Mobile App"
+                  className="w-auto h-[260px] sm:h-[300px] lg:h-[340px] block object-contain object-bottom drop-shadow-2xl select-none mb-0 pb-0"
+                  loading="lazy"
+                />
+              </div>
+
             </div>
 
           </div>
