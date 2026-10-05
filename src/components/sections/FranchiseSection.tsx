@@ -128,22 +128,19 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
             {FRANCHISE_BENEFITS.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-2xl border border-slate-200/85 hover:border-[#32aa15] p-4.5 sm:p-5 shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-3.5 sm:gap-4 group hover:-translate-y-0.5 cursor-default relative overflow-hidden"
+                className="bg-white rounded-2xl border border-slate-200/85 p-4.5 sm:p-5 shadow-sm flex items-center gap-3.5 sm:gap-4 relative overflow-hidden"
               >
-                {/* Light Green Diagonal Sweep: Top-Left to Bottom-Right */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#eef7e3] via-[#e4f6d3] to-[#d8f2c2]/80 origin-top-left scale-0 group-hover:scale-100 transition-transform duration-500 ease-out pointer-events-none rounded-2xl z-0" />
-
                 {/* Number Badge */}
-                <div className="w-10 h-10 rounded-full bg-[#32aa15] text-white font-bold flex items-center justify-center shrink-0 text-sm shadow-sm group-hover:scale-105 transition-transform duration-300 font-['Wix_Madefor_Display',sans-serif] relative z-10">
+                <div className="w-10 h-10 rounded-full bg-[#32aa15] text-white font-bold flex items-center justify-center shrink-0 text-sm shadow-sm font-['Wix_Madefor_Display',sans-serif]">
                   {item.number}
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 min-w-0 relative z-10">
-                  <h3 className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#1c640e] transition-colors leading-snug font-['Wix_Madefor_Display',sans-serif]">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm sm:text-base font-bold text-slate-900 leading-snug font-['Wix_Madefor_Display',sans-serif]">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-slate-500 group-hover:text-slate-700 font-normal leading-relaxed mt-0.5 transition-colors">
+                  <p className="text-xs text-slate-500 font-normal leading-relaxed mt-0.5">
                     {item.description}
                   </p>
                 </div>
