@@ -9,6 +9,7 @@ import { ChargingSolutions } from './components/sections/ChargingSolutions';
 import { HighwayHubSection } from './components/sections/HighwayHubSection';
 import { MobileAppSection } from './components/sections/MobileAppSection';
 import { HowItWorksSection } from './components/sections/HowItWorksSection';
+import { FranchiseSection } from './components/sections/FranchiseSection';
 import { RoiCalculatorSection } from './components/sections/RoiCalculatorSection';
 import { CtaSection } from './components/sections/CtaSection';
 import { Footer } from './components/common/Footer';
@@ -92,6 +93,9 @@ export default function App() {
 
       {/* 7. WORK PROCESS (HOW IT WORKS - Simple. Fast. Reliable.) SECTION */}
       <HowItWorksSection />
+
+      {/* 8. FRANCHISE OPPORTUNITY (BUILD YOUR OWN EV CHARGING BUSINESS) */}
+      <FranchiseSection openModalWithOption={openModalWithOption} />
 
       {/* HIGHWAY HUBS & RECHARGE EXPERIENCE SECTION */}
       <HighwayHubSection />
