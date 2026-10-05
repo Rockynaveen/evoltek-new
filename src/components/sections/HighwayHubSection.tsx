@@ -23,17 +23,17 @@ const AMENITIES = [
   },
   {
     id: 'parks',
-    title: 'Parks &\nRelaxation',
+    title: 'Relaxation',
     icon: <Trees className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-[#32aa15]" />
   },
   {
     id: 'rooms',
-    title: 'Rooms /\nRest Facilities',
+    title: 'Rooms ',
     icon: <Bed className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-[#32aa15]" />
   },
   {
     id: 'lounges',
-    title: 'Comfortable\nLounges',
+    title: 'Lounges',
     icon: <Coffee className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-[#32aa15]" />
   }
 ];
@@ -42,10 +42,10 @@ export const HighwayHubSection: React.FC = () => {
   return (
     <section id="highway-hubs" className="w-full bg-white py-8 sm:py-12 lg:py-16">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Full Image Banner Container */}
         <div className="relative overflow-hidden rounded-[24px] sm:rounded-[36px] shadow-2xl border border-slate-200/80 bg-slate-950 w-full group">
-          
+
           {/* Background Image: public/ev hub section.png */}
           <img
             src="/ev hub section.png"
