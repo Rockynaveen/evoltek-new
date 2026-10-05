@@ -16,7 +16,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   openModalWithOption
 }) => {
   return (
-    <div className="min-h-[calc(100vh-68px)] sm:h-[calc(100vh-76px)] sm:min-h-[560px] flex flex-col justify-between p-0 m-0 bg-[#171E23]">
+    <div className="h-[480px] xs:h-[510px] sm:h-[calc(100vh-76px)] sm:min-h-[560px] flex flex-col justify-between p-0 m-0 bg-[#171E23]">
       {/* HERO SECTION BLOCK */}
       <div id="home" className="flex-1 min-h-0 w-full relative flex flex-col justify-between rounded-none overflow-hidden bg-[#171E23] text-white shadow-xl">
 
@@ -87,26 +87,26 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
 
               {/* Action Button Row */}
-              <div className="pt-1 sm:pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-5 w-full max-w-sm sm:max-w-none">
+              <div className="pt-1 sm:pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-4 w-full max-w-[280px] xs:max-w-[320px] sm:max-w-none">
                 {/* Button 1: Green Pill (Invest With Evoltek) */}
                 <a
                   href="#investment"
-                  className="border-2 border-[#32aa15] bg-[#32aa15] hover:bg-transparent text-white hover:text-[#32aa15] font-bold text-xs sm:text-base py-2 sm:py-3 px-4 sm:pl-7 sm:pr-2.5 rounded-full flex items-center justify-between sm:justify-start gap-2 sm:gap-4 shadow-xl shadow-[#32aa15]/30 hover:shadow-none transition-all duration-300 group cursor-pointer active:scale-95 w-full sm:w-auto"
+                  className="border-2 border-[#32aa15] bg-[#32aa15] hover:bg-transparent text-white hover:text-[#32aa15] font-bold text-[11px] sm:text-sm py-1.5 sm:py-2 px-3.5 sm:pl-5 sm:pr-2 rounded-full flex items-center justify-between sm:justify-start gap-2 sm:gap-3 shadow-lg shadow-[#32aa15]/25 hover:shadow-none transition-all duration-300 group cursor-pointer active:scale-95 w-full sm:w-auto"
                 >
                   <span className="whitespace-nowrap">Invest With Evoltek</span>
-                  <div className="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-white text-[#32aa15] group-hover:bg-[#32aa15] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm">
-                    <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.2] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <div className="w-6 h-6 sm:w-7.5 sm:h-7.5 rounded-full bg-white text-[#32aa15] group-hover:bg-[#32aa15] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm">
+                    <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2.2] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </div>
                 </a>
 
                 {/* Button 2: Pure White Pill (Explore Charging Network) */}
                 <button
                   onClick={() => openModalWithOption('Become a Partner')}
-                  className="border-2 border-white hover:border-[#32aa15] bg-white hover:bg-transparent text-[#0F172A] hover:text-[#32aa15] font-bold text-xs sm:text-base py-2 sm:py-3 px-4 sm:pl-7 sm:pr-2.5 rounded-full flex items-center justify-between sm:justify-start gap-2 sm:gap-4 shadow-xl hover:shadow-none transition-all duration-300 group cursor-pointer active:scale-95 w-full sm:w-auto"
+                  className="border-2 border-white hover:border-[#32aa15] bg-white hover:bg-transparent text-[#0F172A] hover:text-[#32aa15] font-bold text-[11px] sm:text-sm py-1.5 sm:py-2 px-3.5 sm:pl-5 sm:pr-2 rounded-full flex items-center justify-between sm:justify-start gap-2 sm:gap-3 shadow-lg hover:shadow-none transition-all duration-300 group cursor-pointer active:scale-95 w-full sm:w-auto"
                 >
                   <span className="whitespace-nowrap">Explore Charging Network</span>
-                  <div className="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-[#32aa15] text-white group-hover:bg-[#32aa15] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm">
-                    <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.2] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <div className="w-6 h-6 sm:w-7.5 sm:h-7.5 rounded-full bg-[#32aa15] text-white group-hover:bg-[#32aa15] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm">
+                    <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2.2] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </div>
                 </button>
               </div>
