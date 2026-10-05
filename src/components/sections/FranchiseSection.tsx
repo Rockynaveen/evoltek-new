@@ -128,7 +128,7 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
             {FRANCHISE_BENEFITS.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-2xl border border-slate-200/85 p-4.5 sm:p-5 shadow-sm flex items-center gap-3.5 sm:gap-4 relative overflow-hidden"
+                className="bg-white rounded-2xl border border-slate-200/85 p-4.5 sm:p-5 shadow-sm hover:shadow-md transition-shadow duration-300 flex items-center gap-3.5 sm:gap-4 relative overflow-hidden"
               >
                 {/* Number Badge */}
                 <div className="w-10 h-10 rounded-full bg-[#32aa15] text-white font-bold flex items-center justify-center shrink-0 text-sm shadow-sm font-['Wix_Madefor_Display',sans-serif]">

@@ -41,7 +41,7 @@ const STATIONS: StationType[] = [
 
 export const ChargingSolutions: React.FC<ChargingSolutionsProps> = ({ openModalWithOption }) => {
   return (
-    <section id="charging-stations" className="w-full bg-[#eef7e3] text-slate-900 py-12 relative overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]">
+    <section id="charging-stations" className="w-full bg-white text-slate-900 py-12 relative overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]">
       {/* Background Subtle Ambient Glow Effects */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#32aa15]/10 blur-[140px] pointer-events-none rounded-full" />
 

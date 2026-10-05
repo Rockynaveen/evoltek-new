@@ -49,8 +49,6 @@ export default function App() {
     agreement: 5
   });
 
-
-
   const openModalWithOption = (optionTitle: string) => {
     setModalOption(optionTitle);
     setPartnerModalOpen(true);
@@ -59,7 +57,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-[#0F172A] font-['Plus_Jakarta_Sans',sans-serif] p-0 relative">
 
-      {/* TOP STICKY NAVIGATION BAR */}
+      {/* 01. HEADER */}
       <Header
         isScrolled={isScrolled}
         mobileMenuOpen={mobileMenuOpen}
@@ -67,7 +65,7 @@ export default function App() {
         openModalWithOption={openModalWithOption}
       />
 
-      {/* 1. TOP FOLD (HERO SECTION) */}
+      {/* 02. HERO */}
       <HeroSection
         isScrolled={isScrolled}
         mobileMenuOpen={mobileMenuOpen}
@@ -77,50 +75,44 @@ export default function App() {
         openModalWithOption={openModalWithOption}
       />
 
-      {/* 2. ABOUT EVOLTEK SECTION */}
+      {/* 03. ABOUT + VISION */}
       <AboutSection />
-
-      {/* 3. VISION & MISSION CARDS SECTION */}
       <VisionMissionSection />
 
-      {/* 4. CHARGING SOLUTIONS (STATION CATEGORIES) SECTION */}
-      <ChargingSolutions openModalWithOption={openModalWithOption} />
-
-      {/* 5. WHY CHOOSE EVOLTEK SECTION */}
-      <WhyChooseEvoltek />
-
-      {/* 6. INVESTMENT & COLLABORATION MODEL SECTION */}
+      {/* 04. 50/50 INVESTMENT */}
       <InvestmentModel />
 
-      {/* RETURNS MODEL SECTION (CHOOSE YOUR RETURN MODEL) */}
-      <ReturnsSection openModalWithOption={openModalWithOption} />
+      {/* 05. WHY EVOLTEK / SMARTER DIFFERENCE */}
+      <WhyChooseEvoltek />
 
-      {/* 7. WORK PROCESS (HOW IT WORKS - Simple. Fast. Reliable.) SECTION */}
-      <HowItWorksSection />
-
-      {/* 8. FRANCHISE OPPORTUNITY (BUILD YOUR OWN EV CHARGING BUSINESS) */}
-      <FranchiseSection openModalWithOption={openModalWithOption} />
-
-      {/* HIGHWAY HUBS & RECHARGE EXPERIENCE SECTION */}
+      {/* 06. HIGHWAY EV HUB */}
       <HighwayHubSection />
 
-      {/* MOBILE APP SHOWCASE SECTION */}
-      <MobileAppSection />
+      {/* 07. CHARGING SOLUTIONS */}
+      <ChargingSolutions openModalWithOption={openModalWithOption} />
 
-      {/* 5. INTERACTIVE ROI CALCULATOR SECTION */}
+      {/* 08. INVESTMENT RETURNS */}
+      <ReturnsSection openModalWithOption={openModalWithOption} />
+
+      {/* 09. HOW IT WORKS + ROI CALCULATOR */}
+      <HowItWorksSection />
       <RoiCalculatorSection
         roiState={roiState}
         setRoiState={setRoiState}
         openModalWithOption={openModalWithOption}
       />
+      <FranchiseSection openModalWithOption={openModalWithOption} />
 
-      {/* 6. CALL TO ACTION BANNER SECTION */}
+      {/* 10. APP + FRANCHISE */}
+      <MobileAppSection />
+
+      {/* 11. CTA BANNER */}
       <CtaSection openModalWithOption={openModalWithOption} />
 
-      {/* 7. FOOTER */}
+      {/* 12. FOOTER */}
       <Footer openModalWithOption={openModalWithOption} />
 
-      {/* 8. PARTNER / ENQUIRY MODAL */}
+      {/* PARTNER / ENQUIRY MODAL */}
       <PartnerModal
         partnerModalOpen={partnerModalOpen}
         setPartnerModalOpen={setPartnerModalOpen}

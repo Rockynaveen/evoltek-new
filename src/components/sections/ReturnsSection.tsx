@@ -7,7 +7,7 @@ interface ReturnsSectionProps {
 
 export const ReturnsSection: React.FC<ReturnsSectionProps> = ({ openModalWithOption }) => {
   return (
-    <section id="returns" className="w-full bg-slate-50/70 py-16 sm:py-20 lg:py-24 relative overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]">
+    <section id="returns" className="w-full bg-white py-12 relative overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]">
       {/* Background Decorative Blur Orbs */}
       <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-[#32aa15]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-10 w-[400px] h-[300px] bg-emerald-300/20 rounded-full blur-3xl pointer-events-none" />

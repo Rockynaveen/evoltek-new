@@ -3,18 +3,36 @@ import { Mail, PhoneCall, Building2, Send, CheckCircle2 } from 'lucide-react';
 import type { ContactFormData } from '../../types';
 
 interface ContactSectionProps {
-  contactForm: ContactFormData;
-  setContactForm: React.Dispatch<React.SetStateAction<ContactFormData>>;
-  contactSubmitted: boolean;
-  handleContactSubmit: (e: React.FormEvent) => void;
+  contactForm?: ContactFormData;
+  setContactForm?: React.Dispatch<React.SetStateAction<ContactFormData>>;
+  contactSubmitted?: boolean;
+  handleContactSubmit?: (e: React.FormEvent) => void;
 }
 
 export const ContactSection: React.FC<ContactSectionProps> = ({
-  contactForm,
-  setContactForm,
-  contactSubmitted,
-  handleContactSubmit
+  contactForm: propForm,
+  setContactForm: propSetForm,
+  contactSubmitted: propSubmitted,
+  handleContactSubmit: propHandleSubmit
 }) => {
+  const [internalForm, setInternalForm] = React.useState<ContactFormData>({
+    name: '',
+    phone: '',
+    email: '',
+    location: '',
+    interest: 'Investment',
+    message: ''
+  });
+  const [internalSubmitted, setInternalSubmitted] = React.useState(false);
+
+  const contactForm = propForm || internalForm;
+  const setContactForm = propSetForm || setInternalForm;
+  const contactSubmitted = propSubmitted !== undefined ? propSubmitted : internalSubmitted;
+  const handleContactSubmit = propHandleSubmit || ((e: React.FormEvent) => {
+    e.preventDefault();
+    setInternalSubmitted(true);
+  });
+
   const interestOptions = [
     { id: 'Investment', label: 'Investment' },
     { id: 'Franchise', label: 'Franchise' },
@@ -23,7 +41,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   ];
 
   return (
-    <section id="contact" className="w-full bg-[#fcfdfe] py-12 border-t border-slate-100">
+    <section id="contact" className="w-full bg-white py-12 border-t border-slate-100">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
 
