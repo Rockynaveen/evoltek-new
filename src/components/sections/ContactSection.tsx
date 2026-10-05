@@ -47,11 +47,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
           {/* Left Column: Contact Info & Value Prop */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-semibold text-[#1C2029] tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+            <div className="space-y-2">
+              <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-semibold text-[#1C2029] tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
                 Let's Power the Future Together
               </h2>
-              <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
+              <p className="text-slate-600 text-base sm:text-lg leading-snug font-normal">
                 Connect with the Evoltek team to explore 50/50 joint investment models, franchise setups, EV charging station deployment, or land partnership opportunities across India.
               </p>
             </div>

@@ -45,17 +45,17 @@ export const RoiCalculatorSection: React.FC<RoiCalculatorSectionProps> = ({
 
           {/* Left Column: Controls */}
           <div className="lg:col-span-6 space-y-8">
-            <div className="space-y-3">
+            <div className="space-y-1.5">
               <div className="inline-flex items-center gap-2.5 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
                 <svg className="w-4 h-4 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                 </svg>
                 <span>INTERACTIVE ESTIMATOR</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-semibold text-[#1C2029] tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+              <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-semibold text-[#1C2029] tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
                 Calculate Your ROI Potential
               </h2>
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+              <p className="text-slate-600 text-sm sm:text-base leading-snug">
                 Estimate your monthly and overall returns based on project scale and agreement duration.
               </p>
             </div>

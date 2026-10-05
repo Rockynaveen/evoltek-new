@@ -23,10 +23,10 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ openModalWithOption }) =
 
           {/* Left Content Area */}
           <div className="relative z-20 p-8 sm:p-12 lg:p-16 max-w-3xl">
-            <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-semibold text-white tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+            <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-semibold text-white tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
               Ready to Invest in the Future of Mobility?
             </h2>
-            <p className="text-slate-200 text-base sm:text-lg max-w-2xl font-medium leading-relaxed mt-4 mb-8">
+            <p className="text-slate-200 text-base sm:text-lg max-w-2xl font-medium leading-snug mt-2 mb-6">
               Join Evoltek and become part of the next generation of EV charging infrastructure.
             </p>
 

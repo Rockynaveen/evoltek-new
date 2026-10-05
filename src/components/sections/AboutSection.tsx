@@ -23,7 +23,7 @@ export const AboutSection: React.FC = () => {
           </div>
 
           {/* Right Column: Content & 4 Features */}
-          <div className="lg:col-span-7 flex flex-col justify-center space-y-5 sm:space-y-6 text-left">
+          <div className="lg:col-span-7 flex flex-col justify-center space-y-2 sm:space-y-3 text-left">
 
             {/* Tagline Badge */}
             <div className="flex items-center gap-2.5">
@@ -36,12 +36,12 @@ export const AboutSection: React.FC = () => {
             </div>
 
             {/* Main Headline */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] font-semibold text-[#1C2029] tracking-tight leading-[1.2] font-['Wix_Madefor_Display',sans-serif]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] font-semibold text-[#1C2029] tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
               The Future of EV Charging Starts Here
             </h2>
 
             {/* Sub-paragraph */}
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal max-w-2xl">
+            <p className="text-sm sm:text-base text-slate-600 leading-snug font-normal max-w-2xl">
               Evoltek is a new-generation EV charging station concept designed to build a convenient, reliable and scalable charging network across cities and highways.
             </p>
 
@@ -50,10 +50,10 @@ export const AboutSection: React.FC = () => {
 
               {/* Item 1: Fast Charging */}
               <div className="flex items-start gap-4 sm:gap-4.5 group cursor-pointer">
-                <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center [perspective:800px]">
-                  <div className="absolute right-0 bottom-0 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center [perspective:800px]">
+                  <div className="absolute right-0 bottom-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
                   <div className="relative z-10 w-full h-full flex items-center justify-center transition-transform duration-700 ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateY(360deg)]">
-                    <svg className="w-9 h-9 sm:w-10 sm:h-10 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="w-11 h-11 sm:w-13 sm:h-13 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
                       <rect x="8" y="41" width="22" height="3" rx="1.5" fill="white" stroke="currentColor" strokeWidth="2.3" />
                       <rect x="10" y="8" width="18" height="33" rx="2.5" fill="white" stroke="currentColor" strokeWidth="2.3" />
                       <rect x="13" y="11" width="12" height="9" rx="1" strokeWidth="2" />
@@ -83,10 +83,10 @@ export const AboutSection: React.FC = () => {
 
               {/* Item 2: Strategic Locations */}
               <div className="flex items-start gap-4 sm:gap-4.5 group cursor-pointer">
-                <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center [perspective:800px]">
-                  <div className="absolute right-0 bottom-0 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center [perspective:800px]">
+                  <div className="absolute right-0 bottom-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
                   <div className="relative z-10 w-full h-full flex items-center justify-center transition-transform duration-700 ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateY(360deg)]">
-                    <svg className="w-9 h-9 sm:w-10 sm:h-10 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="w-11 h-11 sm:w-13 sm:h-13 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M22 6 C15.5 6 10 11.5 10 18 C10 27 22 37 22 37 C22 37 34 27 34 18 C34 11.5 28.5 6 22 6 Z" fill="white" stroke="currentColor" strokeWidth="2.3" />
                       <path d="M23 11 L19 17 L24 17 L21 23" strokeWidth="2" strokeLinejoin="miter" />
                       <ellipse cx="22" cy="42" rx="10" ry="3.2" strokeWidth="2.1" />
@@ -108,10 +108,10 @@ export const AboutSection: React.FC = () => {
 
               {/* Item 3: Smart Digital Experience */}
               <div className="flex items-start gap-4 sm:gap-4.5 group cursor-pointer">
-                <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center [perspective:800px]">
-                  <div className="absolute right-0 bottom-0 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center [perspective:800px]">
+                  <div className="absolute right-0 bottom-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
                   <div className="relative z-10 w-full h-full flex items-center justify-center transition-transform duration-700 ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateY(360deg)]">
-                    <svg className="w-9 h-9 sm:w-10 sm:h-10 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="w-11 h-11 sm:w-13 sm:h-13 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M28 19 L35 19 C38 19 39.5 20.5 40.5 22.5 L43 25" />
                       <path d="M40 22 C41.5 22 42.5 23 42.5 24 C42.5 25 41.5 26 40 26" />
                       <rect x="38" y="27" width="4.5" height="2.5" rx="1" />
@@ -139,10 +139,10 @@ export const AboutSection: React.FC = () => {
 
               {/* Item 4: Scalable Infrastructure */}
               <div className="flex items-start gap-4 sm:gap-4.5 group cursor-pointer">
-                <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center [perspective:800px]">
-                  <div className="absolute right-0 bottom-0 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center [perspective:800px]">
+                  <div className="absolute right-0 bottom-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
                   <div className="relative z-10 w-full h-full flex items-center justify-center transition-transform duration-700 ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateY(360deg)]">
-                    <svg className="w-9 h-9 sm:w-10 sm:h-10 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="w-11 h-11 sm:w-13 sm:h-13 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M13.5 9 C13.5 7.5 14.5 7 16 7 L18 7 C19.5 7 20.5 7.5 20.5 9" strokeWidth="2.1" />
                       <rect x="9" y="9" width="18" height="32" rx="3.5" fill="white" stroke="currentColor" strokeWidth="2.3" />
                       <path d="M19 18 L15.5 24 L20.5 24 L17 30" strokeWidth="2" strokeLinejoin="miter" />

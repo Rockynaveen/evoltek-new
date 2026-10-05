@@ -22,7 +22,7 @@ export const MobileAppSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-end">
 
           {/* LEFT COLUMN: BADGE, HEADLINE & 2 FLOATING STAT CARDS */}
-          <div className="lg:col-span-4 space-y-5 sm:space-y-6 pb-8 sm:pb-12">
+          <div className="lg:col-span-4 space-y-2 sm:space-y-3 pb-8 sm:pb-12">
             
             {/* Badge */}
             <div className="inline-flex items-center gap-2 text-[#32aa15] text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em]">
@@ -31,7 +31,7 @@ export const MobileAppSection: React.FC = () => {
             </div>
 
             {/* Main Heading */}
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-semibold text-white tracking-tight leading-[1.12] font-['Wix_Madefor_Display',sans-serif]">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-semibold text-white tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
               Get the app made for smart EV drivers
             </h2>
 

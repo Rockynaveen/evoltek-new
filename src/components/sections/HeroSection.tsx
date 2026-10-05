@@ -63,7 +63,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
 
               {/* Main Headline */}
-              <h1 className="text-[30px] xs:text-[36px] sm:text-5xl md:text-6xl lg:text-[68px] font-extrabold text-white leading-[1.05] sm:leading-[0.98] lg:leading-[1.0] tracking-tight font-['Plus_Jakarta_Sans'] group">
+              <h1 className="text-[30px] xs:text-[36px] sm:text-5xl md:text-6xl lg:text-[68px] font-bold text-white leading-[0.92] sm:leading-[0.94] lg:leading-[0.96] tracking-tight font-['Plus_Jakarta_Sans'] group">
                 Powering <br className="sm:hidden" />
                 Every <br />
                 <span className="text-[#32aa15] group-hover:text-white transition-colors duration-300">

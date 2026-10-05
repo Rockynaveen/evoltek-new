@@ -49,10 +49,10 @@ export const HowItWorksSection: React.FC = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#38c838]/10 blur-[160px] pointer-events-none rounded-full" />
 
       {/* Main Container */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16 sm:space-y-20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-12">
         
         {/* Section Header */}
-        <div className="text-center space-y-4 max-w-3xl mx-auto">
+        <div className="text-center space-y-1.5 max-w-3xl mx-auto">
           {/* Subtitle Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#32aa15]/10 border border-[#32aa15]/30 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
             <svg className="w-4 h-4 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
@@ -62,7 +62,7 @@ export const HowItWorksSection: React.FC = () => {
           </div>
 
           {/* Main Title */}
-          <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-semibold text-white tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+          <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-semibold text-white tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
             Simple. fast. reliable.
           </h2>
         </div>

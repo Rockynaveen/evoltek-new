@@ -15,17 +15,17 @@ export const ReturnsSection: React.FC<ReturnsSectionProps> = ({ openModalWithOpt
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14 sm:mb-16">
+        <div className="text-center max-w-3xl mx-auto space-y-2 mb-8 sm:mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#32aa15]/10 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
             <Zap className="w-4 h-4 fill-[#32aa15]" />
             <span>INVESTMENT RETURNS</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
             Choose Your Return Model
           </h2>
 
-          <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto font-medium">
+          <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto font-medium leading-snug">
             Tailored investment structures designed to maximize yield with 50/50 shared capital and hassle-free EVOLTEK management.
           </p>
         </div>
