@@ -5,6 +5,11 @@ export const HERO_SLIDES = [
   '/hero 2.jpg'
 ];
 
+export const MOBILE_HERO_SLIDES = [
+  '/mobile hero 1.png',
+  '/mobile hero 2.png'
+];
+
 export const INVESTMENT_BENEFITS: InvestmentBenefit[] = [
   {
     id: 'shared-investment',
