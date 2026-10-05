@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
 interface FranchiseBenefit {
@@ -65,15 +64,15 @@ interface FranchiseSectionProps {
 
 export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWithOption }) => {
   return (
-    <section id="franchise" className="w-full bg-white text-slate-900 py-16 sm:py-20 lg:py-24 relative overflow-hidden">
-      {/* Background Subtle Gradient Accents */}
-      <div className="absolute top-1/4 -left-48 w-96 h-96 bg-emerald-100/40 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-80 h-80 bg-green-50/50 rounded-full blur-3xl pointer-events-none" />
+    <section id="franchise" className="w-full bg-white text-slate-900 py-16 sm:py-20 lg:py-24 relative overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]">
+      {/* Background Subtle Ambient Glow */}
+      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-emerald-500/5 blur-[140px] pointer-events-none rounded-full" />
+      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#32aa15]/5 blur-[140px] pointer-events-none rounded-full" />
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-
-        {/* Section Header (Centered above cards like other sections) */}
-        <div className="text-center max-w-4xl mx-auto space-y-4 mb-12 sm:mb-16">
+        
+        {/* Section Header - Exactly matches the remaining sections */}
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-2.5 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
             <svg className="w-4 h-4 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
               <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
@@ -85,66 +84,66 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
           </h2>
         </div>
 
-        {/* Content Grid: Left Image & CTA | Right 2-per-row Benefit Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center">
+        {/* Content Layout: Left Graphic & CTA | Right 2 Cards Per Row Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-stretch">
           
-          {/* Left Column: Evoltek Highway EV Charging Station Hub & CTA Button */}
-          <div className="lg:col-span-5 flex flex-col items-center sm:items-start space-y-6">
-            <div className="w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl shadow-slate-200/80 border border-slate-200/90 relative group">
-              <img
-                src="/evoltek_franchise_hub.jpg"
-                alt="Evoltek Highway EV Charging Station Hub"
-                className="w-full h-[280px] sm:h-[340px] md:h-[400px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
-              {/* Subtle Gradient & Status Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 pointer-events-none" />
-              <div className="absolute bottom-4 left-4 sm:bottom-5 sm:left-5 right-4 z-10 flex items-center justify-between">
-                <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white text-xs font-bold tracking-wide">
-                  <span className="w-2 h-2 rounded-full bg-[#32aa15] animate-pulse" />
-                  Turnkey Evoltek EV Hub
-                </span>
-                <span className="text-[11px] font-semibold text-white/90 bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-lg border border-white/10 hidden sm:inline-block">
-                  Live Highway Station
-                </span>
+          {/* Left Column: Top Description & CTA Button | Bottom-Anchored EV Car Image */}
+          <div className="lg:col-span-5 flex flex-col justify-between items-center text-center lg:text-left lg:items-start h-full">
+            
+            {/* Top Content Block: Description & CTA Button (Starts at same point as Cards) */}
+            <div className="space-y-4 sm:space-y-5 w-full">
+              {/* Description Text */}
+              <p className="text-slate-600 text-sm sm:text-base font-normal leading-relaxed max-w-md">
+                Partner with India&apos;s fastest-growing EV charging network. Co-invest with Evoltek and build a high-yielding, turnkey charging hub with zero operational friction.
+              </p>
+
+              {/* Pill CTA Button */}
+              <div>
+                <button
+                  onClick={() => openModalWithOption('Franchise Opportunity')}
+                  className="inline-flex items-center gap-3 bg-[#32aa15] hover:bg-[#288a11] text-white font-bold text-sm sm:text-base px-7 py-3 rounded-full shadow-lg shadow-[#32aa15]/25 hover:shadow-xl hover:shadow-[#32aa15]/30 transition-all duration-300 group cursor-pointer active:scale-95"
+                >
+                  <span>Apply for Franchise</span>
+                  <div className="w-7 h-7 rounded-full bg-white text-[#32aa15] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <ArrowUpRight className="w-4 h-4 stroke-[3] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </div>
+                </button>
               </div>
             </div>
 
-            {/* Pill CTA Button */}
-            <div className="w-full flex justify-center sm:justify-start">
-              <button
-                onClick={() => openModalWithOption('Franchise Opportunity')}
-                className="inline-flex items-center gap-3 bg-[#32aa15] hover:bg-[#288a11] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-lg shadow-[#32aa15]/25 hover:shadow-xl hover:shadow-[#32aa15]/30 transition-all duration-300 group cursor-pointer active:scale-95"
-              >
-                <span>Apply for Franchise</span>
-                <div className="w-7 h-7 rounded-full bg-white text-[#32aa15] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
-                  <ArrowUpRight className="w-4 h-4 stroke-[3] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                </div>
-              </button>
+            {/* EV Car & Charger Graphic Image (Ends at exact same point as Cards) */}
+            <div className="w-full max-w-[500px] mx-auto lg:mx-0 flex items-end justify-center lg:justify-start mt-6 lg:mt-auto p-0">
+              <img
+                src="/franchise_car_station.png"
+                alt="Evoltek EV Car Fast Charging Station"
+                className="w-full h-auto block object-contain object-bottom drop-shadow-md select-none pointer-events-none"
+                loading="lazy"
+              />
             </div>
+
           </div>
 
-          {/* Right Column: Benefit Cards Grid (2 cards per row - 4x2 perfect grid) */}
-          <div className="lg:col-span-7 xl:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
+          {/* Right Column: Benefit Cards Grid (2 cards per row - 8 cards in 4 equal rows) */}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 h-full content-between">
             {FRANCHISE_BENEFITS.map((item) => (
               <div
                 key={item.id}
                 className="bg-white rounded-2xl border border-slate-200/85 hover:border-[#32aa15] p-4.5 sm:p-5 shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-3.5 sm:gap-4 group hover:-translate-y-0.5 cursor-default relative overflow-hidden"
               >
-                {/* Light Green Slide-Down Sweep Effect (Top to Bottom) */}
-                <div className="absolute inset-0 bg-gradient-to-b from-[#eaf6dd] to-[#f4faee] -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out pointer-events-none rounded-2xl" />
+                {/* Light Green Diagonal Sweep: Top-Left to Bottom-Right */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#eef7e3] via-[#e4f6d3] to-[#d8f2c2]/80 origin-top-left scale-0 group-hover:scale-100 transition-transform duration-500 ease-out pointer-events-none rounded-2xl z-0" />
 
                 {/* Number Badge */}
-                <div className="relative z-10 w-10 h-10 rounded-full bg-[#32aa15] text-white font-bold flex items-center justify-center shrink-0 text-sm shadow-sm group-hover:scale-105 transition-transform duration-300 font-['Wix_Madefor_Display',sans-serif]">
+                <div className="w-10 h-10 rounded-full bg-[#32aa15] text-white font-bold flex items-center justify-center shrink-0 text-sm shadow-sm group-hover:scale-105 transition-transform duration-300 font-['Wix_Madefor_Display',sans-serif] relative z-10">
                   {item.number}
                 </div>
 
                 {/* Content */}
-                <div className="relative z-10 flex-1 min-w-0">
-                  <h3 className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#1e6b0c] transition-colors leading-snug font-['Wix_Madefor_Display',sans-serif]">
+                <div className="flex-1 min-w-0 relative z-10">
+                  <h3 className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#1c640e] transition-colors leading-snug font-['Wix_Madefor_Display',sans-serif]">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-slate-500 group-hover:text-slate-700 font-normal leading-relaxed mt-0.5 line-clamp-2 transition-colors">
+                  <p className="text-xs text-slate-500 group-hover:text-slate-700 font-normal leading-relaxed mt-0.5 transition-colors">
                     {item.description}
                   </p>
                 </div>
@@ -153,6 +152,7 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
           </div>
 
         </div>
+
       </div>
     </section>
   );
