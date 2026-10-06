@@ -6,7 +6,7 @@ const AMENITIES = [
     id: 'charging',
     title: 'Fast Charging',
     icon: (
-      <svg className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-[#38c838] group-hover:text-white transition-colors fill-current" viewBox="0 0 24 24">
+      <svg className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white fill-current" viewBox="0 0 24 24">
         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
       </svg>
     )
@@ -14,27 +14,27 @@ const AMENITIES = [
   {
     id: 'restaurant',
     title: 'Restaurants',
-    icon: <Utensils className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-[#38c838] group-hover:text-white transition-colors" />
+    icon: <Utensils className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
   },
   {
     id: 'wifi',
     title: 'Wi-Fi',
-    icon: <Wifi className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-[#38c838] group-hover:text-white transition-colors" />
+    icon: <Wifi className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
   },
   {
     id: 'parks',
     title: 'Relaxation',
-    icon: <Trees className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-[#38c838] group-hover:text-white transition-colors" />
+    icon: <Trees className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
   },
   {
     id: 'rooms',
     title: 'Rooms',
-    icon: <Bed className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-[#38c838] group-hover:text-white transition-colors" />
+    icon: <Bed className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
   },
   {
     id: 'lounges',
     title: 'Lounges',
-    icon: <Coffee className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-[#38c838] group-hover:text-white transition-colors" />
+    icon: <Coffee className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
   }
 ];
 
@@ -69,8 +69,8 @@ export const HighwayHubSection: React.FC = () => {
           {/* Overlay Text Container */}
           <div className="absolute left-[6%] right-[6%] bottom-[8.5%] sm:bottom-0 top-auto sm:top-0 sm:left-[5%] sm:right-auto sm:my-auto h-fit w-auto sm:w-[50%] lg:w-[52%] max-w-[650px] flex flex-col justify-center p-2 sm:p-7 lg:p-9 pl-2 sm:pl-9 lg:pl-11 z-10 text-white space-y-2 sm:space-y-3 lg:space-y-4">
 
-            {/* Header & Tag Block with Tight Vertical Spacing */}
-            <div className="space-y-1 sm:space-y-1.5">
+            {/* Header & Tag Block with Comfortable Vertical Spacing */}
+            <div className="space-y-2 sm:space-y-2.5">
               {/* Section Tag Badge */}
               <div className="inline-flex items-center gap-1.5 sm:gap-2 text-[#32aa15] text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.2em]">
                 <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
@@ -79,8 +79,8 @@ export const HighwayHubSection: React.FC = () => {
                 <span>HIGHWAY EV HUB</span>
               </div>
 
-              {/* Headline */}
-              <h2 className="text-[17px] sm:text-3xl md:text-4xl lg:text-[42px] font-semibold tracking-tight leading-[0.95] sm:leading-[1.02] lg:leading-[1.05] font-['Wix_Madefor_Display',sans-serif]">
+              {/* Headline with Reduced Line Height */}
+              <h2 className="text-[18px] sm:text-3xl md:text-4xl lg:text-[42px] font-semibold tracking-tight leading-[1.02] sm:leading-[1.05] lg:leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
                 <span className="text-white block">Your EV Recharges.</span>
                 <span className="text-[#32aa15] block">You Recharge Too.</span>
               </h2>
@@ -91,21 +91,21 @@ export const HighwayHubSection: React.FC = () => {
               While your EV is charging, Evoltek Highway Hubs are envisioned to give travellers a comfortable place to eat, work, rest and relax.
             </p>
 
-            {/* 6 Green Circular Feature Badges in Horizontal Row with Increased Line Length & Spacing */}
-            <div className="grid grid-cols-6 gap-2 sm:gap-5 lg:gap-6 pt-2 sm:pt-5 border-t border-white/20 justify-items-center items-start w-full">
+            {/* 6 Green Circular Feature Badges in Horizontal Row with Clear Spacing between Icon and Text */}
+            <div className="grid grid-cols-6 gap-2.5 sm:gap-6 lg:gap-8 pt-2.5 sm:pt-5 border-t border-white/20 justify-items-center items-start w-full">
               {AMENITIES.map((item) => (
                 <div
                   key={item.id}
                   className="flex flex-col items-center text-center group cursor-pointer w-full"
                 >
-                  {/* Circular Green Icon Node */}
-                  <div className="w-7 h-7 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-[#32aa15]/15 group-hover:bg-[#32aa15] border border-[#32aa15]/60 group-hover:border-[#32aa15] flex items-center justify-center text-[#38c838] group-hover:text-white transition-all duration-300 shadow-md group-hover:scale-110 shrink-0">
+                  {/* Circular Solid Green Icon Node */}
+                  <div className="w-8 h-8 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-[#38c838] group-hover:bg-[#28a828] border border-white/20 flex items-center justify-center text-white transition-all duration-300 shadow-lg group-hover:scale-105 shrink-0">
                     {item.icon}
                   </div>
 
-                  {/* Fixed Height Label Container */}
-                  <div className="h-5 sm:h-10 flex items-start justify-center text-center mt-1 sm:mt-2 w-full px-0.5">
-                    <span className="text-[7px] sm:text-[10.5px] lg:text-xs font-semibold text-slate-200 group-hover:text-white leading-tight text-center block whitespace-nowrap">
+                  {/* Text Label Container with Gap from Icon */}
+                  <div className="flex items-start justify-center text-center mt-2 sm:mt-3 lg:mt-3.5 w-full px-0.5">
+                    <span className="text-[8px] sm:text-xs lg:text-[13px] font-semibold text-white leading-tight text-center block whitespace-nowrap">
                       {item.title}
                     </span>
                   </div>
