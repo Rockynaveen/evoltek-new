@@ -128,10 +128,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
                 {/* Top Text Content */}
                 <div className="space-y-0.5">
-                  <span className="text-white/90 text-xs sm:text-sm font-semibold tracking-wide block">
+                  <span className="text-white/90 text-xs sm:text-sm font-normal tracking-wide block">
                     Fast Charging
                   </span>
-                  <h3 className="text-white text-base sm:text-lg font-extrabold tracking-tight leading-tight">
+                  <h3 className="text-white text-base sm:text-lg font-normal tracking-tight leading-tight">
                     Up to 80% in 30 mins
                   </h3>
                 </div>

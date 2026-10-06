@@ -48,14 +48,14 @@ export const ChargingSolutions: React.FC<ChargingSolutionsProps> = ({ openModalW
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
-        <div className="text-center max-w-5xl mx-auto space-y-2 mb-8 sm:mb-10">
+        <div className="text-center max-w-5xl mx-auto space-y-2.5 mb-10 sm:mb-14 lg:mb-16">
           <div className="inline-flex items-center gap-2.5 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
             <svg className="w-4 h-4 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
               <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
             </svg>
             <span>STATION CATEGORIES</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-[#1C2029] tracking-tight leading-[1.1] font-['Wix_Madefor_Display',sans-serif] uppercase">
+          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-[#1C2029] tracking-tight leading-[1.15] sm:leading-[1.18] font-['Wix_Madefor_Display',sans-serif]">
             Charging Solutions Built for Every Journey
           </h2>
           <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-snug">
@@ -69,7 +69,7 @@ export const ChargingSolutions: React.FC<ChargingSolutionsProps> = ({ openModalW
             <div
               key={station.id}
               onClick={() => openModalWithOption('Charging Station')}
-              className="group relative overflow-hidden rounded-[28px] sm:rounded-[32px] rounded-tl-[6px] bg-slate-900 shadow-2xl hover:shadow-[0_20px_50px_rgba(50,170,21,0.3)] transition-all duration-500 min-h-[460px] sm:min-h-[520px] flex flex-col justify-end cursor-pointer border border-white/10"
+              className="group relative overflow-hidden rounded-[28px] sm:rounded-[32px] rounded-tl-[6px] bg-slate-900 transition-all duration-500 min-h-[460px] sm:min-h-[520px] flex flex-col justify-end cursor-pointer border border-white/10"
             >
               {/* Background Station Image */}
               <img
@@ -86,16 +86,16 @@ export const ChargingSolutions: React.FC<ChargingSolutionsProps> = ({ openModalW
 
               {/* DEFAULT VISIBLE TITLE & ARROW (Smoothly hides when hovered/tapped) */}
               <div className="flex relative z-20 p-6 sm:p-8 items-center justify-between gap-4 group-hover:opacity-0 group-hover:translate-y-4 transition-all duration-500 ease-out">
-                <h3 className="text-xl sm:text-2xl font-medium text-white tracking-tight font-['Wix_Madefor_Display',sans-serif] drop-shadow-md">
+                <h3 className="text-xl sm:text-2xl font-medium text-white tracking-tight font-['Wix_Madefor_Display',sans-serif]">
                   {station.title}
                 </h3>
-                <div className="text-[#32aa15] shrink-0 drop-shadow-md">
+                <div className="text-[#32aa15] shrink-0">
                   <ArrowDownRight className="w-7 h-7 stroke-[2.8]" />
                 </div>
               </div>
 
               {/* SPECS OVERLAY CARD (Reveals on hover/tap) */}
-              <div className="absolute inset-x-3.5 sm:inset-x-6 bottom-3.5 sm:bottom-6 z-30 bg-[#0b0f19]/95 backdrop-blur-md border border-[#32aa15]/50 rounded-[22px] sm:rounded-[26px] p-4.5 sm:p-7 shadow-2xl space-y-3 sm:space-y-4 opacity-0 group-hover:opacity-100 translate-y-6 group-hover:translate-y-0 transition-all duration-500 ease-out pointer-events-none group-hover:pointer-events-auto">
+              <div className="absolute inset-x-3.5 sm:inset-x-6 bottom-3.5 sm:bottom-6 z-30 bg-[#0b0f19]/95 backdrop-blur-md border border-[#32aa15]/50 rounded-[22px] sm:rounded-[26px] p-4.5 sm:p-7 space-y-3 sm:space-y-4 opacity-0 group-hover:opacity-100 translate-y-6 group-hover:translate-y-0 transition-all duration-500 ease-out pointer-events-none group-hover:pointer-events-auto">
 
                 {/* Subtle Ambient Green Corner Glow */}
                 <div className="absolute top-0 right-0 w-48 h-48 bg-[#32aa15]/15 rounded-full blur-2xl pointer-events-none" />

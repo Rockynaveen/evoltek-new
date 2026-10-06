@@ -9,20 +9,20 @@ export const InvestmentModel: React.FC = () => {
           <div className="relative space-y-8 py-6 overflow-hidden">
 
             {/* Header */}
-            <div className="text-center max-w-3xl mx-auto space-y-1.5 mb-6 relative z-10">
+            <div className="text-center max-w-3xl mx-auto space-y-1.5 mb-10 sm:mb-14 lg:mb-16 relative z-10">
               <div className="inline-flex items-center gap-2.5 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
                 <svg className="w-4 h-4 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                 </svg>
                 <span>INVESTMENT MODEL</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-[#1C2029] tracking-tight leading-[1.1] font-['Wix_Madefor_Display',sans-serif] uppercase">
+              <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-[#1C2029] tracking-tight leading-[1.1] font-['Wix_Madefor_Display',sans-serif]">
                 Invest Together. Grow Together.
               </h2>
             </div>
 
             {/* 3 Column Graphic: Left Circle (Evoltek Plaza) | Center 50%/50% Handshake | Right Circle (Investment Coins) */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full my-4 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full mt-8 sm:mt-12 lg:mt-14 mb-8 relative z-10">
 
               {/* Left Circle: EVOLTEK Charging Station Plaza */}
               <div className="lg:col-span-5 flex justify-center items-center relative">

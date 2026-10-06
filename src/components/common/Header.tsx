@@ -33,51 +33,51 @@ export const Header: React.FC<HeaderProps> = ({
           </a>
 
           {/* Navigation Links (Center/Right) */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8 ml-auto mr-6">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 ml-auto mr-6">
             <a
               href="#home"
-              className="font-bold text-sm xl:text-base text-[#32aa15] relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[#32aa15] after:rounded-full"
+              className="font-bold text-[14px] text-[#32aa15] relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[#32aa15] after:rounded-full"
             >
               Home
             </a>
             <a
               href="#about"
-              className="font-semibold text-sm xl:text-base text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
+              className="font-semibold text-[14px] text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
             >
               About
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#32aa15] transition-all duration-300 group-hover:w-full rounded-full" />
             </a>
             <a
               href="#charging-stations"
-              className="font-semibold text-sm xl:text-base text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
+              className="font-semibold text-[14px] text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
             >
               Charging Stations
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#32aa15] transition-all duration-300 group-hover:w-full rounded-full" />
             </a>
             <a
               href="#investment"
-              className="font-semibold text-sm xl:text-base text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
+              className="font-semibold text-[14px] text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
             >
               Investment
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#32aa15] transition-all duration-300 group-hover:w-full rounded-full" />
             </a>
             <a
               href="#franchise"
-              className="font-semibold text-sm xl:text-base text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
+              className="font-semibold text-[14px] text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
             >
               Franchise
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#32aa15] transition-all duration-300 group-hover:w-full rounded-full" />
             </a>
             <a
               href="#roi-calculator"
-              className="font-semibold text-sm xl:text-base text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
+              className="font-semibold text-[14px] text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
             >
               ROI Calculator
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#32aa15] transition-all duration-300 group-hover:w-full rounded-full" />
             </a>
             <a
               href="#contact"
-              className="font-semibold text-sm xl:text-base text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
+              className="font-semibold text-[14px] text-slate-700 hover:text-[#32aa15] transition-colors relative py-1 group"
             >
               Contact
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#32aa15] transition-all duration-300 group-hover:w-full rounded-full" />
@@ -88,9 +88,9 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="hidden sm:flex items-center shrink-0">
             <button
               onClick={() => openModalWithOption('Become a Partner')}
-              className="border-2 border-[#32aa15] bg-[#32aa15] hover:bg-transparent text-white hover:text-[#32aa15] font-bold text-sm sm:text-base py-1.5 sm:py-2 px-5 sm:px-6 rounded-full flex items-center gap-3 shadow-lg shadow-[#32aa15]/25 transition-all duration-300 group active:scale-95 cursor-pointer shrink-0"
+              className="border-2 border-[#32aa15] bg-[#32aa15] hover:bg-transparent text-white hover:text-[#32aa15] font-bold text-[14px] py-1.5 sm:py-2 px-5 sm:px-6 rounded-full flex items-center gap-3 shadow-lg shadow-[#32aa15]/25 transition-all duration-300 group active:scale-95 cursor-pointer shrink-0"
             >
-              <span className="whitespace-nowrap">BECOME A PARTNER</span>
+              <span className="whitespace-nowrap tracking-wide">BECOME A PARTNER</span>
               <div className="w-7 h-7 rounded-full bg-white group-hover:bg-[#32aa15] text-[#32aa15] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300">
                 <ArrowRight className="w-4 h-4 stroke-[3] group-hover:translate-x-0.5 transition-transform" />
               </div>

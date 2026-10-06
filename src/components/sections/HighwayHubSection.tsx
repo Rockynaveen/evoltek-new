@@ -80,7 +80,7 @@ export const HighwayHubSection: React.FC = () => {
               </div>
 
               {/* Headline */}
-              <h2 className="text-[17px] sm:text-3xl md:text-4xl lg:text-[42px] font-semibold tracking-tight leading-[0.95] sm:leading-[1.02] lg:leading-[1.05] font-['Wix_Madefor_Display',sans-serif] uppercase">
+              <h2 className="text-[17px] sm:text-3xl md:text-4xl lg:text-[42px] font-semibold tracking-tight leading-[0.95] sm:leading-[1.02] lg:leading-[1.05] font-['Wix_Madefor_Display',sans-serif]">
                 <span className="text-white block">Your EV Recharges.</span>
                 <span className="text-[#32aa15] block">You Recharge Too.</span>
               </h2>

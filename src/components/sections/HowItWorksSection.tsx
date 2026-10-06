@@ -133,7 +133,7 @@ export const HowItWorksSection: React.FC = () => {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6 sm:space-y-8">
 
         {/* Section Header */}
-        <div className="text-center space-y-1.5 max-w-3xl mx-auto">
+        <div className="text-center space-y-2.5 max-w-3xl mx-auto mb-10 sm:mb-14 lg:mb-16">
           {/* Subtitle Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#32aa15]/10 border border-[#32aa15]/30 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
             <svg className="w-4 h-4 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
@@ -143,7 +143,7 @@ export const HowItWorksSection: React.FC = () => {
           </div>
 
           {/* Main Title */}
-          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-white tracking-tight leading-[1.1] font-['Wix_Madefor_Display',sans-serif] uppercase">
+          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-white tracking-tight leading-[1.15] sm:leading-[1.18] font-['Wix_Madefor_Display',sans-serif]">
             Simple. Fast. Reliable.
           </h2>
         </div>
@@ -153,7 +153,7 @@ export const HowItWorksSection: React.FC = () => {
           {STEPS.map((item) => (
             <div
               key={item.step}
-              className="bg-white text-slate-900 border border-slate-200/90 p-4.5 sm:p-5 shadow-md hover:shadow-2xl hover:border-[#38c838] flex flex-col justify-between relative group hover:-translate-y-1.5 transition-all duration-300"
+              className="bg-white text-slate-900 border border-slate-200/90 p-4.5 sm:p-5 hover:border-[#38c838] flex flex-col justify-between relative group hover:-translate-y-1.5 transition-all duration-300"
               style={{
                 clipPath: 'polygon(0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 0 100%)',
                 borderTopLeftRadius: '20px',

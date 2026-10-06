@@ -72,14 +72,14 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Header - Exactly matches the remaining sections */}
-        <div className="text-center max-w-5xl mx-auto space-y-1.5 mb-6 sm:mb-10">
+        <div className="text-center max-w-5xl mx-auto space-y-2.5 mb-10 sm:mb-14 lg:mb-16">
           <div className="inline-flex items-center gap-2.5 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
             <svg className="w-4 h-4 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
               <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
             </svg>
             <span>FRANCHISE OPPORTUNITY</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-[#1C2029] tracking-tight leading-[1.1] font-['Wix_Madefor_Display',sans-serif] uppercase">
+          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-[#1C2029] tracking-tight leading-[1.15] sm:leading-[1.18] font-['Wix_Madefor_Display',sans-serif]">
             Build Your Own EV Charging Business With Evoltek
           </h2>
         </div>
@@ -90,10 +90,10 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
           {/* Left Column: Top Description & CTA Button | Bottom-Anchored EV Car Image */}
           <div className="lg:col-span-5 flex flex-col justify-between items-center text-center lg:text-left lg:items-start h-full">
 
-            {/* Top Content Block: Description & CTA Button (Starts at same point as Cards) */}
-            <div className="space-y-4 sm:space-y-5 w-full">
+            {/* Top Content Block: Description & CTA Button */}
+            <div className="space-y-4 sm:space-y-5 w-full mb-3 sm:mb-4">
               {/* Description Text */}
-              <p className="text-slate-900 text-base sm:text-lg font-medium leading-relaxed max-w-md">
+              <p className="text-slate-900 text-base sm:text-lg font-medium leading-[1.65] max-w-md">
                 Partner with India&apos;s fastest-growing EV charging network. Co-invest with Evoltek and build a high-yielding, turnkey charging hub with zero operational friction.
               </p>
 
@@ -101,18 +101,18 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
               <div>
                 <button
                   onClick={() => openModalWithOption('Franchise Opportunity')}
-                  className="inline-flex items-center gap-3 bg-[#32aa15] hover:bg-[#288a11] text-white font-bold text-sm sm:text-base px-7 py-3 rounded-full shadow-lg shadow-[#32aa15]/25 hover:shadow-xl hover:shadow-[#32aa15]/30 transition-all duration-300 group cursor-pointer active:scale-95"
+                  className="inline-flex items-center gap-3.5 bg-[#32aa15] hover:bg-[#288a11] text-white font-bold text-sm sm:text-base pl-7 pr-2.5 py-2.5 rounded-full shadow-lg shadow-[#32aa15]/25 hover:shadow-xl hover:shadow-[#32aa15]/30 transition-all duration-300 group cursor-pointer active:scale-95"
                 >
                   <span>Apply for Franchise</span>
-                  <div className="w-7 h-7 rounded-full bg-white text-[#32aa15] flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
-                    <ArrowUpRight className="w-4 h-4 stroke-[3] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </div>
+                  <span className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#32aa15] shadow-sm group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300">
+                    <ArrowUpRight className="w-4.5 h-4.5 text-[#32aa15] stroke-[2.8]" />
+                  </span>
                 </button>
               </div>
             </div>
 
-            {/* EV Car & Charger Graphic Image (Ends at exact same point as Cards) */}
-            <div className="w-full max-w-[500px] mx-auto lg:mx-0 flex items-end justify-center lg:justify-start mt-6 lg:mt-auto p-0">
+            {/* EV Car & Charger Graphic Image (Natural moderate gap below button) */}
+            <div className="w-full max-w-[500px] mx-auto lg:mx-0 flex items-end justify-center lg:justify-start mt-4 sm:mt-5 p-0">
               <img
                 src="/franchise_car_station.png"
                 alt="Evoltek EV Car Fast Charging Station"
@@ -128,7 +128,7 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
             {FRANCHISE_BENEFITS.map((item) => (
               <div
                 key={item.id}
-                className="bg-white hover:border-[#32aa15] hover:shadow-md hover:-translate-y-0.5 rounded-2xl border border-slate-200/85 p-4.5 sm:p-5 shadow-none transition-all duration-300 flex items-center gap-3.5 sm:gap-4 relative overflow-hidden cursor-pointer"
+                className="bg-[#d1e7a7] hover:border-[#32aa15] hover:shadow-md hover:-translate-y-0.5 rounded-2xl border border-[#b8dd82] p-4.5 sm:p-5 transition-all duration-300 flex items-center gap-3.5 sm:gap-4 relative overflow-hidden cursor-pointer"
               >
                 {/* Number Badge */}
                 <div className="w-10 h-10 rounded-full bg-[#32aa15] text-white font-bold flex items-center justify-center shrink-0 text-sm shadow-sm font-['Wix_Madefor_Display',sans-serif]">
@@ -140,7 +140,7 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
                   <h3 className="text-sm sm:text-base font-bold text-slate-900 leading-snug font-['Wix_Madefor_Display',sans-serif]">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-slate-500 font-normal leading-relaxed mt-0.5">
+                  <p className="text-xs sm:text-[13px] text-slate-700 font-medium leading-relaxed mt-0.5">
                     {item.description}
                   </p>
                 </div>
