@@ -52,24 +52,27 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Content Box */}
           <div className="relative z-20 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-10 md:py-12 w-full">
-            <div className="max-w-3xl lg:max-w-5xl space-y-2 sm:space-y-6">
+            <div className="max-w-3xl lg:max-w-5xl space-y-3 sm:space-y-6">
 
-              {/* Welcome Tag */}
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 text-[#32aa15] text-[11px] sm:text-base font-bold uppercase tracking-[0.16em] sm:tracking-[0.2em]">
-                <svg className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                </svg>
-                <span>WELCOME TO EVOLTEK</span>
+              {/* Title & Tag Block with Tight Spacing */}
+              <div className="space-y-1 sm:space-y-2">
+                {/* Welcome Tag */}
+                <div className="inline-flex items-center gap-1.5 sm:gap-2 text-[#32aa15] text-[11px] sm:text-base font-bold uppercase tracking-[0.16em] sm:tracking-[0.2em]">
+                  <svg className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                  </svg>
+                  <span>WELCOME TO EVOLTEK</span>
+                </div>
+
+                {/* Main Headline */}
+                <h1 className="text-[30px] xs:text-[36px] sm:text-5xl md:text-6xl lg:text-[68px] font-bold text-white leading-[0.88] sm:leading-[0.90] lg:leading-[0.92] tracking-tight font-['Plus_Jakarta_Sans'] group">
+                  Powering <br className="sm:hidden" />
+                  Every <br />
+                  <span className="text-[#32aa15] group-hover:text-white transition-colors duration-300">
+                    Journey.
+                  </span>
+                </h1>
               </div>
-
-              {/* Main Headline */}
-              <h1 className="text-[30px] xs:text-[36px] sm:text-5xl md:text-6xl lg:text-[68px] font-bold text-white leading-[0.92] sm:leading-[0.94] lg:leading-[0.96] tracking-tight font-['Plus_Jakarta_Sans'] group">
-                Powering <br className="sm:hidden" />
-                Every <br />
-                <span className="text-[#32aa15] group-hover:text-white transition-colors duration-300">
-                  Journey.
-                </span>
-              </h1>
 
               {/* Subtitle / Description Paragraph with Note Callout */}
               <div className="space-y-2 sm:space-y-3 max-w-xl sm:max-w-2xl">

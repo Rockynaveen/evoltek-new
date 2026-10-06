@@ -9,7 +9,7 @@ export const VisionMissionSection: React.FC = () => {
 
           {/* ================= CARD 1: OUR VISION ================= */}
           <div className="bg-white rounded-[32px] border border-slate-200/90 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden relative group cursor-pointer">
-            
+
             {/* Top Right Corner Accent Triangle (Transitions to vibrant green on hover) */}
             <div className="absolute top-0 right-0 w-16 h-16 pointer-events-none z-10 overflow-hidden rounded-tr-[32px]">
               <svg viewBox="0 0 100 100" className="w-full h-full text-[#e6f7e2] group-hover:text-[#32aa15] fill-current transition-colors duration-300">
@@ -40,7 +40,7 @@ export const VisionMissionSection: React.FC = () => {
 
           {/* ================= CARD 2: OUR MISSION ================= */}
           <div className="bg-white rounded-[32px] border border-slate-200/90 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden relative group cursor-pointer">
-            
+
             {/* Top Right Corner Accent Triangle (Transitions to vibrant green on hover) */}
             <div className="absolute top-0 right-0 w-16 h-16 pointer-events-none z-10 overflow-hidden rounded-tr-[32px]">
               <svg viewBox="0 0 100 100" className="w-full h-full text-[#e6f7e2] group-hover:text-[#32aa15] fill-current transition-colors duration-300">

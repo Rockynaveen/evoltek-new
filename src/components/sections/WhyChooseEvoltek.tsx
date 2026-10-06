@@ -22,7 +22,7 @@ export const WhyChooseEvoltek: React.FC = () => {
         {/* LEFT COLUMN: 3 Features */}
         <div className="lg:col-span-4 space-y-10 sm:space-y-14 z-10">
           <div className="relative group p-5 rounded-2xl bg-white lg:bg-transparent hover:bg-slate-50/90 border border-slate-100/80 lg:border-none hover:shadow-lg lg:hover:shadow-none transition-all duration-300 lg:text-right">
-            <h3 className="text-xl font-bold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
+            <h3 className="text-xl font-semibold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
               Shared Investment
             </h3>
             <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed font-normal">
@@ -35,7 +35,7 @@ export const WhyChooseEvoltek: React.FC = () => {
           </div>
 
           <div className="relative group p-5 rounded-2xl bg-white lg:bg-transparent hover:bg-slate-50/90 border border-slate-100/80 lg:border-none hover:shadow-lg lg:hover:shadow-none transition-all duration-300 lg:text-right">
-            <h3 className="text-xl font-bold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
+            <h3 className="text-xl font-semibold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
               Hassle-Free Operations
             </h3>
             <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed font-normal">
@@ -48,7 +48,7 @@ export const WhyChooseEvoltek: React.FC = () => {
           </div>
 
           <div className="relative group p-5 rounded-2xl bg-white lg:bg-transparent hover:bg-slate-50/90 border border-slate-100/80 lg:border-none hover:shadow-lg lg:hover:shadow-none transition-all duration-300 lg:text-right">
-            <h3 className="text-xl font-bold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
+            <h3 className="text-xl font-semibold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
               Flexible Returns
             </h3>
             <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed font-normal">
@@ -81,7 +81,7 @@ export const WhyChooseEvoltek: React.FC = () => {
               <div className="w-3 h-3 rounded-full bg-[#32aa15] shrink-0 shadow-[0_0_10px_#32aa15] group-hover:scale-125 transition-transform" />
               <div className="w-full h-[2px] bg-gradient-to-r from-[#32aa15] via-[#32aa15]/50 to-slate-200 group-hover:to-[#32aa15] transition-all" />
             </div>
-            <h3 className="text-xl font-bold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
+            <h3 className="text-xl font-semibold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
               Long-Term Agreement
             </h3>
             <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed font-normal">
@@ -94,7 +94,7 @@ export const WhyChooseEvoltek: React.FC = () => {
               <div className="w-3 h-3 rounded-full bg-[#32aa15] shrink-0 shadow-[0_0_10px_#32aa15] group-hover:scale-125 transition-transform" />
               <div className="w-full h-[2px] bg-gradient-to-r from-[#32aa15] via-[#32aa15]/50 to-slate-200 group-hover:to-[#32aa15] transition-all" />
             </div>
-            <h3 className="text-xl font-bold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
+            <h3 className="text-xl font-semibold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
               Digital Transparency
             </h3>
             <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed font-normal">
@@ -107,7 +107,7 @@ export const WhyChooseEvoltek: React.FC = () => {
               <div className="w-3 h-3 rounded-full bg-[#32aa15] shrink-0 shadow-[0_0_10px_#32aa15] group-hover:scale-125 transition-transform" />
               <div className="w-full h-[2px] bg-gradient-to-r from-[#32aa15] via-[#32aa15]/50 to-slate-200 group-hover:to-[#32aa15] transition-all" />
             </div>
-            <h3 className="text-xl font-bold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
+            <h3 className="text-xl font-semibold text-[#1C2029] tracking-tight mb-2 group-hover:text-[#32aa15] transition-colors">
               Scalable Network
             </h3>
             <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed font-normal">

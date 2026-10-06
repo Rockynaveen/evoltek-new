@@ -70,7 +70,7 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
       <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#32aa15]/5 blur-[140px] pointer-events-none rounded-full" />
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header - Exactly matches the remaining sections */}
         <div className="text-center max-w-3xl mx-auto space-y-1.5 mb-6 sm:mb-10">
           <div className="inline-flex items-center gap-2.5 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
@@ -86,10 +86,10 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
 
         {/* Content Layout: Left Graphic & CTA | Right 2 Cards Per Row Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-stretch">
-          
+
           {/* Left Column: Top Description & CTA Button | Bottom-Anchored EV Car Image */}
           <div className="lg:col-span-5 flex flex-col justify-between items-center text-center lg:text-left lg:items-start h-full">
-            
+
             {/* Top Content Block: Description & CTA Button (Starts at same point as Cards) */}
             <div className="space-y-4 sm:space-y-5 w-full">
               {/* Description Text */}

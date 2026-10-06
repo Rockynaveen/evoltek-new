@@ -122,7 +122,7 @@ export const InvestmentModel: React.FC = () => {
                     <path d="M32 15L34.5 21.5L41 24L34.5 26.5L32 33L29.5 26.5L23 24L29.5 21.5L32 15Z" fill="#fef08a" />
                   </svg>
                 </div>
-                <h4 className="text-base sm:text-lg font-black text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
+                <h4 className="text-base sm:text-lg font-bold text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
                   Shared<br />Investment
                 </h4>
                 <p className="text-sm text-slate-700 font-medium leading-relaxed max-w-[210px]">
@@ -139,7 +139,7 @@ export const InvestmentModel: React.FC = () => {
                     className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <h4 className="text-base sm:text-lg font-black text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
+                <h4 className="text-base sm:text-lg font-bold text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
                   Hassle-free<br />Maintenance
                 </h4>
                 <p className="text-sm text-slate-700 font-medium leading-relaxed max-w-[210px]">
@@ -156,7 +156,7 @@ export const InvestmentModel: React.FC = () => {
                     className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <h4 className="text-base sm:text-lg font-black text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
+                <h4 className="text-base sm:text-lg font-bold text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
                   Two Return<br />Options
                 </h4>
                 <p className="text-sm text-slate-700 font-medium leading-relaxed max-w-[210px]">
@@ -173,7 +173,7 @@ export const InvestmentModel: React.FC = () => {
                     className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <h4 className="text-base sm:text-lg font-black text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
+                <h4 className="text-base sm:text-lg font-bold text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
                   Secure<br />Agreements
                 </h4>
                 <p className="text-sm text-slate-700 font-medium leading-relaxed max-w-[210px]">
@@ -183,14 +183,46 @@ export const InvestmentModel: React.FC = () => {
 
               <div className="flex flex-col items-center p-3 space-y-2 pt-4 sm:pt-3 col-span-1 sm:col-span-3 lg:col-span-1 group">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 mb-1 flex items-center justify-center">
-                  <img
-                    src="/feat_app_transparency.jpg"
-                    onError={(e) => { e.currentTarget.src = '/icon_3d_digital_transparency.jpg'; }}
-                    alt="Transparency with App"
-                    className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-                  />
+                  <svg className="w-full h-full group-hover:scale-110 transition-transform duration-300 drop-shadow-md" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="phoneBodyGrad" x1="18" y1="5" x2="46" y2="55" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#334155" />
+                        <stop offset="1" stopColor="#0f172a" />
+                      </linearGradient>
+                      <linearGradient id="phoneScreenGrad" x1="20" y1="8" x2="44" y2="52" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#064e3b" />
+                        <stop offset="1" stopColor="#022c22" />
+                      </linearGradient>
+                    </defs>
+
+                    {/* Outer Phone Shadow / Base */}
+                    <rect x="18" y="7" width="28" height="50" rx="6" fill="#020617" opacity="0.3" />
+
+                    {/* Phone Body Frame */}
+                    <rect x="18" y="5" width="28" height="50" rx="6" fill="url(#phoneBodyGrad)" stroke="#475569" strokeWidth="1.5" />
+
+                    {/* Inner App Screen */}
+                    <rect x="20" y="8" width="24" height="44" rx="4" fill="url(#phoneScreenGrad)" stroke="#10b981" strokeWidth="0.8" />
+
+                    {/* Top Speaker / Dynamic Notch */}
+                    <rect x="27" y="10" width="10" height="2" rx="1" fill="#0f172a" />
+
+                    {/* EV Charging Status Card */}
+                    <rect x="23" y="15" width="18" height="9" rx="2" fill="#065f46" stroke="#34d399" strokeWidth="0.8" />
+                    <path d="M30 17L28.5 20.5H31.5L30 23" stroke="#38c838" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+
+                    {/* Analytics Bar Chart */}
+                    <rect x="23" y="36" width="3.5" height="7" rx="1" fill="#10b981" opacity="0.6" />
+                    <rect x="28.5" y="32" width="3.5" height="11" rx="1" fill="#34d399" opacity="0.8" />
+                    <rect x="34" y="28" width="3.5" height="15" rx="1" fill="#38c838" />
+                    <rect x="39.5" y="34" width="3.5" height="9" rx="1" fill="#10b981" opacity="0.7" />
+
+                    {/* Upward Growth Trend Line with Glowing Star Node */}
+                    <path d="M22 33Q28 29 34 24T41 26" stroke="#5eead4" strokeWidth="1.8" strokeLinecap="round" fill="none" />
+                    <circle cx="41" cy="26" r="1.5" fill="#fef08a" />
+                  </svg>
                 </div>
-                <h4 className="text-base sm:text-lg font-black text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
+                <h4 className="text-base sm:text-lg font-bold text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
                   Transparency<br />with App
                 </h4>
                 <p className="text-sm text-slate-700 font-medium leading-relaxed max-w-[210px]">

@@ -38,7 +38,7 @@ export const HowItWorksSection: React.FC = () => {
   return (
     <section id="how-it-works" className="w-full bg-[#0B1320] text-white py-12 relative overflow-hidden">
       {/* Background Image - Highly Visible with Dark Tint matching reference screenshot */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 pointer-events-none"
         style={{ backgroundImage: `url('/charging_solutions_hub.jpg')` }}
       />
@@ -50,7 +50,7 @@ export const HowItWorksSection: React.FC = () => {
 
       {/* Main Container */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-12">
-        
+
         {/* Section Header */}
         <div className="text-center space-y-1.5 max-w-3xl mx-auto">
           {/* Subtitle Badge */}

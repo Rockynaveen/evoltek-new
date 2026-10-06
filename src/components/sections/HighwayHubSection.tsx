@@ -66,22 +66,33 @@ export const HighwayHubSection: React.FC = () => {
             className="block sm:hidden w-full h-auto rounded-[24px]"
           />
 
-          {/* Overlay Text Container (Mobile: Positioned 8.5% from bottom to fit inside blur card, Desktop: Vertically centered) */}
-          <div className="absolute left-[6%] right-[6%] bottom-[8.5%] sm:bottom-0 top-auto sm:top-0 sm:left-[5.5%] sm:right-auto sm:my-auto h-fit w-auto sm:w-[48%] max-w-[620px] flex flex-col justify-center p-2 sm:p-8 lg:p-10 pl-2 sm:pl-10 lg:pl-12 z-10 text-white space-y-2 sm:space-y-5 lg:space-y-7">
+          {/* Overlay Text Container */}
+          <div className="absolute left-[6%] right-[6%] bottom-[8.5%] sm:bottom-0 top-auto sm:top-0 sm:left-[5%] sm:right-auto sm:my-auto h-fit w-auto sm:w-[50%] lg:w-[52%] max-w-[650px] flex flex-col justify-center p-2 sm:p-7 lg:p-9 pl-2 sm:pl-9 lg:pl-11 z-10 text-white space-y-2 sm:space-y-3 lg:space-y-4">
 
-            {/* Headline */}
-            <h2 className="text-[17px] sm:text-3xl md:text-4xl lg:text-[44px] font-semibold tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
-              <span className="text-white block">Your EV Recharges.</span>
-              <span className="text-[#32aa15] block mt-0.5 sm:mt-1">You Recharge Too.</span>
-            </h2>
+            {/* Header & Tag Block with Tight Vertical Spacing */}
+            <div className="space-y-1 sm:space-y-1.5">
+              {/* Section Tag Badge */}
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 text-[#32aa15] text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.2em]">
+                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+                <span>HIGHWAY EV HUB</span>
+              </div>
+
+              {/* Headline */}
+              <h2 className="text-[17px] sm:text-3xl md:text-4xl lg:text-[42px] font-semibold tracking-tight leading-[0.95] sm:leading-[1.02] lg:leading-[1.05] font-['Wix_Madefor_Display',sans-serif]">
+                <span className="text-white block">Your EV Recharges.</span>
+                <span className="text-[#32aa15] block">You Recharge Too.</span>
+              </h2>
+            </div>
 
             {/* Subtitle Paragraph */}
-            <p className="text-slate-200 text-[9.5px] sm:text-xs md:text-sm lg:text-base leading-tight sm:leading-relaxed font-normal max-w-xl">
+            <p className="text-slate-200 text-[9.5px] sm:text-xs md:text-sm lg:text-base leading-tight sm:leading-snug font-normal max-w-xl">
               While your EV is charging, Evoltek Highway Hubs are envisioned to give travellers a comfortable place to eat, work, rest and relax.
             </p>
 
-            {/* 6 Green Circular Feature Badges in Horizontal Row */}
-            <div className="grid grid-cols-6 gap-1 sm:gap-4 lg:gap-5 pt-1.5 sm:pt-6 border-t border-white/15 justify-items-center items-start w-full">
+            {/* 6 Green Circular Feature Badges in Horizontal Row with Increased Line Length & Spacing */}
+            <div className="grid grid-cols-6 gap-2 sm:gap-5 lg:gap-6 pt-2 sm:pt-5 border-t border-white/20 justify-items-center items-start w-full">
               {AMENITIES.map((item) => (
                 <div
                   key={item.id}
@@ -94,7 +105,7 @@ export const HighwayHubSection: React.FC = () => {
 
                   {/* Fixed Height Label Container */}
                   <div className="h-5 sm:h-10 flex items-start justify-center text-center mt-1 sm:mt-2 w-full px-0.5">
-                    <span className="text-[7px] sm:text-[11px] lg:text-xs font-semibold text-slate-200 group-hover:text-white leading-tight text-center block">
+                    <span className="text-[7px] sm:text-[10.5px] lg:text-xs font-semibold text-slate-200 group-hover:text-white leading-tight text-center block whitespace-nowrap">
                       {item.title}
                     </span>
                   </div>

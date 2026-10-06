@@ -86,7 +86,7 @@ export const ChargingSolutions: React.FC<ChargingSolutionsProps> = ({ openModalW
 
               {/* DEFAULT VISIBLE TITLE & ARROW (Smoothly hides when hovered/tapped) */}
               <div className="flex relative z-20 p-6 sm:p-8 items-center justify-between gap-4 group-hover:opacity-0 group-hover:translate-y-4 transition-all duration-500 ease-out">
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-['Wix_Madefor_Display',sans-serif] drop-shadow-md">
+                <h3 className="text-xl sm:text-2xl font-medium text-white tracking-tight font-['Wix_Madefor_Display',sans-serif] drop-shadow-md">
                   {station.title}
                 </h3>
                 <div className="text-[#32aa15] shrink-0 drop-shadow-md">
@@ -102,7 +102,7 @@ export const ChargingSolutions: React.FC<ChargingSolutionsProps> = ({ openModalW
 
                 {/* Top Row: Title + Green Arrow */}
                 <div className="flex items-start justify-between gap-3 relative z-10">
-                  <h3 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight max-w-[82%] font-['Wix_Madefor_Display',sans-serif]">
+                  <h3 className="text-xl sm:text-2xl font-medium text-white tracking-tight leading-tight max-w-[82%] font-['Wix_Madefor_Display',sans-serif]">
                     {station.title}
                   </h3>
                   <div className="shrink-0 text-[#32aa15] p-1 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-300">

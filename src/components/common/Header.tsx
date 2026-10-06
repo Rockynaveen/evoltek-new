@@ -90,7 +90,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => openModalWithOption('Become a Partner')}
               className="border-2 border-[#32aa15] bg-[#32aa15] hover:bg-transparent text-white hover:text-[#32aa15] font-bold text-sm sm:text-base py-1.5 sm:py-2 px-5 sm:px-6 rounded-full flex items-center gap-3 shadow-lg shadow-[#32aa15]/25 transition-all duration-300 group active:scale-95 cursor-pointer shrink-0"
             >
-              <span className="whitespace-nowrap">Become a Partner</span>
+              <span className="whitespace-nowrap">BECOME A PARTNER</span>
               <div className="w-7 h-7 rounded-full bg-white group-hover:bg-[#32aa15] text-[#32aa15] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300">
                 <ArrowRight className="w-4 h-4 stroke-[3] group-hover:translate-x-0.5 transition-transform" />
               </div>
@@ -123,7 +123,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => { setMobileMenuOpen(false); openModalWithOption('Become a Partner'); }}
               className="w-full py-3.5 bg-[#32aa15] text-white font-bold text-base rounded-full flex items-center justify-center gap-2 shadow-lg hover:bg-[#288a11] transition-all"
             >
-              Become a Partner
+              Become A Partner
               <ArrowRight className="w-5 h-5 stroke-[2.5]" />
             </button>
           </div>

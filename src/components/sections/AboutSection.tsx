@@ -50,10 +50,10 @@ export const AboutSection: React.FC = () => {
 
               {/* Item 1: Fast Charging */}
               <div className="flex items-start gap-4 sm:gap-4.5 group cursor-pointer">
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center [perspective:800px]">
-                  <div className="absolute right-0 bottom-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
+                <div className="relative w-18 h-18 sm:w-22 sm:h-22 shrink-0 flex items-center justify-center [perspective:800px]">
+                  <div className="absolute right-0 bottom-0 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
                   <div className="relative z-10 w-full h-full flex items-center justify-center transition-transform duration-700 ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateY(360deg)]">
-                    <svg className="w-11 h-11 sm:w-13 sm:h-13 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="w-13 h-13 sm:w-15 sm:h-15 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
                       <rect x="8" y="41" width="22" height="3" rx="1.5" fill="white" stroke="currentColor" strokeWidth="2.3" />
                       <rect x="10" y="8" width="18" height="33" rx="2.5" fill="white" stroke="currentColor" strokeWidth="2.3" />
                       <rect x="13" y="11" width="12" height="9" rx="1" strokeWidth="2" />
@@ -72,10 +72,10 @@ export const AboutSection: React.FC = () => {
                 </div>
 
                 <div className="flex-1 min-w-0 space-y-1 pt-0.5">
-                  <h4 className="text-[17px] sm:text-[18px] font-bold text-[#0f172a] leading-tight group-hover:text-[#32aa15] transition-colors">
+                  <h4 className="text-[17px] sm:text-[18px] font-semibold text-[#0f172a] leading-tight group-hover:text-[#32aa15] transition-colors">
                     Fast Charging
                   </h4>
-                  <p className="text-[13px] sm:text-[13.5px] text-slate-500 leading-relaxed font-normal">
+                  <p className="text-[13px] sm:text-[13.5px] text-slate-500 leading-snug font-normal">
                     High-capacity DC fast chargers minimizing wait times for every driver.
                   </p>
                 </div>
@@ -83,10 +83,10 @@ export const AboutSection: React.FC = () => {
 
               {/* Item 2: Strategic Locations */}
               <div className="flex items-start gap-4 sm:gap-4.5 group cursor-pointer">
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center [perspective:800px]">
-                  <div className="absolute right-0 bottom-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
+                <div className="relative w-18 h-18 sm:w-22 sm:h-22 shrink-0 flex items-center justify-center [perspective:800px]">
+                  <div className="absolute right-0 bottom-0 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
                   <div className="relative z-10 w-full h-full flex items-center justify-center transition-transform duration-700 ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateY(360deg)]">
-                    <svg className="w-11 h-11 sm:w-13 sm:h-13 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="w-13 h-13 sm:w-15 sm:h-15 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M22 6 C15.5 6 10 11.5 10 18 C10 27 22 37 22 37 C22 37 34 27 34 18 C34 11.5 28.5 6 22 6 Z" fill="white" stroke="currentColor" strokeWidth="2.3" />
                       <path d="M23 11 L19 17 L24 17 L21 23" strokeWidth="2" strokeLinejoin="miter" />
                       <ellipse cx="22" cy="42" rx="10" ry="3.2" strokeWidth="2.1" />
@@ -97,10 +97,10 @@ export const AboutSection: React.FC = () => {
                 </div>
 
                 <div className="flex-1 min-w-0 space-y-1 pt-0.5">
-                  <h4 className="text-[17px] sm:text-[18px] font-bold text-[#0f172a] leading-tight group-hover:text-[#32aa15] transition-colors">
+                  <h4 className="text-[17px] sm:text-[18px] font-semibold text-[#0f172a] leading-tight group-hover:text-[#32aa15] transition-colors">
                     Strategic Locations
                   </h4>
-                  <p className="text-[13px] sm:text-[13.5px] text-slate-500 leading-relaxed font-normal">
+                  <p className="text-[13px] sm:text-[13.5px] text-slate-500 leading-snug font-normal">
                     Optimally placed along busy highways, urban centers and popular hubs.
                   </p>
                 </div>
@@ -108,10 +108,10 @@ export const AboutSection: React.FC = () => {
 
               {/* Item 3: Smart Digital Experience */}
               <div className="flex items-start gap-4 sm:gap-4.5 group cursor-pointer">
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center [perspective:800px]">
-                  <div className="absolute right-0 bottom-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
+                <div className="relative w-18 h-18 sm:w-22 sm:h-22 shrink-0 flex items-center justify-center [perspective:800px]">
+                  <div className="absolute right-0 bottom-0 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
                   <div className="relative z-10 w-full h-full flex items-center justify-center transition-transform duration-700 ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateY(360deg)]">
-                    <svg className="w-11 h-11 sm:w-13 sm:h-13 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="w-13 h-13 sm:w-15 sm:h-15 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M28 19 L35 19 C38 19 39.5 20.5 40.5 22.5 L43 25" />
                       <path d="M40 22 C41.5 22 42.5 23 42.5 24 C42.5 25 41.5 26 40 26" />
                       <rect x="38" y="27" width="4.5" height="2.5" rx="1" />
@@ -128,10 +128,10 @@ export const AboutSection: React.FC = () => {
                 </div>
 
                 <div className="flex-1 min-w-0 space-y-1 pt-0.5">
-                  <h4 className="text-[17px] sm:text-[18px] font-bold text-[#0f172a] leading-tight group-hover:text-[#32aa15] transition-colors">
+                  <h4 className="text-[17px] sm:text-[18px] font-semibold text-[#0f172a] leading-tight group-hover:text-[#32aa15] transition-colors">
                     Smart Digital Experience
                   </h4>
-                  <p className="text-[13px] sm:text-[13.5px] text-slate-500 leading-relaxed font-normal">
+                  <p className="text-[13px] sm:text-[13.5px] text-slate-500 leading-snug font-normal">
                     Seamless app navigation, real-time availability & contactless payments.
                   </p>
                 </div>
@@ -139,10 +139,10 @@ export const AboutSection: React.FC = () => {
 
               {/* Item 4: Scalable Infrastructure */}
               <div className="flex items-start gap-4 sm:gap-4.5 group cursor-pointer">
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center [perspective:800px]">
-                  <div className="absolute right-0 bottom-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
+                <div className="relative w-18 h-18 sm:w-22 sm:h-22 shrink-0 flex items-center justify-center [perspective:800px]">
+                  <div className="absolute right-0 bottom-0 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#EAEAEA] group-hover:bg-[#32aa15]/15 transition-all duration-300 group-hover:scale-110" />
                   <div className="relative z-10 w-full h-full flex items-center justify-center transition-transform duration-700 ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateY(360deg)]">
-                    <svg className="w-11 h-11 sm:w-13 sm:h-13 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="w-13 h-13 sm:w-15 sm:h-15 text-[#32aa15]" viewBox="0 0 52 52" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M13.5 9 C13.5 7.5 14.5 7 16 7 L18 7 C19.5 7 20.5 7.5 20.5 9" strokeWidth="2.1" />
                       <rect x="9" y="9" width="18" height="32" rx="3.5" fill="white" stroke="currentColor" strokeWidth="2.3" />
                       <path d="M19 18 L15.5 24 L20.5 24 L17 30" strokeWidth="2" strokeLinejoin="miter" />
@@ -155,10 +155,10 @@ export const AboutSection: React.FC = () => {
                 </div>
 
                 <div className="flex-1 min-w-0 space-y-1 pt-0.5">
-                  <h4 className="text-[17px] sm:text-[18px] font-bold text-[#0f172a] leading-tight group-hover:text-[#32aa15] transition-colors">
+                  <h4 className="text-[17px] sm:text-[18px] font-semibold text-[#0f172a] leading-tight group-hover:text-[#32aa15] transition-colors">
                     Scalable Infrastructure
                   </h4>
-                  <p className="text-[13px] sm:text-[13.5px] text-slate-500 leading-relaxed font-normal">
+                  <p className="text-[13px] sm:text-[13.5px] text-slate-500 leading-snug font-normal">
                     Future-ready modular hardware designed to grow with EV adoption.
                   </p>
                 </div>
