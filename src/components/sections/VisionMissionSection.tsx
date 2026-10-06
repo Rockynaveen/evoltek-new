@@ -26,7 +26,7 @@ export const VisionMissionSection: React.FC = () => {
               <div className="w-9 h-1 bg-[#38c838] rounded-full mt-3 mb-2 group-hover:w-14 transition-all duration-300 shadow-sm" />
 
               {/* Title: Our Vision */}
-              <h3 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif] drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
+              <h3 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif] drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] uppercase">
                 Our <span className="text-[#38c838]">Vision</span>
               </h3>
 
@@ -56,7 +56,7 @@ export const VisionMissionSection: React.FC = () => {
               <div className="w-9 h-1 bg-[#15803d] rounded-full mt-3 mb-2 group-hover:w-14 transition-all duration-300" />
 
               {/* Title: Our Mission */}
-              <h3 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-slate-900 tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif]">
+              <h3 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-slate-900 tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif] uppercase">
                 Our <span className="text-[#15803d]">Mission</span>
               </h3>
 

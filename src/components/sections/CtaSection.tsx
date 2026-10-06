@@ -9,7 +9,7 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ openModalWithOption }) =
   return (
     <section className="w-full bg-white py-12 relative">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-[32px] overflow-hidden shadow-2xl min-h-[380px] sm:min-h-[420px] flex items-center group">
+        <div className="relative rounded-[32px] overflow-hidden min-h-[380px] sm:min-h-[420px] flex items-center group transition-all duration-500">
           {/* Background Card Image */}
           <img
             src="/charging_solutions_hub.jpg"
@@ -23,7 +23,7 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ openModalWithOption }) =
 
           {/* Left Content Area */}
           <div className="relative z-20 p-8 sm:p-12 lg:p-16 max-w-3xl">
-            <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-semibold text-white tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
+            <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-semibold text-white tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif] uppercase">
               Ready to Invest in the Future of Mobility?
             </h2>
             <p className="text-slate-200 text-base sm:text-lg max-w-2xl font-medium leading-snug mt-2 mb-6">
@@ -32,18 +32,18 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ openModalWithOption }) =
 
             <button
               onClick={() => openModalWithOption ? openModalWithOption('50/50 Joint Investment') : window.location.href = '#contact'}
-              className="bg-[#32aa15] hover:bg-[#288a11] text-white font-extrabold text-base py-3.5 pl-7 pr-3 rounded-full inline-flex items-center gap-4 shadow-xl shadow-[#32aa15]/30 hover:scale-[1.02] transition-all cursor-pointer group/btn"
+              className="bg-[#32aa15] hover:bg-[#288a11] text-white font-extrabold text-base py-3.5 pl-7 pr-3 rounded-full inline-flex items-center gap-4 shadow-lg hover:scale-[1.02] transition-all cursor-pointer group/btn"
             >
               <span className="whitespace-nowrap">Invest With Evoltek</span>
-              <div className="w-9 h-9 rounded-full bg-white text-[#32aa15] flex items-center justify-center shrink-0 shadow-sm group-hover/btn:bg-[#32aa15] group-hover/btn:text-white transition-colors">
+              <div className="w-9 h-9 rounded-full bg-white text-[#32aa15] flex items-center justify-center shrink-0 group-hover/btn:bg-[#32aa15] group-hover/btn:text-white transition-colors">
                 <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
               </div>
             </button>
           </div>
 
           {/* Bottom Right Cutout Call Us Badge (matching exact screenshot layout) */}
-          <div className="absolute bottom-0 right-0 bg-white pt-3 pl-5 pr-6 pb-4 rounded-tl-[28px] hidden md:flex items-center gap-3 shadow-xl z-20">
-            <div className="w-11 h-11 rounded-full bg-[#32aa15] text-white flex items-center justify-center shrink-0 shadow-md">
+          <div className="absolute bottom-0 right-0 bg-white pt-3.5 pl-6 pr-7 pb-4 rounded-tl-[28px] hidden md:flex items-center gap-3.5 border-t border-l border-slate-100 z-20">
+            <div className="w-11 h-11 rounded-full bg-[#32aa15] text-white flex items-center justify-center shrink-0">
               <PhoneCall className="w-5 h-5" />
             </div>
             <div className="space-y-0.5">

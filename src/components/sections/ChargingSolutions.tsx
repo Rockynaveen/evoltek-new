@@ -48,14 +48,14 @@ export const ChargingSolutions: React.FC<ChargingSolutionsProps> = ({ openModalW
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-2 mb-8 sm:mb-10">
+        <div className="text-center max-w-5xl mx-auto space-y-2 mb-8 sm:mb-10">
           <div className="inline-flex items-center gap-2.5 text-[#32aa15] text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
             <svg className="w-4 h-4 text-[#32aa15] fill-[#32aa15] shrink-0" viewBox="0 0 24 24">
               <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
             </svg>
             <span>STATION CATEGORIES</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-semibold text-[#1C2029] tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
+          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-[#1C2029] tracking-tight leading-[1.1] font-['Wix_Madefor_Display',sans-serif] uppercase">
             Charging Solutions Built for Every Journey
           </h2>
           <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-snug">

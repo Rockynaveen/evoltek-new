@@ -48,7 +48,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           {/* Left Column: Contact Info & Value Prop */}
           <div className="lg:col-span-5 space-y-8">
             <div className="space-y-2">
-              <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-semibold text-[#1C2029] tracking-tight leading-[1.08] font-['Wix_Madefor_Display',sans-serif]">
+              <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-semibold text-[#1C2029] tracking-tight leading-[1.1] font-['Wix_Madefor_Display',sans-serif] uppercase">
                 Let's Power the Future Together
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-snug font-normal">
