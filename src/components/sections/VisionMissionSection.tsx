@@ -26,7 +26,7 @@ export const VisionMissionSection: React.FC = () => {
               <div className="w-9 h-1 bg-[#38c838] rounded-full mt-3 mb-2 group-hover:w-14 transition-all duration-300 shadow-sm" />
 
               {/* Title: Our Vision */}
-              <h3 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif] drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] uppercase">
+              <h3 className="text-3xl sm:text-4xl lg:text-[42px] font-medium text-white tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif] drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] uppercase">
                 Our <span className="text-[#38c838]">Vision</span>
               </h3>
 
@@ -56,12 +56,12 @@ export const VisionMissionSection: React.FC = () => {
               <div className="w-9 h-1 bg-[#15803d] rounded-full mt-3 mb-2 group-hover:w-14 transition-all duration-300" />
 
               {/* Title: Our Mission */}
-              <h3 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-slate-900 tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif] uppercase">
+              <h3 className="text-3xl sm:text-4xl lg:text-[42px] font-medium text-slate-900 tracking-tight leading-tight font-['Wix_Madefor_Display',sans-serif] uppercase">
                 Our <span className="text-[#15803d]">Mission</span>
               </h3>
 
               {/* Description Paragraph */}
-              <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-semibold max-w-md pt-1">
+              <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-medium max-w-md pt-1">
                 To establish strategically located EV charging stations with reliable technology, fast charging, simple digital payments, high uptime and a customer-friendly charging experience.
               </p>
             </div>
