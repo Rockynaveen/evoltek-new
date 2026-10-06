@@ -34,7 +34,7 @@ export const ReturnsSection: React.FC<ReturnsSectionProps> = ({ openModalWithOpt
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch max-w-5xl mx-auto">
 
           {/* ================= OPTION A: PERCENTAGE RETURN ================= */}
-          <div className="bg-[#e6f7e2] rounded-[32px] rounded-br-sm p-4 sm:p-6 md:p-7 flex flex-col justify-between shadow-lg hover:shadow-xl transition-all duration-300 border border-[#32aa15]/20 group relative">
+          <div className="bg-[#d1e7a7] rounded-[32px] rounded-br-sm p-4 sm:p-6 md:p-7 flex flex-col justify-between shadow-lg hover:shadow-xl transition-all duration-300 border border-[#32aa15]/20 group relative">
             
             <div>
               {/* White Inner Top Header Card */}
@@ -44,7 +44,7 @@ export const ReturnsSection: React.FC<ReturnsSectionProps> = ({ openModalWithOpt
                     <span className="text-[#32aa15] font-extrabold text-xs uppercase tracking-widest block mb-1">
                       OPTION A
                     </span>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-['Wix_Madefor_Display',sans-serif]">
+                    <h3 className="text-2xl sm:text-3xl font-medium text-slate-900 tracking-tight font-['Wix_Madefor_Display',sans-serif]">
                       Percentage Return
                     </h3>
                   </div>
@@ -121,7 +121,7 @@ export const ReturnsSection: React.FC<ReturnsSectionProps> = ({ openModalWithOpt
                     <span className="text-emerald-100 font-extrabold text-xs uppercase tracking-widest block mb-1">
                       OPTION B
                     </span>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-['Wix_Madefor_Display',sans-serif]">
+                    <h3 className="text-2xl sm:text-3xl font-medium text-white tracking-tight font-['Wix_Madefor_Display',sans-serif]">
                       Fixed Return
                     </h3>
                   </div>

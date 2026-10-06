@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Download, Star, Apple } from 'lucide-react';
+import { Zap, Download, Star, Smartphone } from 'lucide-react';
 
 export const MobileAppSection: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ export const MobileAppSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-end">
 
           {/* LEFT COLUMN: BADGE, HEADLINE & 2 FLOATING STAT CARDS */}
-          <div className="lg:col-span-4 space-y-2 sm:space-y-3 pb-8 sm:pb-12">
+          <div className="lg:col-span-4 space-y-3 sm:space-y-4 pb-8 sm:pb-12">
             
             {/* Badge */}
             <div className="inline-flex items-center gap-2 text-[#32aa15] text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em]">
@@ -35,34 +35,34 @@ export const MobileAppSection: React.FC = () => {
               Get the app made for smart EV drivers
             </h2>
 
-            {/* 2 Floating Stat Cards Matching Screenshot */}
+            {/* 2 Floating Stat Cards - Glassmorphism Style with Circular Icon Badges */}
             <div className="space-y-3.5 max-w-xs sm:max-w-sm">
               
               {/* Stat Card 1: 30M+ Downloaded & Installation */}
-              <div className="bg-[#242A38]/90 backdrop-blur-md border border-slate-700/60 rounded-2xl p-4 flex items-center gap-4 shadow-xl hover:border-[#32aa15]/60 transition-colors">
-                <div className="w-10 h-10 rounded-full bg-[#32aa15]/20 text-[#32aa15] flex items-center justify-center shrink-0 shadow-inner">
+              <div className="bg-white/10 backdrop-blur-xl border border-white/20 hover:border-[#38c838]/60 hover:bg-white/15 rounded-2xl p-4 flex items-center gap-4 shadow-2xl transition-all duration-300">
+                <div className="w-11 h-11 rounded-full bg-[#52b202] text-white flex items-center justify-center shrink-0 shadow-lg">
                   <Download className="w-5 h-5 stroke-[2.5]" />
                 </div>
                 <div>
                   <p className="text-2xl font-black text-white leading-tight font-['Wix_Madefor_Display',sans-serif]">
                     30M+
                   </p>
-                  <p className="text-xs text-slate-400 font-medium mt-0.5">
+                  <p className="text-xs text-slate-300 font-medium mt-0.5">
                     Downloaded &amp; Installation
                   </p>
                 </div>
               </div>
 
               {/* Stat Card 2: 4.7/5 Based on 2,302 reviews */}
-              <div className="bg-[#242A38]/90 backdrop-blur-md border border-slate-700/60 rounded-2xl p-4 flex items-center gap-4 shadow-xl hover:border-[#32aa15]/60 transition-colors">
-                <div className="w-10 h-10 rounded-full bg-[#32aa15]/20 text-[#32aa15] flex items-center justify-center shrink-0 shadow-inner">
-                  <Star className="w-5 h-5 fill-[#32aa15] text-[#32aa15]" />
+              <div className="bg-white/10 backdrop-blur-xl border border-white/20 hover:border-[#38c838]/60 hover:bg-white/15 rounded-2xl p-4 flex items-center gap-4 shadow-2xl transition-all duration-300">
+                <div className="w-11 h-11 rounded-full bg-[#52b202] text-white flex items-center justify-center shrink-0 shadow-lg">
+                  <Star className="w-5 h-5 fill-white text-white" />
                 </div>
                 <div>
                   <p className="text-2xl font-black text-white leading-tight font-['Wix_Madefor_Display',sans-serif]">
                     4.7/5
                   </p>
-                  <p className="text-xs text-slate-400 font-medium mt-0.5">
+                  <p className="text-xs text-slate-300 font-medium mt-0.5">
                     Based on 2,302 reviews
                   </p>
                 </div>
@@ -72,7 +72,7 @@ export const MobileAppSection: React.FC = () => {
 
           </div>
 
-          {/* CENTER & RIGHT VISUAL CLUSTER: PHONES + ATTACHED MAN & APP STORE CARD */}
+          {/* CENTER & RIGHT VISUAL CLUSTER: PHONES + RIGHT TOP DOWNLOAD BADGES & HAPPY USER */}
           <div className="lg:col-span-8 flex flex-col md:flex-row items-end justify-start lg:justify-start relative">
             
             {/* 1. Dual Phones (kept in place on the left of this visual area) */}
@@ -85,35 +85,43 @@ export const MobileAppSection: React.FC = () => {
               />
             </div>
 
-            {/* 2. Man & App Store Card Group (brought to the left, tightly attached to the mobile phones) */}
+            {/* 2. Right Side Top: Glassmorphism App Store & Google Play Badges + Bottom-Anchored Happy User */}
             <div className="flex flex-col justify-between items-start self-stretch -ml-6 sm:-ml-10 lg:-ml-14 z-20 shrink-0">
               
-              {/* Vibrant Green Store Download Card (Attached directly above the man) */}
-              <div className="w-full max-w-[200px] sm:max-w-[210px] bg-[#38c838] p-3.5 sm:p-4 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col gap-2 border border-white/20 mb-3 sm:mb-4">
-                
-                {/* App Store Pill Button */}
+              {/* Right Side Top Glassmorphism Download Badges */}
+              <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-3 mb-4 sm:mb-6 pt-2 ml-4 sm:ml-10 lg:ml-14 xl:ml-20">
+                {/* App Store Badge (Glassmorphism + Green Circular Icon Badge) */}
                 <a
                   href="#download-ios"
-                  className="w-full bg-[#0F172A] hover:bg-black text-white px-3.5 py-2 rounded-xl flex items-center gap-2.5 transition-all duration-200 group shadow-md"
+                  className="bg-white/10 backdrop-blur-xl border border-white/20 hover:border-[#38c838]/60 hover:bg-white/15 px-4.5 py-3 rounded-2xl flex items-center gap-3.5 transition-all duration-300 group shadow-2xl cursor-pointer"
                 >
-                  <Apple className="w-4 h-4 fill-current text-white shrink-0 group-hover:scale-105 transition-transform" />
-                  <span className="text-xs font-bold text-white tracking-wide">App Store</span>
+                  <div className="w-11 h-11 rounded-full bg-[#52b202] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-lg">
+                    <Smartphone className="w-5 h-5 text-white stroke-[2.2]" />
+                  </div>
+                  <div className="text-left">
+                    <span className="text-[11px] text-slate-300 font-medium block leading-none mb-1">Download On The</span>
+                    <span className="text-sm sm:text-base font-bold text-white block leading-none">App Store</span>
+                  </div>
                 </a>
 
-                {/* Google Play Pill Button */}
+                {/* Google Play Badge (Glassmorphism + Green Circular Icon Badge) */}
                 <a
                   href="#download-android"
-                  className="w-full bg-[#0F172A] hover:bg-black text-white px-3.5 py-2 rounded-xl flex items-center gap-2.5 transition-all duration-200 group shadow-md"
+                  className="bg-white/10 backdrop-blur-xl border border-white/20 hover:border-[#38c838]/60 hover:bg-white/15 px-4.5 py-3 rounded-2xl flex items-center gap-3.5 transition-all duration-300 group shadow-2xl cursor-pointer"
                 >
-                  <svg className="w-3.5 h-3.5 fill-current text-white shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 24 24">
-                    <path d="M3 20.5v-17c0-.55.45-1 1-1h.24l10.22 8.76L4.24 20.02H4c-.55 0-1-.45-1-.98zm12.92-7.81L18.4 14.1l3.07-1.78c.7-.4.7-1.05 0-1.45L18.4 9.1l-2.48 1.44 2.48 1.43v.72zm-1.46.85L4.72 21.84c.34.16.74.12 1.05-.06l10.15-5.91-1.46-.84zm0-3.08l1.46-.84-10.15-5.9c-.31-.18-.71-.22-1.05-.06l9.74 8.35.7.45z" />
-                  </svg>
-                  <span className="text-xs font-bold text-white tracking-wide">Google Play</span>
+                  <div className="w-11 h-11 rounded-full bg-[#52b202] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-lg">
+                    <svg className="w-4.5 h-4.5 fill-white text-white" viewBox="0 0 24 24">
+                      <path d="M3 20.5v-17c0-.55.45-1 1-1h.24l10.22 8.76L4.24 20.02H4c-.55 0-1-.45-1-.98zm12.92-7.81L18.4 14.1l3.07-1.78c.7-.4.7-1.05 0-1.45L18.4 9.1l-2.48 1.44 2.48 1.43v.72zm-1.46.85L4.72 21.84c.34.16.74.12 1.05-.06l10.15-5.91-1.46-.84zm0-3.08l1.46-.84-10.15-5.9c-.31-.18-.71-.22-1.05-.06l9.74 8.35.7.45z" />
+                    </svg>
+                  </div>
+                  <div className="text-left">
+                    <span className="text-[11px] text-slate-300 font-medium block leading-none mb-1">Get It On</span>
+                    <span className="text-sm sm:text-base font-bold text-white block leading-none">Google Play</span>
+                  </div>
                 </a>
-
               </div>
 
-              {/* Smiling Happy User Looking at Smartphone (Attached to the phones, touching bottom) */}
+              {/* Smiling Happy User Looking at Smartphone */}
               <div className="flex items-end justify-start mt-auto p-0 m-0 leading-none">
                 <img
                   src="/happy_ev_user.png"

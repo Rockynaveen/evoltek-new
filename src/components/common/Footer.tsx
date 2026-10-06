@@ -24,10 +24,10 @@ export const Footer: React.FC<FooterProps> = ({ openModalWithOption }) => {
       <div className="absolute top-12 left-1/4 w-96 h-96 bg-[#32aa15]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-12 right-1/4 w-96 h-96 bg-[#32aa15]/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-14 sm:pt-16 pb-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-10 sm:pt-12 pb-4 sm:pb-5">
 
         {/* 4-COLUMN FOOTER GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 items-start pb-12 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 items-start pb-6 sm:pb-8 border-b border-slate-800">
 
           {/* COL 1: BRAND & TAGLINE (LG: 4 COLS) */}
           <div className="lg:col-span-4 space-y-3">
@@ -133,13 +133,13 @@ export const Footer: React.FC<FooterProps> = ({ openModalWithOption }) => {
 
             <div className="space-y-3 text-sm font-medium pt-1">
               <a
-                href="mailto:info@evoltek.in"
+                href="mailto:evoltekchargeindia@gmail.com"
                 className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors group"
               >
                 <div className="w-9 h-9 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-[#32aa15] group-hover:bg-[#32aa15] group-hover:text-white transition-colors shadow-sm shrink-0">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span>info@evoltek.in</span>
+                <span className="break-all sm:break-normal">evoltekchargeindia@gmail.com</span>
               </a>
 
               <a
@@ -203,19 +203,19 @@ export const Footer: React.FC<FooterProps> = ({ openModalWithOption }) => {
         </div>
 
         {/* BOTTOM COPYRIGHT & CREDITS */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-semibold">
+        <div className="pt-4 sm:pt-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 font-semibold">
           <div className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-4 text-center sm:text-left">
             <p>© 2026 Evoltek. All Rights Reserved.</p>
             <span className="hidden sm:inline text-slate-700">•</span>
             <p>
-              Designed by{' '}
+              Designed & Developed by{' '}
               <a
                 href="https://sunseaz.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#32aa15] hover:text-[#38c838] underline underline-offset-2 transition-colors font-bold"
               >
-                sunseaz.com
+                Sunseaz Technologies Pvt Ltd.
               </a>
             </p>
           </div>
