@@ -104,6 +104,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
                 {/* Button 2: Pure White Pill (Franchise Opportunity) */}
                 <button
+                  id="hero-franchise-opportunity-btn"
                   onClick={() => openModalWithOption('Franchise Opportunity')}
                   className="border-2 border-white hover:border-[#32aa15] bg-white hover:bg-transparent text-[#0F172A] hover:text-[#32aa15] font-bold text-[11px] sm:text-sm py-1.5 sm:py-2 px-3.5 sm:pl-5 sm:pr-2 rounded-full flex items-center justify-between sm:justify-start gap-2 sm:gap-3 shadow-lg hover:shadow-none transition-all duration-300 group cursor-pointer active:scale-95 w-full sm:w-auto"
                 >

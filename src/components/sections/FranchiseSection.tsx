@@ -11,7 +11,7 @@ const FRANCHISE_BENEFITS: FranchiseBenefit[] = [
   {
     id: 'shared-investment',
     number: '01',
-    title: '50% Shared Investment',
+    title: '100% Shared Investment',
     description: 'Evoltek funds half the project.'
   },
   {
@@ -24,7 +24,7 @@ const FRANCHISE_BENEFITS: FranchiseBenefit[] = [
     id: 'long-term-security',
     number: '03',
     title: 'Long-Term Security',
-    description: '5 or 10-year agreements.'
+    description: 'Upto To 10 Years .'
   },
   {
     id: 'managed-operations',
@@ -94,7 +94,7 @@ export const FranchiseSection: React.FC<FranchiseSectionProps> = ({ openModalWit
             <div className="space-y-4 sm:space-y-5 w-full mb-3 sm:mb-4">
               {/* Description Text */}
               <p className="text-slate-900 text-base sm:text-lg font-medium leading-[1.65] max-w-md">
-                Partner with India&apos;s fastest-growing EV charging network. Co-invest with Evoltek and build a high-yielding, turnkey charging hub with zero operational friction.
+                Partner with India&apos;s fastest-growing EV charging network. Franchise with Evoltek and build a high-yielding, turnkey charging hub with zero operational friction.
               </p>
 
               {/* Pill CTA Button */}

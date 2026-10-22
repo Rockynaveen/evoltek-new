@@ -85,8 +85,8 @@ export const InvestmentModel: React.FC = () => {
 
             </div>
 
-            {/* Bottom 5 Feature Columns - 2 per row on Mobile */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 pt-6 border-t border-emerald-200/60 w-full relative z-10 text-center">
+            {/* Bottom 4 Feature Columns - 2 per row on Mobile, 4 on Desktop */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 pt-6 border-t border-emerald-200/60 w-full relative z-10 text-center">
 
               <div className="flex flex-col items-center p-3 space-y-2 group">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 mb-1 flex items-center justify-center">
@@ -150,23 +150,6 @@ export const InvestmentModel: React.FC = () => {
               <div className="flex flex-col items-center p-3 space-y-2 pt-4 sm:pt-3 group">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 mb-1 flex items-center justify-center">
                   <img
-                    src="/feat_return_options.jpg"
-                    onError={(e) => { e.currentTarget.src = '/icon_3d_flexible_returns.jpg'; }}
-                    alt="Two Return Options"
-                    className="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <h4 className="text-base sm:text-lg font-medium text-[#1C2029] leading-snug font-['Wix_Madefor_Display',sans-serif]">
-                  Two Return<br />Options
-                </h4>
-                <p className="text-sm text-slate-900 font-medium leading-relaxed max-w-[210px]">
-                  Choose between a percentage return or a fixed return.
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center p-3 space-y-2 pt-4 sm:pt-3 group">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 mb-1 flex items-center justify-center">
-                  <img
                     src="/feat_agreements.jpg"
                     onError={(e) => { e.currentTarget.src = '/icon_3d_long_term.jpg'; }}
                     alt="Secure Agreements"
@@ -181,7 +164,7 @@ export const InvestmentModel: React.FC = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col items-center p-3 space-y-2 pt-4 sm:pt-3 col-span-1 sm:col-span-3 lg:col-span-1 group">
+              <div className="flex flex-col items-center p-3 space-y-2 pt-4 sm:pt-3 group">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 mb-1 flex items-center justify-center">
                   <svg className="w-full h-full group-hover:scale-110 transition-transform duration-300 drop-shadow-md" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>

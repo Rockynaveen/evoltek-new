@@ -1,5 +1,5 @@
 import React from 'react';
-import { Utensils, Wifi, Trees, Bed, Coffee } from 'lucide-react';
+import { Utensils, Wifi, Trees, Gamepad2, Coffee } from 'lucide-react';
 
 const AMENITIES = [
   {
@@ -18,7 +18,7 @@ const AMENITIES = [
   },
   {
     id: 'wifi',
-    title: 'Wi-Fi',
+    title: 'Free Wi-Fi',
     icon: <Wifi className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
   },
   {
@@ -27,9 +27,9 @@ const AMENITIES = [
     icon: <Trees className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
   },
   {
-    id: 'rooms',
-    title: 'Rooms',
-    icon: <Bed className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
+    id: 'playzone',
+    title: 'PlayZone',
+    icon: <Gamepad2 className="w-3.5 h-3.5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" />
   },
   {
     id: 'lounges',
