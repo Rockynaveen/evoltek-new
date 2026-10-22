@@ -102,12 +102,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   </div>
                 </a>
 
-                {/* Button 2: Pure White Pill (Explore Charging Network) */}
+                {/* Button 2: Pure White Pill (Franchise Opportunity) */}
                 <button
-                  onClick={() => openModalWithOption('Become a Partner')}
+                  onClick={() => openModalWithOption('Franchise Opportunity')}
                   className="border-2 border-white hover:border-[#32aa15] bg-white hover:bg-transparent text-[#0F172A] hover:text-[#32aa15] font-bold text-[11px] sm:text-sm py-1.5 sm:py-2 px-3.5 sm:pl-5 sm:pr-2 rounded-full flex items-center justify-between sm:justify-start gap-2 sm:gap-3 shadow-lg hover:shadow-none transition-all duration-300 group cursor-pointer active:scale-95 w-full sm:w-auto"
                 >
-                  <span className="whitespace-nowrap">Explore Charging Network</span>
+                  <span className="whitespace-nowrap">Franchise Opportunity</span>
                   <div className="w-6 h-6 sm:w-7.5 sm:h-7.5 rounded-full bg-[#32aa15] text-white group-hover:bg-[#32aa15] group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm">
                     <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2.2] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </div>

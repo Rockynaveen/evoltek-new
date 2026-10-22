@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Download, Star, Smartphone } from 'lucide-react';
+import { Zap, Download, Star } from 'lucide-react';
 
 export const MobileAppSection: React.FC = () => {
   return (
