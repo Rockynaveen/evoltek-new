@@ -1,20 +1,16 @@
 import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { Header } from './components/common/Header';
-import { HeroSection } from './components/sections/HeroSection';
-import { VisionMissionSection } from './components/sections/VisionMissionSection';
-import { AboutSection } from './components/sections/AboutSection';
-import { InvestmentModel } from './components/sections/InvestmentModel';
-import { ReturnsSection } from './components/sections/ReturnsSection';
-import { WhyChooseEvoltek } from './components/sections/WhyChooseEvoltek';
-import { ChargingSolutions } from './components/sections/ChargingSolutions';
-import { HighwayHubSection } from './components/sections/HighwayHubSection';
-import { MobileAppSection } from './components/sections/MobileAppSection';
-import { HowItWorksSection } from './components/sections/HowItWorksSection';
-import { FranchiseSection } from './components/sections/FranchiseSection';
-import { RoiCalculatorSection } from './components/sections/RoiCalculatorSection';
-import { CtaSection } from './components/sections/CtaSection';
 import { Footer } from './components/common/Footer';
 import { PartnerModal } from './components/common/PartnerModal';
+import { ScrollToTop } from './components/common/ScrollToTop';
+import { HomePage } from './pages/HomePage';
+import { AboutPage } from './pages/AboutPage';
+import { ChargingStationsPage } from './pages/ChargingStationsPage';
+import { InvestmentPage } from './pages/InvestmentPage';
+import { FranchisePage } from './pages/FranchisePage';
+import { RoiCalculatorPage } from './pages/RoiCalculatorPage';
+import { ContactPage } from './pages/ContactPage';
 import type { RoiCalculatorState } from './types';
 import { HERO_SLIDES } from './data/siteData';
 
@@ -55,9 +51,11 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-[#0F172A] font-['Plus_Jakarta_Sans',sans-serif] p-0 relative">
+    <div className="min-h-screen bg-white text-[#0F172A] font-['Plus_Jakarta_Sans',sans-serif] p-0 relative flex flex-col justify-between">
+      {/* Auto-scroll to top on route change */}
+      <ScrollToTop />
 
-      {/* 01. HEADER */}
+      {/* PERSISTENT HEADER NAVIGATION */}
       <Header
         isScrolled={isScrolled}
         mobileMenuOpen={mobileMenuOpen}
@@ -65,61 +63,61 @@ export default function App() {
         openModalWithOption={openModalWithOption}
       />
 
-      {/* 02. HERO */}
-      <HeroSection
-        isScrolled={isScrolled}
-        mobileMenuOpen={mobileMenuOpen}
-        setMobileMenuOpen={setMobileMenuOpen}
-        currentHeroSlide={currentHeroSlide}
-        setCurrentHeroSlide={setCurrentHeroSlide}
-        openModalWithOption={openModalWithOption}
-      />
+      {/* MAIN ROUTED PAGES */}
+      <main className="flex-grow">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomePage
+                isScrolled={isScrolled}
+                mobileMenuOpen={mobileMenuOpen}
+                setMobileMenuOpen={setMobileMenuOpen}
+                currentHeroSlide={currentHeroSlide}
+                setCurrentHeroSlide={setCurrentHeroSlide}
+                roiState={roiState}
+                setRoiState={setRoiState}
+                openModalWithOption={openModalWithOption}
+              />
+            }
+          />
+          <Route
+            path="/about"
+            element={<AboutPage openModalWithOption={openModalWithOption} />}
+          />
+          <Route
+            path="/charging-stations"
+            element={<ChargingStationsPage openModalWithOption={openModalWithOption} />}
+          />
+          <Route
+            path="/investment"
+            element={<InvestmentPage openModalWithOption={openModalWithOption} />}
+          />
+          <Route
+            path="/franchise"
+            element={<FranchisePage openModalWithOption={openModalWithOption} />}
+          />
+          <Route
+            path="/roi-calculator"
+            element={<RoiCalculatorPage openModalWithOption={openModalWithOption} />}
+          />
+          <Route
+            path="/contact"
+            element={<ContactPage openModalWithOption={openModalWithOption} />}
+          />
+        </Routes>
+      </main>
 
-      {/* 03. ABOUT + VISION */}
-      <AboutSection />
-      <VisionMissionSection />
-
-      {/* 04. 50/50 INVESTMENT */}
-      <InvestmentModel />
-
-      {/* 05. WHY EVOLTEK / SMARTER DIFFERENCE */}
-      <WhyChooseEvoltek />
-
-      {/* 06. HIGHWAY EV HUB */}
-      <HighwayHubSection />
-
-      {/* 07. CHARGING SOLUTIONS */}
-      <ChargingSolutions openModalWithOption={openModalWithOption} />
-
-      {/* 08. INVESTMENT RETURNS */}
-      <ReturnsSection openModalWithOption={openModalWithOption} />
-
-      {/* 09. HOW IT WORKS + ROI CALCULATOR */}
-      <HowItWorksSection />
-      <RoiCalculatorSection
-        roiState={roiState}
-        setRoiState={setRoiState}
-        openModalWithOption={openModalWithOption}
-      />
-      <FranchiseSection openModalWithOption={openModalWithOption} />
-
-      {/* 10. APP + FRANCHISE */}
-      <MobileAppSection />
-
-      {/* 11. CTA BANNER */}
-      <CtaSection openModalWithOption={openModalWithOption} />
-
-      {/* 12. FOOTER */}
+      {/* PERSISTENT FOOTER */}
       <Footer openModalWithOption={openModalWithOption} />
 
-      {/* PARTNER / ENQUIRY MODAL */}
+      {/* PERSISTENT PARTNER / ENQUIRY MODAL */}
       <PartnerModal
         partnerModalOpen={partnerModalOpen}
         setPartnerModalOpen={setPartnerModalOpen}
         modalOption={modalOption}
         setModalOption={setModalOption}
       />
-
     </div>
   );
 }
